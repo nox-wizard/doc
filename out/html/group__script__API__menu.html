@@ -56,10 +56,10 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga5">gui_addBackground</a> (const menu, const gump, const width, const height)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add background at given menu.  <a href="#ga5"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga6">gui_addButton</a> (const menu, const x, const y, const up, const down, const result=<a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>, const pressable=true)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga6">gui_addButton</a> (const menu, const x, const y, const up, const down, const result=<a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>, const pressable=true)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new button at given menu.  <a href="#ga6"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga7">gui_addButtonFn</a> (const menu, const x, const y, const up, const down, const result=<a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>, const pressable=true, const callback[],...)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga7">gui_addButtonFn</a> (const menu, const x, const y, const up, const down, const result=<a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>, const pressable=true, const callback[],...)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new button at given menu.  <a href="#ga7"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga8">gui_addCheckbox</a> (const menu, const x, const y, const off, const on, const checked, const result)</td></tr>
@@ -104,13 +104,16 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga21">gui_addPage</a> (const menu, const page)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new page at given menu.  <a href="#ga21"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga22">gui_addPageButton</a> (const menu, const x, const y, const up, const down, const page)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga22">gui_addGroup</a> (const menu, const group)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new page button at given menu.  <a href="#ga22"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga23">gui_createIconList</a> (const callback[], const question[],...)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new group at given menu.  <a href="#ga22"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga23">gui_addPageButton</a> (const menu, const x, const y, const up, const down, const page)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create a new icon list menu.  <a href="#ga23"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga24">gui_addIcon</a> (const menu, const model, const color=0, const data=<a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>, const response[],...)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new page button at given menu.  <a href="#ga23"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga24">gui_createIconList</a> (const callback[], const question[],...)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create a new icon list menu.  <a href="#ga24"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__menu.html#ga25">gui_addIcon</a> (const menu, const model, const color=0, const data=<a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>, const response[],...)</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
@@ -213,7 +216,7 @@
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>result</em> = <a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>, </td>
+          <td class="mdname" nowrap> <em>result</em> = <a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>, </td>
         </tr>
         <tr>
           <td class="md" nowrap align="right"></td>
@@ -294,7 +297,7 @@
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>result</em> = <a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>, </td>
+          <td class="mdname" nowrap> <em>result</em> = <a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>, </td>
         </tr>
         <tr>
           <td class="md" nowrap align="right"></td>
@@ -583,6 +586,52 @@
     </td>
   </tr>
 </table>
+<a class="anchor" name="ga22" doxytag="gui.api::gui_addGroup" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gui_addGroup </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>menu</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>group</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Wintermute </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>1</em>&nbsp;</td><td>the menu serial </td></tr>
+    <tr><td valign=top><em>2</em>&nbsp;</td><td>the group </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Returns:</b></dt><dd>false if error, true else </dd></dl>
+    </td>
+  </tr>
+</table>
 <a class="anchor" name="ga10" doxytag="gui.api::gui_addGump" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
@@ -738,7 +787,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga24" doxytag="gui.api::gui_addIcon" ></a><p>
+<a class="anchor" name="ga25" doxytag="gui.api::gui_addIcon" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -765,7 +814,7 @@
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>data</em> = <a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>, </td>
+          <td class="mdname" nowrap> <em>data</em> = <a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>, </td>
         </tr>
         <tr>
           <td class="md" nowrap align="right"></td>
@@ -940,7 +989,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga22" doxytag="gui.api::gui_addPageButton" ></a><p>
+<a class="anchor" name="ga23" doxytag="gui.api::gui_addPageButton" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1641,7 +1690,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga23" doxytag="gui.api::gui_createIconList" ></a><p>
+<a class="anchor" name="ga24" doxytag="gui.api::gui_createIconList" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1904,7 +1953,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>
