@@ -39,13 +39,13 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>group&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__tempfx__constants.html">Constants</a></td></tr>
 
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__tempfx.html#ga0">tempfx_activate</a> (const type=<a class="el" href="group__script__API__tempfx__constants.html#ga30">TFX_AMXCUSTOM</a>, const chrsrc, const chrdest, const more, const dur=-1, const callback=-1)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__tempfx.html#ga0">tempfx_activate</a> (const <a class="el" href="group__script__commands__add.html#ga3">type</a>=<a class="el" href="group__script__API__tempfx__constants.html#ga30">TFX_AMXCUSTOM</a>, const objsrc, const objdest, const more, const dur=-1, const callback=-1)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new temp effect.  <a href="#ga0"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__tempfx.html#ga1">tempfx_delete</a> (const chr, const type=<a class="el" href="group__script__API__tempfx__constants.html#ga30">TFX_AMXCUSTOM</a>, const doExpire=true, const callback=<a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__tempfx.html#ga1">tempfx_delete</a> (const obj, const <a class="el" href="group__script__commands__add.html#ga3">type</a>=<a class="el" href="group__script__API__tempfx__constants.html#ga30">TFX_AMXCUSTOM</a>, const doExpire=true, const callback=<a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Delete a tempfx.  <a href="#ga1"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__tempfx.html#ga2">tempfx_isActive</a> (const chr, const type=<a class="el" href="group__script__API__tempfx__constants.html#ga30">TFX_AMXCUSTOM</a>, const callback=<a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__tempfx.html#ga2">tempfx_isActive</a> (const obj, const <a class="el" href="group__script__commands__add.html#ga3">type</a>=<a class="el" href="group__script__API__tempfx__constants.html#ga30">TFX_AMXCUSTOM</a>, const callback=<a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Check if a tempfx is active.  <a href="#ga2"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>stock&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__tempfx.html#ga3">tempfx_getMore1</a> (const more)</td></tr>
@@ -73,13 +73,13 @@
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chrsrc</em>, </td>
+          <td class="mdname" nowrap> <em>objsrc</em>, </td>
         </tr>
         <tr>
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chrdest</em>, </td>
+          <td class="mdname" nowrap> <em>objdest</em>, </td>
         </tr>
         <tr>
           <td class="md" nowrap align="right"></td>
@@ -121,8 +121,8 @@
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>type</em>&nbsp;</td><td>the type ( see constants ) </td></tr>
-    <tr><td valign=top><em>chrsrc</em>&nbsp;</td><td>the source character </td></tr>
-    <tr><td valign=top><em>chrdest</em>&nbsp;</td><td>the destination character </td></tr>
+    <tr><td valign=top><em>objsrc</em>&nbsp;</td><td>the source object </td></tr>
+    <tr><td valign=top><em>objdest</em>&nbsp;</td><td>the destination object </td></tr>
     <tr><td valign=top><em>more</em>&nbsp;</td><td></td></tr>
     <tr><td valign=top><em>dur</em>&nbsp;</td><td>the duration </td></tr>
     <tr><td valign=top><em>callback</em>&nbsp;</td><td>the function callack to call ( only if is a TFX_AMXCUSTOM ) </td></tr>
@@ -140,7 +140,7 @@
           <td class="md" nowrap valign="top"> tempfx_delete </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chr</em>, </td>
+          <td class="mdname" nowrap> <em>obj</em>, </td>
         </tr>
         <tr>
           <td class="md" nowrap align="right"></td>
@@ -158,7 +158,7 @@
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>callback</em> = <a class="el" href="nxw__lib_8sma.html#a1">INVALID</a></td>
+          <td class="mdname" nowrap> <em>callback</em> = <a class="el" href="nxw__lib_8sma.html#a2">INVALID</a></td>
         </tr>
         <tr>
           <td></td>
@@ -181,7 +181,7 @@
 <dl compact><dt><b>Author:</b></dt><dd>Endymion </dd></dl>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign=top><em>chr</em>&nbsp;</td><td>the character </td></tr>
+    <tr><td valign=top><em>obj</em>&nbsp;</td><td>the object </td></tr>
     <tr><td valign=top><em>type</em>&nbsp;</td><td>the tempfx type </td></tr>
     <tr><td valign=top><em>doExpire</em>&nbsp;</td><td>if true call the expire function </td></tr>
     <tr><td valign=top><em>callback</em>&nbsp;</td><td>is the second param if type = TFX_AMXCUSTOM, is INVALID if not used </td></tr>
@@ -289,7 +289,7 @@
           <td class="md" nowrap valign="top"> tempfx_isActive </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chr</em>, </td>
+          <td class="mdname" nowrap> <em>obj</em>, </td>
         </tr>
         <tr>
           <td class="md" nowrap align="right"></td>
@@ -301,7 +301,7 @@
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>callback</em> = <a class="el" href="nxw__lib_8sma.html#a1">INVALID</a></td>
+          <td class="mdname" nowrap> <em>callback</em> = <a class="el" href="nxw__lib_8sma.html#a2">INVALID</a></td>
         </tr>
         <tr>
           <td></td>
@@ -324,7 +324,7 @@
 <dl compact><dt><b>Author:</b></dt><dd>Endymion </dd></dl>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign=top><em>chr</em>&nbsp;</td><td>the character </td></tr>
+    <tr><td valign=top><em>obj</em>&nbsp;</td><td>the object </td></tr>
     <tr><td valign=top><em>type</em>&nbsp;</td><td>the tempfx type </td></tr>
     <tr><td valign=top><em>callback</em>&nbsp;</td><td>is the second param if type = TFX_AMXCUSTOM, is INVALID if not used </td></tr>
   </table>
@@ -395,7 +395,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

@@ -41,10 +41,13 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__freeze.html#ga1">cmd_damage_targ</a> (target, chr, object, x, y, z, unused, damage)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">handles single character targetting and freezing  <a href="#ga1"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__freeze.html#ga2">cmd_resurrect</a> (const chr)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__freeze.html#ga2">cmd_freeze</a> (const chr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">resurrects a character  <a href="#ga2"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__freeze.html#ga3">cmd_resurrect_targ</a> (target, chr, object, x, y, z, unused, unused2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">freezes a character  <a href="#ga2"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__freeze.html#ga3">cmd_resurrect</a> (const chr)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">resurrects a character  <a href="#ga3"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__freeze.html#ga4">cmd_resurrect_targ</a> (target, chr, object, x, y, z, unused, unused2)</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
@@ -152,7 +155,51 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga2" doxytag="resurrect.sma::cmd_resurrect" ></a><p>
+<a class="anchor" name="ga2" doxytag="freeze.sma::cmd_freeze" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> cmd_freeze </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<b>syntax:<b> 'damage [amount]["hp"/"stam"/"mana"] <b>command params:</b> <ul>
+<li>
+amount: hoe much damage you want to do <ul>
+<li>
+"hp": decrease HP (default) </li>
+<li>
+"stam": decrease stamina </li>
+<li>
+"mana": decrease mana </li>
+</ul>
+<p>
+</li>
+</ul>
+</b></b><p>
+<b><b>If area effect is active, all characters in area will be damaged. If no area effect is active, or if you pass "target", a target will appear and only the targetted char will be damaged. </b></b>    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga3" doxytag="resurrect.sma::cmd_resurrect" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -179,15 +226,13 @@
 
 <p>
 <dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
-<b>syntax:<b> 'resurrect ["target"] <b>command params:</b> <ul>
-<li>
-"target": pass this paramter if you want to bypass the area effect </li>
+<b>syntax:<b> 'resurrect <b>command params:</b> <ul>
 </ul>
 </b></b><p>
 <b><b>If area effect is active, all characters in area will be resurrected. If no area effect is active, or if you pass "target", a target will appear and only the targetted char will be resurrected </b></b>    </td>
   </tr>
 </table>
-<a class="anchor" name="ga3" doxytag="resurrect.sma::cmd_resurrect_targ" ></a><p>
+<a class="anchor" name="ga4" doxytag="resurrect.sma::cmd_resurrect_targ" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -279,7 +324,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

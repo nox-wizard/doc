@@ -35,37 +35,62 @@
 [<a class="el" href="group__script__skills.html">Skills</a>]</small>
 </h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
-<tr><td colspan=2><br><h2>Defines</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga0">ACTIVATE_EXTENDED_SKILLSYSTEM</a>&nbsp;&nbsp;&nbsp;0</td></tr>
+<tr><td colspan=2><br><h2>Functions</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga0">chr_getBaseSkill</a> (const chr, const skill)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">set to 1 to activate the extended skillsystem  <a href="#ga0"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga1">SK_ADDITIONAL_COUNT</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga1">chr_getSkillSum</a> (const chr)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga2">SK_EXT_COUNT</a>&nbsp;&nbsp;&nbsp;SK_COUNT</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga2">skill_isDirectlyUsable</a> (skill)</td></tr>
 
-<tr><td colspan=2><br><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga3">__skill</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__script__extended__skills.html#gga3a3">_skFailRaise</a>, 
-<a class="el" href="group__script__extended__skills.html#gga3a4">_skSuccessRaise</a>, 
-<a class="el" href="group__script__extended__skills.html#gga3a5">_skStr</a>, 
-<a class="el" href="group__script__extended__skills.html#gga3a6">_skDex</a>, 
-<br>
-&nbsp;&nbsp;<a class="el" href="group__script__extended__skills.html#gga3a7">_skInt</a>, 
-<a class="el" href="group__script__extended__skills.html#gga3a8">_skUnhideOnFail</a>, 
-<a class="el" href="group__script__extended__skills.html#gga3a9">_skUnhideOnUse</a>, 
-<a class="el" href="group__script__extended__skills.html#gga3a10">_skName</a>
-<br>
- }</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga3">startExtSkillsystem</a> (chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga4">initExtendedSkillsystem</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">initializes the extended skillsystem  <a href="#ga4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga5">chr_trySkill</a> (const chr, sk, low, high, const raise)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga6">skillChance</a> (const chr, const sk, const low, const high)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">defines skill success chance  <a href="#ga6"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga7">advanceSkill</a> (chr, sk, success)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">increases character's base skill value  <a href="#ga7"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga8">updateSkillLevel</a> (chr, sk)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">increases character's skill value, basing on base value and stats value  <a href="#ga8"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__extended__skills.html#ga9">loadAdditionalSkills</a> (file, line)</td></tr>
 
 </table>
-<hr><h2>Define Documentation</h2>
-<a class="anchor" name="ga0" doxytag="extendedSkillsystem.sma::ACTIVATE_EXTENDED_SKILLSYSTEM" ></a><p>
+<hr><h2>Function Documentation</h2>
+<a class="anchor" name="ga7" doxytag="extendedSkillsystem.sma::advanceSkill" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> #define ACTIVATE_EXTENDED_SKILLSYSTEM&nbsp;&nbsp;&nbsp;0
+          <td class="md" nowrap valign="top"> advanceSkill </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">chr&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>sk&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>success&nbsp;</td>
+          <td class="mdname" nowrap></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
       </table>
     </td>
   </tr>
@@ -78,93 +103,373 @@
     <td>
 
 <p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="ga1" doxytag="extendedSkillsystem.sma::SK_ADDITIONAL_COUNT" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define SK_ADDITIONAL_COUNT&nbsp;&nbsp;&nbsp;1
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="ga2" doxytag="extendedSkillsystem.sma::SK_EXT_COUNT" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define SK_EXT_COUNT&nbsp;&nbsp;&nbsp;SK_COUNT
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<hr><h2>Enumeration Type Documentation</h2>
-<a class="anchor" name="ga3" doxytag="extendedSkillsystem.sma::__skill" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> enum <a class="el" href="group__script__extended__skills.html#ga3">__skill</a>
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-<dl compact><dt><b>Enumeration values: </b></dt><dd>
-<table border=0 cellspacing=2 cellpadding=0>
-<tr><td valign=top><em><a class="anchor" name="gga3a3" doxytag="_skFailRaise" ></a>_skFailRaise</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga3a4" doxytag="_skSuccessRaise" ></a>_skSuccessRaise</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga3a5" doxytag="_skStr" ></a>_skStr</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga3a6" doxytag="_skDex" ></a>_skDex</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga3a7" doxytag="_skInt" ></a>_skInt</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga3a8" doxytag="_skUnhideOnFail" ></a>_skUnhideOnFail</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga3a9" doxytag="_skUnhideOnUse" ></a>_skUnhideOnUse</em>&nbsp;</td><td>
-true if charcater is unhidden when he uses the skill </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga3a10" doxytag="_skName" ></a>_skName</em>&nbsp;</td><td>
-skill name </td></tr>
-</table>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr:</em>&nbsp;</td><td>the character </td></tr>
+    <tr><td valign=top><em>sk:</em>&nbsp;</td><td>the skill </td></tr>
+    <tr><td valign=top><em>success:</em>&nbsp;</td><td>-1000 - 0 on fail, 1 - 1000 on success </td></tr>
+  </table>
 </dl>
+Modify this function to define how the skills grow when they are used <dl compact><dt><b>Note:</b></dt><dd>: this function doesn't exist if extended skillsystem is not activated </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga0" doxytag="extendedSkillsystem.sma::chr_getBaseSkill" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public chr_getBaseSkill </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>skill</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga1" doxytag="extendedSkillsystem.sma::chr_getSkillSum" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public chr_getSkillSum </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga5" doxytag="extendedSkillsystem.sma::chr_trySkill" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public chr_trySkill </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>sk&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>low&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>high&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>raise</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga4" doxytag="extendedSkillsystem.sma::initExtendedSkillsystem" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public initExtendedSkillsystem </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<dl compact><dt><b>Since:</b></dt><dd>0.82 </dd></dl>
+This function is called in __StartServer() function and that's the only location where it must be used.<br>
+ Loads skills2.xss, uses <a class="el" href="group__script__extended__skills.html#ga9">loadAdditionalSkills()</a> to actually load skills <dl compact><dt><b>Returns:</b></dt><dd>nothing </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga9" doxytag="extendedSkillsystem.sma::loadAdditionalSkills" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public loadAdditionalSkills </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">file&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>line&nbsp;</td>
+          <td class="mdname" nowrap></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga2" doxytag="extendedSkillsystem.sma::skill_isDirectlyUsable" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public skill_isDirectlyUsable </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">skill&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga6" doxytag="extendedSkillsystem.sma::skillChance" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> skillChance </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>sk</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>high</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr:</em>&nbsp;</td><td>the character </td></tr>
+    <tr><td valign=top><em>sk:</em>&nbsp;</td><td>the skill </td></tr>
+    <tr><td valign=top><em>low:</em>&nbsp;</td><td>minimum skill required </td></tr>
+    <tr><td valign=top><em>high:</em>&nbsp;</td><td>skill value at wich chance = 99% </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Returns:</b></dt><dd>chance from 0 to 1000 (0 is 0% - 1000 is 100%)</dd></dl>
+Modify this function to define the chance of success of a skill <dl compact><dt><b>Note:</b></dt><dd>: this function doesn't exist if extended skillsystem is not activated </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga3" doxytag="extendedSkillsystem.sma::startExtSkillsystem" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public startExtSkillsystem </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">chr&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga8" doxytag="extendedSkillsystem.sma::updateSkillLevel" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> updateSkillLevel </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">chr&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>sk&nbsp;</td>
+          <td class="mdname" nowrap></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr:</em>&nbsp;</td><td>the character </td></tr>
+    <tr><td valign=top><em>sk:</em>&nbsp;</td><td>the skill </td></tr>
+  </table>
+</dl>
+Modify this function to define how real skill value is calculated from base skill value <dl compact><dt><b>Note:</b></dt><dd>: this function doesn't exist if extended skillsystem is not activated </dd></dl>
     </td>
   </tr>
 </table>
@@ -186,7 +491,7 @@ skill name </td></tr>
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

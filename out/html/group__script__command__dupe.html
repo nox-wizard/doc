@@ -38,16 +38,12 @@
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__dupe.html#ga0">cmd_dupe</a> (const chr)</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">duplicates an item  <a href="#ga0"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__dupe.html#ga1">cmd_dupe_targ</a> (target, chr, object, x, y, z, unused, unused1)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__dupe.html#ga2">duplicate</a> (const item, const chr)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__dupe.html#ga2">cmd_freeze_targ</a> (target, chr, object, x, y, z, unused, freeze)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__dupe.html#ga3">cmd_freeze</a> (const chr)</td></tr>
-
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">freezes a character  <a href="#ga3"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__dupe.html#ga4">cmd_freeze_targ</a> (target, chr, object, x, y, z, unused, freeze)</td></tr>
-
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">handles single character targetting and freezing  <a href="#ga4"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">handles single character targetting and freezing  <a href="#ga2"></a><br><br></td></tr>
 </table>
 <hr><h2>Function Documentation</h2>
 <a class="anchor" name="ga0" doxytag="dupe.sma::cmd_dupe" ></a><p>
@@ -56,7 +52,7 @@
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> public cmd_dupe </td>
+          <td class="md" nowrap valign="top"> cmd_dupe </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
           <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
@@ -76,7 +72,12 @@
     <td>
 
 <p>
-    </td>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<b>syntax:<b> 'dupe <b>command params:</b> <ul>
+</ul>
+</b></b><p>
+<b><b>If area effect is active, all items in area will be cloned. If no area effect is active, or if you pass "target", a target will appear and only the targetted item will be cloned.<br>
+ Items in the player's backpack are not copied. </b></b>    </td>
   </tr>
 </table>
 <a class="anchor" name="ga1" doxytag="dupe.sma::cmd_dupe_targ" ></a><p>
@@ -153,53 +154,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga3" doxytag="freeze.sma::cmd_freeze" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> cmd_freeze </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
-          <td class="md" valign="top">&nbsp;)&nbsp;</td>
-          <td class="md" nowrap></td>
-        </tr>
-
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
-<b>syntax:<b> 'damage [amount]["hp"/"stam"/"mana"]["target"] <b>command params:</b> <ul>
-<li>
-amount: hoe much damage you want to do <ul>
-<li>
-"hp": decrease HP (default) </li>
-<li>
-"stam": decrease stamina </li>
-<li>
-"mana": decrease mana </li>
-</ul>
-<p>
-</li>
-<li>
-"target": pass this paramter if you want to bypass the area effect </li>
-</ul>
-</b></b><p>
-<b><b>If area effect is active, all characters in area will be damaged. If no area effect is active, or if you pass "target", a target will appear and only the targetted char will be damaged. </b></b>    </td>
-  </tr>
-</table>
-<a class="anchor" name="ga4" doxytag="freeze.sma::cmd_freeze_targ" ></a><p>
+<a class="anchor" name="ga2" doxytag="freeze.sma::cmd_freeze_targ" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -274,44 +229,6 @@ amount: hoe much damage you want to do <ul>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga2" doxytag="dupe.sma::duplicate" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> duplicate </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>item</em>, </td>
-        </tr>
-        <tr>
-          <td class="md" nowrap align="right"></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chr</em></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="md">)&nbsp;</td>
-          <td class="md" colspan="2"><code> [static]</code></td>
-        </tr>
-
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
 				</TD>
 				<TD WIDTH=30  VALIGN=top >
 					<TABLE WIDTH=30 cellpadding="0" cellspacing="0">
@@ -330,7 +247,7 @@ amount: hoe much damage you want to do <ul>
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

@@ -44,12 +44,18 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga2">cmd_move_targ</a> (target, chr, object, x, y, z, unused, unused2)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">handles first targetting in 'move command with no params  <a href="#ga2"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga3">cmd_move_targ_dst</a> (target, chr, object, x, y, z, unused2, param)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga3">cmd_move_targ_here</a> (target, chr, object, x, y, z, unused, unused2)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">handles the destination targetting in 'move when called without params  <a href="#ga3"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga4">cmd_move_targ_rel</a> (target, chr, object, x, y, z, unused2, param)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">handles 'move here commmand  <a href="#ga3"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga4">cmd_move_targ_loc</a> (target, chr, object, x, y, z, unused, unused2)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga5">cmd_move_targ_abs</a> (target, chr, object, x, y, z, unused2, param)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">handles 'move loc commmand  <a href="#ga4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga5">cmd_move_targ_dst</a> (target, chr, object, x, y, z, unused2, param)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">handles the destination targetting in 'move when called without params  <a href="#ga5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga6">cmd_move_targ_rel</a> (target, chr, object, x, y, z, unused2, param)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__move.html#ga7">cmd_move_targ_abs</a> (target, chr, object, x, y, z, unused2, param)</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
@@ -109,10 +115,13 @@
 
 <p>
 <dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
-<b>syntax:<b> 'move [x][y]["abs"/"rel"]["target"] or 'move me</b></b><p>
+<b>syntax:<b> 'move x y ["abs"/"rel"] or 'move me or 'move here or 'move loc</b></b><p>
 <b><b><b>command params:</b> <ul>
 <li>
 me: if command is called as 'move me, the character is teleported in a targetted location When using this option no other parameters are needed.<br>
+ </li>
+<li>
+here: if command is called as 'move here, the targetted character is teleported to the command user<br>
  </li>
 <li>
 x: x movement </li>
@@ -208,7 +217,7 @@ y : y movement </li>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga5" doxytag="move.sma::cmd_move_targ_abs" ></a><p>
+<a class="anchor" name="ga7" doxytag="move.sma::cmd_move_targ_abs" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -282,7 +291,7 @@ y : y movement </li>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga3" doxytag="move.sma::cmd_move_targ_dst" ></a><p>
+<a class="anchor" name="ga5" doxytag="move.sma::cmd_move_targ_dst" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -357,7 +366,157 @@ y : y movement </li>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga4" doxytag="move.sma::cmd_move_targ_rel" ></a><p>
+<a class="anchor" name="ga3" doxytag="move.sma::cmd_move_targ_here" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> cmd_move_targ_here </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">target&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>chr&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>object&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>x&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>y&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>z&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>unused&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>unused2&nbsp;</td>
+          <td class="mdname" nowrap></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax  all standard target callback params </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga4" doxytag="move.sma::cmd_move_targ_loc" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> cmd_move_targ_loc </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">target&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>chr&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>object&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>x&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>y&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>z&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>unused&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>unused2&nbsp;</td>
+          <td class="mdname" nowrap></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax  all standard target callback params </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga6" doxytag="move.sma::cmd_move_targ_rel" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -449,7 +608,7 @@ y : y movement </li>
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>
