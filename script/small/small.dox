@@ -18,11 +18,13 @@ a lot of tutorials that will help you.
 \subsection API_reference API reference
 * <UL>
 * <LI> \ref script_API
+* <LI> \ref script_skills
 * </UL>
 \subsection NOX_small NOX-Small scripting guide
 * <UL>
 * <LI> \ref p_override
 * <LI> \ref p_targetting
+* <LI> \ref p_tempfx
 * </UL>
 */
 
@@ -322,5 +324,248 @@ with the new
 \code
 chr_message(chr,_,"message");
 target_create(chr,_,_,_,"callback");
+\endcode
+*/
+
+
+//=========================================================================================
+//=====================================  TEMPFX ===========================================
+//=========================================================================================
+
+/*!
+\page p_tempfx Tempfx use and abuse
+
+Here you'll learn about one of the most widel used features of NOX wizard, the tempfx<br>
+The functions we are talking about are:
+
+\code
+native tempfx_activate( const type = TFX_AMXCUSTOM, const chrsrc, const chrdest, const more, const dur = -1, const callback = -1);
+native tempfx_delete(const chr, const type = TFX_AMXCUSTOM, const doExpire = true, const callback = -1);
+native tempfx_isActive(const chr, const type = TFX_AMXCUSTOM, const callback = -1)
+\endcode
+
+\section whataretempfxfor WHAT ARE TEMPFX FOR?
+Tempfx have 2 kinds of use:
+- A "standard" one wich is for playing some "effects" from a character to another, passing one of the predefined constants (in small-scripts/effects/constants.sma) as "type", this will performe one of the standard effects.
+- A "custom" one wich is used to execute a function after a determined time is passed.
+
+\section stdeffects STANDARD EFFECTS
+For "standard" use there isn't much to say, simply call tempfx_activate passing the type of effect you want, putting in "more" the power of the effect. 
+To manage the "more" parameter you should do a little work on it ...
+Only the 24 least significant bits are taken, and they are subdivided in 3 8bit numbers that affect the behaviour of the effect.
+
+So when setting "more" you should do the following:
+
+\code
+new more;
+new more1,more2,more3; //assign something to theese vars
+more = more1 + (more2 << 8) + (more3 << 16);
+\endcode
+
+what more1, more2 and more3 mean depends on the "type" of effect.
+I will post a table with the meaning of the "more" parameters for each effect... not now because it's a long work.
+
+\section customtempfx CUSTOM TEMPFX
+This is the most useful feature of tempfx, let's see how it works:
+To use a custom tempfx you should pass TFX_AMXCUSTOM as "type" parameter, but as far as this is the default value, you can pass _
+"dur" parameter indicates how long will it take for the tempfx to expire, in seconds
+"more" is useless, unless you want this parameter passed to your callback
+"callback" is the function that is called by the temp effect
+A typical call is:
+
+\code
+#define DELAY 5
+...
+tempfx_activate(_,chr,chr,0,DELAY,funcidx("mycallback"));
+\endcode
+
+\subsection tempfxprototype Callback function prototype
+
+The function you want to call must have the following proptotype
+
+\code
+public mycallback(const chrsrc, const chrdest, const power, const mode)
+\endcode
+
+"chrsrc" and "chrdest" are those you have passed in the tempfx_activate call
+"power" is the "more" parameter
+"mode" needs some explanation
+
+You function is called a lot of times before the tempfx expires, every time the "mode" parameter tells you the reason of the call.
+There are 5 different modes:
+TFXM_START = 0    the tempfx is started
+TFXM_END = 1;     the tempfx is expired (timeout)
+TFXM_ON = 2;      the tempfx is activated
+TFXM_OFF = 3;     the tempfx is deactivated
+TFXM_REVERSE = 4; don't know ...
+
+Usually you will need to call a function after a certain time has passed, so you will need only the TFXM_END mode.
+This is a function that fires on the tempfx timeout
+
+\code
+public mycallback(const chrsrc, const chrdest, const power, const mode)
+{
+if (mode != TFXM_END) return;
+nprintf(getCharFromSocket(chrsrc),"You tempfx has expired");
+}
+\endcode
+
+This is the standard structure of the tempfx callbacks, if you perform some operations before the check they will be executed a lot of times and you won't have control on it.
+This way of using tempfx is useful to script all that things that need a timeout, such as skill/stats temporary bonuses, time bombs and so on
+
+\section loops LOOPS
+Another interesting use of tempfx are loops, it's very simple to make a loop with tempfx: simply make your callback call the same tempfx:
+
+\code
+#define DELAY 2
+public mycallback(const chrsrc, const chrdest, const power, const mode)
+{
+if (mode != TFXM_END) return;
+//
+//some code here
+//
+tempfx_activate(_,chrsrc,chrdst,power,DELAY,funcidx("mycallback"));
+}
+\endcode
+
+This function will be called every 2 seconds.
+Here you can notice the danger of putting some code before the TFXM_END check, if you do not put the check you will start a terrible sequence of loops out of control!
+
+\section tipsandtricks TIPS & TRICKS
+
+Tempfx work only for chars, not for items, so what about putting a tempfx on an item?
+Usually you can find a character that can take the tempfx instead of the item, it can be the character that is using the item or something like that.
+For example if you want a sword to lose HP every day (beacuse of rust) you can put the tempfx on the owner of the sword, no matter if the sword is given to someone else, the tempfx is linked to a char and it will fire anyway, the problem is that you can't pass additional parameters to the callback so when the tempfx fires you won't have information about your sword, and.
+NOTE: item tempfx of this kind stop working if the char is deleted... so this example is not completely right... but it's only an example
+you won't be able to damage it. The solution is to store the serial of the sword in a localvar on the character, so your callback can read the sword's serial from there.
+
+I described loops before, but those were infinite loops (as for hunger system), most times you will need to stop your loop under a certain condition. Stopping a tempfx loop is simple... simply put
+
+\code 
+if(stopcondition) return;
+\endcode
+
+before the tempfx_activate call in your callback.
+Loops can be very computing expensive for you machine, so choose with care the looping delays and minimize the operations in the loop especially in loops that involve many characters, as hunger systems o regeneration systems.
+
+\section tampfxtable MORE* TABLE
+Here is the table with the usage of the "more" parameter.
+more parameter is divided into 3 subparameters as follows:
+
+more = more1 + (more2 <­<­ 8 ) + (more3 <­<­ 16)
+
+so to pass the moreN parameters you have to build the "more" parameter as described above 
+
+I wrote this table looking in sources and trying to understand what each parameter is used for, obviousely I could have made mistakes because the source code is quite difficult to read, and I don't have time for testing all this stuff.
+Please make some tests and report any differences you might find.
+
+\code
+
+-----------------------|-----------------|----------------|----------------|
+
+      EFFECT           |      more1      |     more2      |      more3     |
+
+-----------------------|-----------------|----------------|----------------|
+
+TFX_SPELL_PARALYZE     |       -         |       -        |         -      |
+
+TFX_SPELL_LIGHT        |       -         |       -        |         -      |
+
+TFX_SPELL_CLUMSY       |   dex malus     |       -        |         -      |
+
+TFX_SPELL_FEEBLEMIND   |   int malus     |       -        |         -      |
+
+TFX_SPELL_WEAKEN       |   str malus     |       -        |         -      |
+
+TFX_SPELL_AGILITY      | dex/stam bonus  |       -        |         -      |
+
+TFX_SPELL_CUNNING      | int/mana bonus  |       -        |         -      |
+
+TFX_SPELL_STRENGHT     |   str bonus     |       -        |         -      |
+
+TFX_ALCHEMY_GRIND      |       ?         |   duration     |         -      |
+
+TFX_ALCHEMY_END        |  potion type*   | potion subtype*|         -      |
+
+TFX_SPELL_BLESS        | str/hp bonus    | dex/stam bonus | int/mana bonus |
+
+TFX_SPELL_CURSE        |   str malus     |    dex malus   |   int malus    |
+
+TFX_AUTODOOR           |       -         |       -        |       -        | 
+
+TFX_TRAINDUMMY         |       -         |       -        |       -        | 
+
+TFX_SPELL_REACTARMOR   |       -         |       -        |       -        | 
+
+TFX_EXPLOTIONMSG       |       -         |    duration    |       ?        | 
+
+TFX_EXPLOTIONEXP       |       -         |       -        |       -        | 
+
+TFX_SPELL_POLYMORPH    |    body ID      |       -        |       -        |
+
+TFX_SPELL_INCOGNITO    |       -         |       -        |       -        | 
+
+TFX_LSD                |       -         |       -        |       -        | 
+
+TFX_SPELL_PROTECTION   |       -         |       -        |       -        | 
+
+TFX_HEALING_HEAL       |       -         |       -        |       -        | 
+
+TFX_HEALING_RESURRECT  |       -         |       -        |       -        | 
+
+TFX_HEALING_CURE       |       -         |       -        |       -        |
+
+TFX_POTION_DELAY       |       -         |       -        |       -        |
+
+TFX_GM_HIDING          |    duration     |       -        |       -        |
+
+TFX_GM_UNHIDING        |    duration     |       -        |       -        |
+
+TFX_HEALING_DELAYHEAL  |    hp healed    |       ?        |    duration    |
+
+TFX_COMBAT_PARALYZE    |       -         |       -        |       -        |
+
+TFX_COMBAT_CONCUSSION  |    int malus    |       -        |       -        |
+
+TFX_AMXCUSTOM          |     more1       |    more2       |     more3      |
+
+TFX_GREY               |       -         |       -        |       -        |
+
+-----------------------|-----------------|----------------|----------------|
+
+- = parameter unused
+
+? = parameter used, but I don't know for what O_o
+
+ 
+
+* 
+
+Potion type table
+
+  POTION   |  TYPE  | SUBTYPE = 1 | SUBTYPE = 2 | SUNBTYPE = 3 | SUBTYPE = 4 |
+
+-----------|--------|-------------|-------------|--------------|-------------|
+
+agility    |    1   |    normal   |   greater   |       -      |      -      | 
+
+cure       |    2   |    lesser   |   normal    |       -      |      -      | 
+
+explosion  |    3   |    lesser   |   normal    |    greater   |      -      | 
+
+heal       |    4   |    lesser   |   normal    |    greater   |      -      | 
+
+night sight|    5   |      -      |     -       |       -      |      -      | 
+
+poison     |    6   |    lesser   |   normal    |    greater   |    deadly   | 
+
+refresh    |    7   |    normal   |   total     |       -      |      -      | 
+
+strenght   |    8   |    normal   |   greater   |       -      |      -      | 
+
+-----------|--------|-------------|-------------|--------------|-------------|
+
+NOTE: passing an invalid subtype will cause a "switch reached default" error to be logged
+
 \endcode
 */
