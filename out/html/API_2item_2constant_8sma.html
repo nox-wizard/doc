@@ -32,44 +32,17 @@
 <div class="qindex"><a class="qindex" href="index.html">Main&nbsp;Page</a> | <a class="qindex" href="modules.html">Modules</a> | <a class="qindex" href="files.html">File&nbsp;List</a> | <a class="qindex" href="globals.html">Globals</a> | <a class="qindex" href="pages.html">Related&nbsp;Pages</a></div>
 <h1>constant.sma File Reference</h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
+<tr><td colspan=2><br><h2>Defines</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a0">BANKBOX_NORMAL</a>&nbsp;&nbsp;&nbsp;0</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a1">BANKBOX_GOLDONLY</a>&nbsp;&nbsp;&nbsp;123</td></tr>
+
 <tr><td colspan=2><br><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom>{ <br>
-&nbsp;&nbsp;<a class="el" href="API_2item_2constant_8sma.html#a115a90">TYPE_KNIFE</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a91">TYPE_SWORD</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a92">TYPE_AXE_1H</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a93">TYPE_FORK_1H</a>, 
-<br>
-&nbsp;&nbsp;<a class="el" href="API_2item_2constant_8sma.html#a115a94">TYPE_CROSSBOW</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a95">TYPE_BOW</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a96">TYPE_SPEAR_1H</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a97">TYPE_STAFF</a>, 
-<br>
-&nbsp;&nbsp;<a class="el" href="API_2item_2constant_8sma.html#a115a98">TYPE_MACE_1H</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a99">TYPE_MACE_2H</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a100">TYPE_AXE_2H</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a101">TYPE_LONGWEAPON</a>, 
-<br>
-&nbsp;&nbsp;<a class="el" href="API_2item_2constant_8sma.html#a115a102">TYPE_FORK_2H</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a103">TYPE_SPEAR_2H</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a104">TYPE_JAVELIN</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a105">TYPE_BOLT</a>, 
-<br>
-&nbsp;&nbsp;<a class="el" href="API_2item_2constant_8sma.html#a115a106">TYPE_ARROW</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a107">TYPE_CHAINMAIL</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a108">TYPE_LEATHER</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a109">TYPE_STUDDED</a>, 
-<br>
-&nbsp;&nbsp;<a class="el" href="API_2item_2constant_8sma.html#a115a110">TYPE_RINGMAIL</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a111">TYPE_HELM</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a112">TYPE_PLATEMAIL</a>, 
-<a class="el" href="API_2item_2constant_8sma.html#a115a113">TYPE_BONEARMOR</a>, 
-<br>
-&nbsp;&nbsp;<a class="el" href="API_2item_2constant_8sma.html#a115a114">TYPE_UNDEFINED</a>
-<br>
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom>{ <a class="el" href="group__IP__.html#gga84a116">ILV_FLIPITEM</a> =  9000
  }</td></tr>
 
 <tr><td colspan=2><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a0">PROP_ITEM</a> = 1</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a2">PROP_ITEM</a> = 1</td></tr>
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__IP2__.html#ga0">IP2_X</a> = 0</td></tr>
 
@@ -208,12 +181,14 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">rank  <a href="group__IP__.html#ga44"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__IP__.html#ga45">IP_REQSKILL</a> = 229</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">bugged, its the SMALL-synonym of REQSKILL in XSS, REQSKILL is only loaded from worldsave and is a number pair: skillnumber skillvalue, REQSKILL is never saved to worldsave except for itemcreation once, SMALL IP_REQSKILL does only change skillvalue but its not stored in worldsave too - so bugged twice  <a href="group__IP__.html#ga45"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__IP__.html#ga46">IP_RESTOCK</a> = 230</td></tr>
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__IP__.html#ga47">IP_RNDVALUERATE</a> = 231</td></tr>
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__IP__.html#ga48">IP_SECUREIT</a> = 232</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">1 or 0, secured container inside houses, if 1 only house owner can move and open the chest/container, for other people its closed as if locked by a key  <a href="group__IP__.html#ga48"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__IP__.html#ga49">IP_SERIAL</a> = 233</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">useless, the item serial  <a href="group__IP__.html#ga49"></a><br><br></td></tr>
@@ -312,15 +287,63 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__IP__.html#ga83">IP_STR_NAME2</a> = 455</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">item-id name of the item  <a href="group__IP__.html#ga83"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a92">TYPE_KNIFE</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a93">TYPE_SWORD</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a94">TYPE_AXE_1H</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a95">TYPE_FORK_1H</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a96">TYPE_CROSSBOW</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a97">TYPE_BOW</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a98">TYPE_SPEAR_1H</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a99">TYPE_STAFF</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a100">TYPE_MACE_1H</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a101">TYPE_MACE_2H</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a102">TYPE_AXE_2H</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a103">TYPE_LONGWEAPON</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a104">TYPE_FORK_2H</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a105">TYPE_SPEAR_2H</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a106">TYPE_JAVELIN</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a107">TYPE_BOLT</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a108">TYPE_ARROW</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a109">TYPE_CHAINMAIL</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a110">TYPE_LEATHER</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a111">TYPE_STUDDED</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a112">TYPE_RINGMAIL</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a113">TYPE_HELM</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a114">TYPE_PLATEMAIL</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum  { ... } &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2item_2constant_8sma.html#a115">TYPE_BONEARMOR</a></td></tr>
+
 </table>
-<hr><h2>Enumeration Type Documentation</h2>
-<a class="anchor" name="a115" doxytag="API/item/constant.sma::@12" ></a><p>
+<hr><h2>Define Documentation</h2>
+<a class="anchor" name="a1" doxytag="API/item/constant.sma::BANKBOX_GOLDONLY" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> anonymous enum
+          <td class="md" nowrap valign="top"> #define BANKBOX_GOLDONLY&nbsp;&nbsp;&nbsp;123
       </table>
     </td>
   </tr>
@@ -333,71 +356,594 @@
     <td>
 
 <p>
-<dl compact><dt><b>Enumeration values: </b></dt><dd>
-<table border=0 cellspacing=2 cellpadding=0>
-<tr><td valign=top><em><a class="anchor" name="a115a90" doxytag="TYPE_KNIFE" ></a>TYPE_KNIFE</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a91" doxytag="TYPE_SWORD" ></a>TYPE_SWORD</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a92" doxytag="TYPE_AXE_1H" ></a>TYPE_AXE_1H</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a93" doxytag="TYPE_FORK_1H" ></a>TYPE_FORK_1H</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a94" doxytag="TYPE_CROSSBOW" ></a>TYPE_CROSSBOW</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a95" doxytag="TYPE_BOW" ></a>TYPE_BOW</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a96" doxytag="TYPE_SPEAR_1H" ></a>TYPE_SPEAR_1H</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a97" doxytag="TYPE_STAFF" ></a>TYPE_STAFF</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a98" doxytag="TYPE_MACE_1H" ></a>TYPE_MACE_1H</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a99" doxytag="TYPE_MACE_2H" ></a>TYPE_MACE_2H</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a100" doxytag="TYPE_AXE_2H" ></a>TYPE_AXE_2H</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a101" doxytag="TYPE_LONGWEAPON" ></a>TYPE_LONGWEAPON</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a102" doxytag="TYPE_FORK_2H" ></a>TYPE_FORK_2H</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a103" doxytag="TYPE_SPEAR_2H" ></a>TYPE_SPEAR_2H</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a104" doxytag="TYPE_JAVELIN" ></a>TYPE_JAVELIN</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a105" doxytag="TYPE_BOLT" ></a>TYPE_BOLT</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a106" doxytag="TYPE_ARROW" ></a>TYPE_ARROW</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a107" doxytag="TYPE_CHAINMAIL" ></a>TYPE_CHAINMAIL</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a108" doxytag="TYPE_LEATHER" ></a>TYPE_LEATHER</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a109" doxytag="TYPE_STUDDED" ></a>TYPE_STUDDED</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a110" doxytag="TYPE_RINGMAIL" ></a>TYPE_RINGMAIL</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a111" doxytag="TYPE_HELM" ></a>TYPE_HELM</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a112" doxytag="TYPE_PLATEMAIL" ></a>TYPE_PLATEMAIL</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a113" doxytag="TYPE_BONEARMOR" ></a>TYPE_BONEARMOR</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign=top><em><a class="anchor" name="a115a114" doxytag="TYPE_UNDEFINED" ></a>TYPE_UNDEFINED</em>&nbsp;</td><td>
-</td></tr>
-</table>
-</dl>
     </td>
   </tr>
 </table>
-<hr><h2>Variable Documentation</h2>
-<a class="anchor" name="a0" doxytag="API/item/constant.sma::PROP_ITEM" ></a><p>
+<a class="anchor" name="a0" doxytag="API/item/constant.sma::BANKBOX_NORMAL" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> const <a class="el" href="API_2item_2constant_8sma.html#a0">PROP_ITEM</a> = 1
+          <td class="md" nowrap valign="top"> #define BANKBOX_NORMAL&nbsp;&nbsp;&nbsp;0
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Variable Documentation</h2>
+<a class="anchor" name="a2" doxytag="API/item/constant.sma::PROP_ITEM" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> const <a class="el" href="API_2item_2constant_8sma.html#a2">PROP_ITEM</a> = 1
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a108" doxytag="API/item/constant.sma::TYPE_ARROW" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a108">TYPE_ARROW</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a94" doxytag="API/item/constant.sma::TYPE_AXE_1H" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a94">TYPE_AXE_1H</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a102" doxytag="API/item/constant.sma::TYPE_AXE_2H" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a102">TYPE_AXE_2H</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a107" doxytag="API/item/constant.sma::TYPE_BOLT" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	
+	 <a class="el" href="API_2item_2constant_8sma.html#a107">TYPE_BOLT</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a115" doxytag="API/item/constant.sma::TYPE_BONEARMOR" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a115">TYPE_BONEARMOR</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a97" doxytag="API/item/constant.sma::TYPE_BOW" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a97">TYPE_BOW</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a109" doxytag="API/item/constant.sma::TYPE_CHAINMAIL" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+
+	 <a class="el" href="API_2item_2constant_8sma.html#a109">TYPE_CHAINMAIL</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a96" doxytag="API/item/constant.sma::TYPE_CROSSBOW" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a96">TYPE_CROSSBOW</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a95" doxytag="API/item/constant.sma::TYPE_FORK_1H" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a95">TYPE_FORK_1H</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a104" doxytag="API/item/constant.sma::TYPE_FORK_2H" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a104">TYPE_FORK_2H</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a113" doxytag="API/item/constant.sma::TYPE_HELM" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a113">TYPE_HELM</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a106" doxytag="API/item/constant.sma::TYPE_JAVELIN" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a106">TYPE_JAVELIN</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a92" doxytag="API/item/constant.sma::TYPE_KNIFE" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a92">TYPE_KNIFE</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a110" doxytag="API/item/constant.sma::TYPE_LEATHER" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a110">TYPE_LEATHER</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a103" doxytag="API/item/constant.sma::TYPE_LONGWEAPON" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a103">TYPE_LONGWEAPON</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a100" doxytag="API/item/constant.sma::TYPE_MACE_1H" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 	
+	 <a class="el" href="API_2item_2constant_8sma.html#a100">TYPE_MACE_1H</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a101" doxytag="API/item/constant.sma::TYPE_MACE_2H" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a101">TYPE_MACE_2H</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a114" doxytag="API/item/constant.sma::TYPE_PLATEMAIL" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a114">TYPE_PLATEMAIL</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a112" doxytag="API/item/constant.sma::TYPE_RINGMAIL" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a112">TYPE_RINGMAIL</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a98" doxytag="API/item/constant.sma::TYPE_SPEAR_1H" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a98">TYPE_SPEAR_1H</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a105" doxytag="API/item/constant.sma::TYPE_SPEAR_2H" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a105">TYPE_SPEAR_2H</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a99" doxytag="API/item/constant.sma::TYPE_STAFF" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	
+	 <a class="el" href="API_2item_2constant_8sma.html#a99">TYPE_STAFF</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a111" doxytag="API/item/constant.sma::TYPE_STUDDED" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 
+	 <a class="el" href="API_2item_2constant_8sma.html#a111">TYPE_STUDDED</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a93" doxytag="API/item/constant.sma::TYPE_SWORD" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum { ... } 	
+	 <a class="el" href="API_2item_2constant_8sma.html#a93">TYPE_SWORD</a>
       </table>
     </td>
   </tr>
@@ -431,7 +977,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

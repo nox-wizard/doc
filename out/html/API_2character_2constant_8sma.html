@@ -42,18 +42,30 @@
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga39">CLV_CMDTEMP</a>&nbsp;&nbsp;&nbsp;9996</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable  <a href="group__script__API__character__constants.html#ga39"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga40">CLV_CMDADDTEMP</a>&nbsp;&nbsp;&nbsp;9995</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable - created at startup, never delete!  <a href="group__script__API__character__constants.html#ga39"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga40">CLV_CMDTEMPVEC</a>&nbsp;&nbsp;&nbsp;9995</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">'add command temp variable  <a href="group__script__API__character__constants.html#ga40"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable for vectors - created on the fly,delete after use  <a href="group__script__API__character__constants.html#ga40"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga41">CLV_CMDTEMPSTR</a>&nbsp;&nbsp;&nbsp;9994</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable for strings - created on the fly,delete after use  <a href="group__script__API__character__constants.html#ga41"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga42">CLV_CMDTEMPSTR1</a>&nbsp;&nbsp;&nbsp;9993</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable for strings - created on the fly,delete after use  <a href="group__script__API__character__constants.html#ga42"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga43">CLV_CMDADDTEMP</a>&nbsp;&nbsp;&nbsp;9992</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">'add command temp variable - created on the fly, delete after use.  <a href="group__script__API__character__constants.html#ga43"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga44">CLV_TEMP1</a>&nbsp;&nbsp;&nbsp;9991</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">generic temp var 1 - now used for <a class="el" href="nxw__lib2_8sma.html#a7">getRectangle()</a> - created on the fly, delete after use.  <a href="group__script__API__character__constants.html#ga44"></a><br><br></td></tr>
 <tr><td colspan=2><br><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom>{ <a class="el" href="group__script__API__character__constants.html#gga41a257">GENDER_MALE</a>, 
-<a class="el" href="group__script__API__character__constants.html#gga41a258">GENDER_FEMALE</a>, 
-<a class="el" href="group__script__API__character__constants.html#gga41a259">GENDER_UNDEFINED</a>
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom>{ <a class="el" href="group__script__API__character__constants.html#gga45a265">GENDER_MALE</a>, 
+<a class="el" href="group__script__API__character__constants.html#gga45a266">GENDER_FEMALE</a>, 
+<a class="el" href="group__script__API__character__constants.html#gga45a267">GENDER_UNDEFINED</a>
  }</td></tr>
 
 <tr><td colspan=2><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2character_2constant_8sma.html#a5">PROP_CHARACTER</a> = 0</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="API_2character_2constant_8sma.html#a9">PROP_CHARACTER</a> = 0</td></tr>
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga0">CP_CANTRAIN</a> = 0</td></tr>
 
@@ -115,9 +127,9 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga19">CP_CELL</a> = 102</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">??  <a href="group__CP__.html#ga19"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga20">CP_COMMANDLEVEL</a> = 103</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga20">CP_PRIVLEVEL</a> = 103</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the command level: 0:player 1:counselor 2:GM  <a href="group__CP__.html#ga20"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the command priv level: 255 admin  <a href="group__CP__.html#ga20"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga21">CP_DIR</a> = 104</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">direction, one of the DIR_* constants TODO: link to list  <a href="group__CP__.html#ga21"></a><br><br></td></tr>
@@ -141,7 +153,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">0: not hidden 1:hidden 2:hidden by spell  <a href="group__CP__.html#ga27"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga28">CP_LOCKSKILL</a> = 112</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">array property - use a SK_* constant as subproperty to red it. values: 0:not locked 1:?? 2:?? TODO: link to SK_*  <a href="group__CP__.html#ga28"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">array property - use a SK_* constant as subproperty to read it. values: 0:not locked 1:?? 2:?? TODO: link to SK_*  <a href="group__CP__.html#ga28"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga29">CP_NPC</a> = 114</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">1 if character is npc  <a href="group__CP__.html#ga29"></a><br><br></td></tr>
@@ -180,7 +192,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">array[4] property - for special nxw features  <a href="group__CP__.html#ga40"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga41">CP_RESISTS</a> = 132</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">array property - index with one of the DAMAGE_* canstants - contains resistance to damage types (0:no resistance 100: full resistance) TODO: link to DAMAGE_*  <a href="group__CP__.html#ga41"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">array property - index with one of the DAMAGE_* canstants - contains RESISTANCE to damage types (0:no RESISTANCE 100: full RESISTANCE) TODO: link to DAMAGE_*  <a href="group__CP__.html#ga41"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga42">CP_TRAININGPLAYERIN</a> = 133</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the skill the char is training a player in  <a href="group__CP__.html#ga42"></a><br><br></td></tr>
@@ -192,7 +204,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">only npc, the damage type, one of the DAMAGE_* constants TODO:link to DAMAGE_*  <a href="group__CP__.html#ga44"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga45">CP_ACCOUNT</a> = 200</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">accoount number  <a href="group__CP__.html#ga45"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">account number  <a href="group__CP__.html#ga45"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga46">CP_ADVOBJ</a> = 201</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">if character used advancement gate, this is the serial of the gate  <a href="group__CP__.html#ga46"></a><br><br></td></tr>
@@ -249,18 +261,19 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">HP at wich the char starts fleeing.  <a href="group__CP__.html#ga64"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga65">CP_FOODPOSITION</a> = 220</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">location where npc goes to eat, CP_NPCWANDER must be WANDER_FREELY, use CP2_X CP2_Y CP2_Z as subproperties  <a href="group__CP__.html#ga65"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga66">CP_FPOS1_NPCWANDER</a> = 221</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">first box corner when wnader mode is WANDER_FREELY_BOX, use CP2_X, CP2_Y, CP2_Z as subproperties  <a href="group__CP__.html#ga66"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga67">CP_FPOS2_NPCWANDER</a> = 222</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">second box corner when wnader mode is WANDER_FREELY_BOX, use CP2_X, CP2_Y, CP2_Z as subproperties  <a href="group__CP__.html#ga67"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">second box corner when wnader mode is WANDER_FREELY_BOX, use CP2_X, CP2_Y as subproperties  <a href="group__CP__.html#ga67"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga68">CP_FTARG</a> = 223</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">npc follow target  <a href="group__CP__.html#ga68"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">npc follow target, the serial of the character the npc should follow  <a href="group__CP__.html#ga68"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga69">CP_GMMOVEEFF</a> = 224</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">move effect fot GMs  <a href="group__CP__.html#ga69"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">move effect for GMs  <a href="group__CP__.html#ga69"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga70">CP_GUILDFEALTY</a> = 225</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">serial of the loyalty declaration in the guildstone  <a href="group__CP__.html#ga70"></a><br><br></td></tr>
@@ -284,6 +297,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gold kept by player vendors  <a href="group__CP__.html#ga76"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga77">CP_HOMELOCPOS</a> = 233</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">location where npc goes to sleep, CP_NPCWANDER must be WANDER_FREELY, use CP2_X CP2_Y CP2_Z as subproperties  <a href="group__CP__.html#ga77"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga78">CP_HUNGER</a> = 234</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">level of hungerness 6= full 0=empty  <a href="group__CP__.html#ga78"></a><br><br></td></tr>
@@ -430,7 +444,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">region from wich the char spawned  <a href="group__CP__.html#ga128"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga129">CP_SPAWNSERIAL</a> = 285</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">serial fo the spawner  <a href="group__CP__.html#ga129"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">serial of the spawner  <a href="group__CP__.html#ga129"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga130">CP_SPELL</a> = 286</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the spell the character is casting  <a href="group__CP__.html#ga130"></a><br><br></td></tr>
@@ -497,6 +511,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">weight  <a href="group__CP__.html#ga153"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga154">CP_WORKLOCPOS</a> = 313</td></tr>
 
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">location where the npc goes to work at day, CP_NPCWANDER must be WANDER_FREELY. UseCP2_x CP2_Y CP2_Z as subproperties  <a href="group__CP__.html#ga154"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga155">CP_AMXFLAGS</a> = 314</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">use local vars instead  <a href="group__CP__.html#ga155"></a><br><br></td></tr>
@@ -526,29 +541,41 @@
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga168">CP_RACE</a> = 409</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga169">CP_STR_DISABLEDMSG</a> = 450</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga169">CP_TOTALSKILL</a> = 410</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga170">CP_STR_GUILDTITLE</a> = 451</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sum of the skills values  <a href="group__CP__.html#ga169"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga170">CP_STR_DISABLEDMSG</a> = 450</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga171">CP_STR_NAME</a> = 453</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga171">CP_STR_GUILDTITLE</a> = 451</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">name of the character  <a href="group__CP__.html#ga171"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga172">CP_STR_ORGNAME</a> = 454</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga172">CP_STR_NAME</a> = 453</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga173">CP_STR_TITLE</a> = 455</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">name of the character  <a href="group__CP__.html#ga172"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga173">CP_STR_ORGNAME</a> = 454</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">title of the character  <a href="group__CP__.html#ga173"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga174">CP_STR_TRIGWORD</a> = 456</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga174">CP_STR_TITLE</a> = 455</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga175">CP_STR_SPEECHWORD</a> = 457</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">title of the character  <a href="group__CP__.html#ga174"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga175">CP_STR_TRIGWORD</a> = 456</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">word/phrase in speech that triggered speech override  <a href="group__CP__.html#ga175"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga176">CP_STR_SPEECH</a> = 458</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga176">CP_STR_SPEECHWORD</a> = 457</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">entire speech that contains word/phrase that triggered speech override  <a href="group__CP__.html#ga176"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga177">CP_UNI_SPEECH_CURRENT</a> = 500</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">word/phrase in speech that triggered speech override  <a href="group__CP__.html#ga176"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga177">CP_STR_SPEECH</a> = 458</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga178">CP_UNI_PROFILE</a> = 501</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">entire speech that contains word/phrase that triggered speech override  <a href="group__CP__.html#ga177"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga178">CP_STR_ACCOUNT</a> = 459</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Account name of current player.  <a href="group__CP__.html#ga178"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga179">CP_STR_PASSWORD</a> = 460</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">password of current player  <a href="group__CP__.html#ga179"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga180">CP_STR_PARAM</a> = 461</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Params given by the character with the last command called.  <a href="group__CP__.html#ga180"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga181">CP_UNI_SPEECH_CURRENT</a> = 500</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP__.html#ga182">CP_UNI_PROFILE</a> = 501</td></tr>
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__CP2__.html#ga0">CP2_X</a> = 0</td></tr>
 
@@ -731,13 +758,13 @@
 
 </table>
 <hr><h2>Variable Documentation</h2>
-<a class="anchor" name="a5" doxytag="API/character/constant.sma::PROP_CHARACTER" ></a><p>
+<a class="anchor" name="a9" doxytag="API/character/constant.sma::PROP_CHARACTER" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> const <a class="el" href="API_2character_2constant_8sma.html#a5">PROP_CHARACTER</a> = 0
+          <td class="md" nowrap valign="top"> const <a class="el" href="API_2character_2constant_8sma.html#a9">PROP_CHARACTER</a> = 0
       </table>
     </td>
   </tr>
@@ -771,7 +798,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

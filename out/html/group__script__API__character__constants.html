@@ -52,14 +52,26 @@
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga39">CLV_CMDTEMP</a>&nbsp;&nbsp;&nbsp;9996</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable  <a href="#ga39"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga40">CLV_CMDADDTEMP</a>&nbsp;&nbsp;&nbsp;9995</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable - created at startup, never delete!  <a href="#ga39"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga40">CLV_CMDTEMPVEC</a>&nbsp;&nbsp;&nbsp;9995</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">'add command temp variable  <a href="#ga40"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable for vectors - created on the fly,delete after use  <a href="#ga40"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga41">CLV_CMDTEMPSTR</a>&nbsp;&nbsp;&nbsp;9994</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable for strings - created on the fly,delete after use  <a href="#ga41"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga42">CLV_CMDTEMPSTR1</a>&nbsp;&nbsp;&nbsp;9993</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands temp variable for strings - created on the fly,delete after use  <a href="#ga42"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga43">CLV_CMDADDTEMP</a>&nbsp;&nbsp;&nbsp;9992</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">'add command temp variable - created on the fly, delete after use.  <a href="#ga43"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__constants.html#ga44">CLV_TEMP1</a>&nbsp;&nbsp;&nbsp;9991</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">generic temp var 1 - now used for <a class="el" href="nxw__lib2_8sma.html#a7">getRectangle()</a> - created on the fly, delete after use.  <a href="#ga44"></a><br><br></td></tr>
 <tr><td colspan=2><br><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom>{ <a class="el" href="group__script__API__character__constants.html#gga41a257">GENDER_MALE</a>, 
-<a class="el" href="group__script__API__character__constants.html#gga41a258">GENDER_FEMALE</a>, 
-<a class="el" href="group__script__API__character__constants.html#gga41a259">GENDER_UNDEFINED</a>
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom>{ <a class="el" href="group__script__API__character__constants.html#gga45a265">GENDER_MALE</a>, 
+<a class="el" href="group__script__API__character__constants.html#gga45a266">GENDER_FEMALE</a>, 
+<a class="el" href="group__script__API__character__constants.html#gga45a267">GENDER_UNDEFINED</a>
  }</td></tr>
 
 <tr><td colspan=2><br><h2>Variables</h2></td></tr>
@@ -183,13 +195,13 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga40" doxytag="API/character/constant.sma::CLV_CMDADDTEMP" ></a><p>
+<a class="anchor" name="ga43" doxytag="API/character/constant.sma::CLV_CMDADDTEMP" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> #define CLV_CMDADDTEMP&nbsp;&nbsp;&nbsp;9995
+          <td class="md" nowrap valign="top"> #define CLV_CMDADDTEMP&nbsp;&nbsp;&nbsp;9992
       </table>
     </td>
   </tr>
@@ -227,6 +239,72 @@
     </td>
   </tr>
 </table>
+<a class="anchor" name="ga41" doxytag="API/character/constant.sma::CLV_CMDTEMPSTR" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define CLV_CMDTEMPSTR&nbsp;&nbsp;&nbsp;9994
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga42" doxytag="API/character/constant.sma::CLV_CMDTEMPSTR1" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define CLV_CMDTEMPSTR1&nbsp;&nbsp;&nbsp;9993
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga40" doxytag="API/character/constant.sma::CLV_CMDTEMPVEC" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define CLV_CMDTEMPVEC&nbsp;&nbsp;&nbsp;9995
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
 <a class="anchor" name="ga36" doxytag="API/character/constant.sma::CLV_PRIVLEVEL" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
@@ -249,8 +327,30 @@
     </td>
   </tr>
 </table>
+<a class="anchor" name="ga44" doxytag="API/character/constant.sma::CLV_TEMP1" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define CLV_TEMP1&nbsp;&nbsp;&nbsp;9991
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
 <hr><h2>Enumeration Type Documentation</h2>
-<a class="anchor" name="ga41" doxytag="API/character/constant.sma::@0" ></a><p>
+<a class="anchor" name="ga45" doxytag="API/character/constant.sma::@0" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -271,11 +371,11 @@
 <p>
 <dl compact><dt><b>Enumeration values: </b></dt><dd>
 <table border=0 cellspacing=2 cellpadding=0>
-<tr><td valign=top><em><a class="anchor" name="gga41a257" doxytag="GENDER_MALE" ></a>GENDER_MALE</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga45a265" doxytag="GENDER_MALE" ></a>GENDER_MALE</em>&nbsp;</td><td>
 ?? </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga41a258" doxytag="GENDER_FEMALE" ></a>GENDER_FEMALE</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga45a266" doxytag="GENDER_FEMALE" ></a>GENDER_FEMALE</em>&nbsp;</td><td>
 ?? </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga41a259" doxytag="GENDER_UNDEFINED" ></a>GENDER_UNDEFINED</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga45a267" doxytag="GENDER_UNDEFINED" ></a>GENDER_UNDEFINED</em>&nbsp;</td><td>
 ?? </td></tr>
 </table>
 </dl>
@@ -1093,7 +1193,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

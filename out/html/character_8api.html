@@ -243,9 +243,9 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga2">chr_countItems</a> (const chr, const itemtype, const color=-1)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">counts the items of the specified type and color (if specified) in the character's backpack  <a href="group__script__API__character__items.html#ga2"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga3">chr_getBankBox</a> (const chr, const bankboxtype)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga3">chr_getBankBox</a> (const chr, const bankboxtype=BANKBOX_NORMAL)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">??  <a href="group__script__API__character__items.html#ga3"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets serial of character's bankbox  <a href="group__script__API__character__items.html#ga3"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga4">chr_getBackpack</a> (const chr, const createIfNotExist=false)</td></tr>
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga5">chr_getItemOnLayer</a> (const chr, const layer)</td></tr>
@@ -367,23 +367,25 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">creates a new npc at a given location  <a href="group__script__API__character.html#ga23"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>stock&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character.html#ga24">chr_addNPCVec</a> (const npcScriptID, pos[3])</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character.html#ga25">chr_remove</a> (const chr)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character.html#ga25">chr_addRandomNPC</a> (const npclistScriptID, const x, const y, const z)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">removes a character  <a href="group__script__API__character.html#ga25"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character.html#ga26">chr_getCreationDay</a> (const chr)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character.html#ga26">chr_remove</a> (const chr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the day the character was created TODO: day format?  <a href="group__script__API__character.html#ga26"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character.html#ga27">chr_setCreationDay</a> (const chr, const day)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">removes a character  <a href="group__script__API__character.html#ga26"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character.html#ga27">chr_getCreationDay</a> (const chr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets the character's creation day TODO: quite nonsense ...  <a href="group__script__API__character.html#ga27"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the day the character was created TODO: day format?  <a href="group__script__API__character.html#ga27"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character.html#ga28">chr_setCreationDay</a> (const chr, const day)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets the character's creation day TODO: quite nonsense ...  <a href="group__script__API__character.html#ga28"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga0">chr_calcAtt</a> (const chr)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">calculates a character's attack power TODO: attack power description  <a href="group__script__API__character__combat.html#ga0"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga1">chr_calcDef</a> (const chr, const bodyPart=0)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga2">chr_attackStuff</a> (const chr_defender, const socket_attacker)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga2">chr_attackStuff</a> (const chr_defender, const chr_attacker)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">??  <a href="group__script__API__character__combat.html#ga2"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">checks if defender is attacked by attacker?  <a href="group__script__API__character__combat.html#ga2"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga3">chr_npcAttack</a> (const attacker, const target)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">makes an npc attack another character  <a href="group__script__API__character__combat.html#ga3"></a><br><br></td></tr>
@@ -413,7 +415,7 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>stock&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__guild.html#ga5">chr_isInOrderGuild</a> (const chr)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">checks if character is in a Order guild  <a href="group__script__API__character__guild.html#ga5"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__guild.html#ga6">chr_setGuildType</a> (const chr, const type)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__guild.html#ga6">chr_setGuildType</a> (const chr, const <a class="el" href="group__script__commands__add.html#ga3">type</a>)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets the guild type of a character TODO: link to guild type list (0:std 1:chaos 2:order)  <a href="group__script__API__character__guild.html#ga6"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__guild.html#ga7">chr_isGuildTraitor</a> (const chr)</td></tr>
@@ -449,7 +451,7 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__skillstats.html#ga0">chr_checkSkill</a> (const chr, const skill, const min=0, const max=1000, const raise=1)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">check if a skill action succeedes or fails  <a href="group__script__API__character__skillstats.html#ga0"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__skillstats.html#ga1">chr_skillMakeMenu</a> (const chr, const makeMenu, const skill, const material1, const material2=<a class="el" href="nxw__lib_8sma.html#a1">INVALID</a>)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__skillstats.html#ga1">chr_skillMakeMenu</a> (const chr, const makeMenu, const skill, const material1, const material2=<a class="el" href="nxw__lib_8sma.html#a2">INVALID</a>)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">opens a skill make menu  <a href="group__script__API__character__skillstats.html#ga1"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>stock&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__skillstats.html#ga2">chr_getInt</a> (const chr)</td></tr>
@@ -520,13 +522,13 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__vars.html#ga0">chr_getLocalVarErr</a> ()</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns result for all operations on character variables TODO: link to local vars explanation  one of VAR_ERROR_NONE, VAR_ERROR_UNKNOWN_VAR, VAR_ERROR_DUPLICATE_VAR, VAR_ERROR_WRONG_TYPE, VAR_ERROR_ACCESS_DENIED.  <a href="group__script__API__character__vars.html#ga0"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__vars.html#ga1">chr_isaLocalVar</a> (const chr, const var, const type=0)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__vars.html#ga1">chr_isaLocalVar</a> (const chr, const var, const <a class="el" href="group__script__commands__add.html#ga3">type</a>=0)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">checks if a local var exists for a character  <a href="group__script__API__character__vars.html#ga1"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__vars.html#ga2">chr_sizeofLocalVar</a> (const chr, const var, const index=-1)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets size of a local var TODO: link to local vars explanation  length of a local variable, number of elements in a vector, or length of variable in a vector  <a href="group__script__API__character__vars.html#ga2"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__vars.html#ga3">chr_delLocalVar</a> (const chr, const var, const type=0)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__vars.html#ga3">chr_delLocalVar</a> (const chr, const var, const <a class="el" href="group__script__commands__add.html#ga3">type</a>=0)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deletes character variable. When type is not VAR_TYPE_ANY variable is only deleted if of same type as specified. TODO: link to local vars explanation.  <a href="group__script__API__character__vars.html#ga3"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__vars.html#ga4">chr_addLocalIntVar</a> (const chr, const var, const <a class="el" href="float_8api.html#a0">value</a>=0)</td></tr>
@@ -571,6 +573,9 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>stock&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__vars.html#ga17">chr_setAmxFlags</a> (const chr, const idx, const <a class="el" href="float_8api.html#a0">value</a>)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets the value of an AMXFlag  <a href="group__script__API__character__vars.html#ga17"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__basicgumps.html#ga0">chr_showPaperdoll</a> (const chr, const target)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">shows a character's paperdoll, visible only to one another character  <a href="group__script__API__character__basicgumps.html#ga0"></a><br><br></td></tr>
 </table>
 <hr><h2>Define Documentation</h2>
 <a class="anchor" name="a0" doxytag="character.api::OK" ></a><p>
@@ -579,7 +584,7 @@
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> #define OK&nbsp;&nbsp;&nbsp;0
+          <td class="md" nowrap valign="top"> #define <a class="el" href="nxw__lib_8sma.html#a3">OK</a>&nbsp;&nbsp;&nbsp;0
       </table>
     </td>
   </tr>
@@ -613,7 +618,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

@@ -41,9 +41,9 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">calculates a character's attack power TODO: attack power description  <a href="#ga0"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga1">chr_calcDef</a> (const chr, const bodyPart=0)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga2">chr_attackStuff</a> (const chr_defender, const socket_attacker)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga2">chr_attackStuff</a> (const chr_defender, const chr_attacker)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">??  <a href="#ga2"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">checks if defender is attacked by attacker?  <a href="#ga2"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__combat.html#ga3">chr_npcAttack</a> (const attacker, const target)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">makes an npc attack another character  <a href="#ga3"></a><br><br></td></tr>
@@ -132,7 +132,7 @@
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>socket_attacker</em></td>
+          <td class="mdname" nowrap> <em>chr_attacker</em></td>
         </tr>
         <tr>
           <td></td>
@@ -153,6 +153,12 @@
 
 <p>
 <dl compact><dt><b>Author:</b></dt><dd>Xanathar </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr_defender:</em>&nbsp;</td><td>the character defending </td></tr>
+    <tr><td valign=top><em>chr_attacker:</em>&nbsp;</td><td>the character who attacks </td></tr>
+  </table>
+</dl>
     </td>
   </tr>
 </table>
@@ -297,7 +303,7 @@
     <tr><td valign=top><em>basedamage</em>&nbsp;</td><td>damage amount </td></tr>
     <tr><td valign=top><em>attacker</em>&nbsp;</td><td>the attacker character </td></tr>
     <tr><td valign=top><em>magiclike</em>&nbsp;</td><td>true if the damage is magical </td></tr>
-    <tr><td valign=top><em>damagetype</em>&nbsp;</td><td>one fo the DAMAGE_* contants </td></tr>
+    <tr><td valign=top><em>damagetype</em>&nbsp;</td><td>one fo the DAMAGE_* constants </td></tr>
     <tr><td valign=top><em>stattobedamaged</em>&nbsp;</td><td>the stat that will be damaged </td></tr>
   </table>
 </dl>
@@ -416,7 +422,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>
