@@ -15,10 +15,16 @@ If you come from other scripting languages, you will get familiar with the sinta
 If you are not a programmer and you see a programming language for the first time, you will find here 
 a lot of tutorials that will help you.
 
+<UL>
+<LI> \ref p_emulators_and_scripts
+<LI> \ref p_nox_basics
+</UL>
+
 \subsection API_reference API reference
 * <UL>
 * <LI> \ref script_API
 * <LI> \ref script_skills
+* <LI> \ref script_commands
 * </UL>
 \subsection NOX_small NOX-Small scripting guide
 * <UL>
@@ -45,6 +51,105 @@ a lot of tutorials that will help you.
 *  
 *  
 *  
+*/
+//============================================================================================
+//===========================  EMULATORS AND SCRIPTS  ========================================
+//============================================================================================
+
+/*! \page p_emulators_and_scripts Emulators and scripts
+This page is for those who never heard about emulators and absolutely don't know what scripting is, so if you
+feel you already know this concepts, you can skill this page.<br>
+
+\section emulators Emulators
+This is not a complete explanation on emulators, and you won't find here what emulator is better for you, here I'll only
+explain the concept of "emulator".<br>
+Ultima Online is a product of OSI (Origin Systems Inc) and you can play it buying UO and creating an 
+account on OSI servers.<br>
+The problem is that you have to pay for an OSI account, paying for the account you receive professional
+ingame support and professional programmer staff who fixes bugs.<br>
+UO shards (a shard is a server running UO) exist because someone wrote a program that, running on a server, makes the people able to
+use their UO client to play Ultima Online on that server, <b>without having an OSI account</b>, that is, withoum payment.<br>
+This program is called "emulator".<br>
+To make a new shard you simply have to download an emulator (they are all free), put in on a server, make it run, and
+wait for players to connect and play on your UO world.<br>
+This ease of use is the cause of the huge number if free shards there are all over the world.<br>
+You will ask: why free shard are all so different from OSI and from each other shard?<br>
+The answer comes in the next chapter.
+
+\section scripting Scripting
+As I said, an emulator allows you to have a shard on your server, but in its base configuration
+emulators usually perform as an OSI UO world, or at least they try to.<br>
+If emulators weren't customizable by shard admins, there will problably be an only emulator and an only huge free shard (many people drem of this ;-))<br>
+"Customization" is the key word for every emulator, wich means, you can modify the emulator behaviour (and then the game)
+so you have your personal shard, with your personal version of UO running.<br>
+To achieve this, emulators usually offer a scripting language to modify some of the emulator's parts.<br>
+A scripting language is not a programming language (you can't write standalone programs with it), and every emulator has a different one, basing on the
+customizations it allows to the user.<br>
+The scripting language is one of the base things to take in consideration when choosing an emulator:
+a too difficult may need expert coders to be used, a too simple one may not allow complex algorithms and so may not
+fit your needs; this is why there are different emulators, each one has his scripting language and is suitable for
+different shard needs.
+*/
+
+//============================================================================================
+//=================================== NOX BASICS  ============================================
+//============================================================================================
+
+/*! \page p_nox_basics NOX basics
+NOX wizard bases his scripting capabilities on Small, a C derived language.<br>
+I won't explain all good features of Small (wich you can find on <A HREF="http://www.compuphase.com/small.htm"> Small homepage</A>),
+I'll explain how Small interacts with NOX.<br>
+\section thesourcecode The source code
+NOX wizard is written in C++, all C++ parts are "the source code", these parts are compiled and put
+into an .exe file (usually noxwizard.exe).<br>
+Although NOX wizard is an open source project (so you can download the C++ code an modify it to your needs)
+modifyng the source code it's not the right way to cusomize the emulator, as source code changes over
+NOX versions and you might not be able to follow the evolution, of course you are free to take a stble version's code
+and make you own NOX wizard without caring of new versions, by this is not NOX aim.<br>
+How can I modify a program's behaviour if I can't access sources? Small language permits this, you can
+modify the internal emulator behaviur even if you only have an exe file.<br>
+
+\section howisthispossible How is this possible?
+Although Small is not a programming language, it allows you to implement all the algorithms a normal language do, so once we 
+can make the bynaries execute a Small routine, we can do what we want.<br>
+NOX has an embedded Small compiler, and at the startup all Small scripts are compiled and transformed
+in AMX code (you can see it in override.amx), this code, can be executed by a virtual machine coded in the sources, so
+once we have the AMX code, the exe can execute it as if it were source code.<br>
+We are done, we can write a Small scrpt and NOX will execute it! Only we still have a problem, how can we tell NOX
+which script we want to execute and when?<br>
+Here come the only limitation of NOX, we can only execute Small code when NOX allows us, so we can'r insert
+our routines where we want.<br>
+Luckily NOX allows a great number of locations in his source code where we can insert our custom scripts, so actually
+this limitation doesn't exist, moreover we must say that if you feel NOX doesn't have a feature you need, you can tell this to
+the dev team, and it will be added if possible.<br>
+A more detailed description on this argument can be found in the \ref p_override page.
+
+\section theAPIs The APIs 
+Now we know how NOX can execute our scripts, but 
+another question rises: how can Small support all the UO features and allow us 
+to make script managing characters, items and so on?<br> As a scripting 
+language, Small heavily relies on the main program interface, so Smal is 
+powerfull only if the main program allows it to be powerful, by giving 
+appropriate funcitons to handle the source code data.<br> As source code is C++, 
+an Object Oriented Language, is easy for the developers to give to Small the 
+capabilities to interact with the program's objects and data types, doing this, 
+Small becomes similar to an OOL itself, and it can deal with charcaters, items, 
+NPCs, spells viewing them as objects.<br>
+The interface between the source code data and Small are the APIs (Application Programming Interface) wich are
+Small native functions, implemented in the sources, wich give the possibility to handle the internal data types an classes.<br>
+APIs are declared in the .api files (this extention does not mean anything particular, it's only to identofy them).
+You will see there are tons of APIs, this is because NOX really gives you control over every aspect
+of the source code, thus many of the internal functions are duplicated as APIs and made available to the scripter.<br>
+
+\section thestandardscripts The standard scripts
+To help the shards scripters customizing their shards, some scripts are provided to perform
+in Small the most commonly customized features, these are called the standard scripts.<br>
+Standard scripts are sometimes called by the sources in way that are not permitted to scripters, but
+we try to keep this exceptions limited to the strict necessary.<br>
+In standard scripts you can find emulator parts written in Small (this demonstrates the power of this language)
+and you can modify them to your needs. Usually these scripts are designed to be easily customizable by
+changing some parameteres, so you usually won't have to modify the algorithms, but sometimes this is needed, so the whole code
+is fully commented to provide you a guide.
 */
 
 
@@ -363,7 +468,7 @@ more = more1 + (more2 << 8) + (more3 << 16);
 \endcode
 
 what more1, more2 and more3 mean depends on the "type" of effect.
-I will post a table with the meaning of the "more" parameters for each effect... not now because it's a long work.
+Description on the more* parameters can be found in the \ref script_API_tempfx_constant description
 
 \section customtempfx CUSTOM TEMPFX
 This is the most useful feature of tempfx, let's see how it works:
@@ -448,124 +553,4 @@ if(stopcondition) return;
 before the tempfx_activate call in your callback.
 Loops can be very computing expensive for you machine, so choose with care the looping delays and minimize the operations in the loop especially in loops that involve many characters, as hunger systems o regeneration systems.
 
-\section tampfxtable MORE* TABLE
-Here is the table with the usage of the "more" parameter.
-more parameter is divided into 3 subparameters as follows:
-
-more = more1 + (more2 <­<­ 8 ) + (more3 <­<­ 16)
-
-so to pass the moreN parameters you have to build the "more" parameter as described above 
-
-I wrote this table looking in sources and trying to understand what each parameter is used for, obviousely I could have made mistakes because the source code is quite difficult to read, and I don't have time for testing all this stuff.
-Please make some tests and report any differences you might find.
-
-\code
-
------------------------|-----------------|----------------|----------------|
-
-      EFFECT           |      more1      |     more2      |      more3     |
-
------------------------|-----------------|----------------|----------------|
-
-TFX_SPELL_PARALYZE     |       -         |       -        |         -      |
-
-TFX_SPELL_LIGHT        |       -         |       -        |         -      |
-
-TFX_SPELL_CLUMSY       |   dex malus     |       -        |         -      |
-
-TFX_SPELL_FEEBLEMIND   |   int malus     |       -        |         -      |
-
-TFX_SPELL_WEAKEN       |   str malus     |       -        |         -      |
-
-TFX_SPELL_AGILITY      | dex/stam bonus  |       -        |         -      |
-
-TFX_SPELL_CUNNING      | int/mana bonus  |       -        |         -      |
-
-TFX_SPELL_STRENGHT     |   str bonus     |       -        |         -      |
-
-TFX_ALCHEMY_GRIND      |       ?         |   duration     |         -      |
-
-TFX_ALCHEMY_END        |  potion type*   | potion subtype*|         -      |
-
-TFX_SPELL_BLESS        | str/hp bonus    | dex/stam bonus | int/mana bonus |
-
-TFX_SPELL_CURSE        |   str malus     |    dex malus   |   int malus    |
-
-TFX_AUTODOOR           |       -         |       -        |       -        | 
-
-TFX_TRAINDUMMY         |       -         |       -        |       -        | 
-
-TFX_SPELL_REACTARMOR   |       -         |       -        |       -        | 
-
-TFX_EXPLOTIONMSG       |       -         |    duration    |       ?        | 
-
-TFX_EXPLOTIONEXP       |       -         |       -        |       -        | 
-
-TFX_SPELL_POLYMORPH    |    body ID      |       -        |       -        |
-
-TFX_SPELL_INCOGNITO    |       -         |       -        |       -        | 
-
-TFX_LSD                |       -         |       -        |       -        | 
-
-TFX_SPELL_PROTECTION   |       -         |       -        |       -        | 
-
-TFX_HEALING_HEAL       |       -         |       -        |       -        | 
-
-TFX_HEALING_RESURRECT  |       -         |       -        |       -        | 
-
-TFX_HEALING_CURE       |       -         |       -        |       -        |
-
-TFX_POTION_DELAY       |       -         |       -        |       -        |
-
-TFX_GM_HIDING          |    duration     |       -        |       -        |
-
-TFX_GM_UNHIDING        |    duration     |       -        |       -        |
-
-TFX_HEALING_DELAYHEAL  |    hp healed    |       ?        |    duration    |
-
-TFX_COMBAT_PARALYZE    |       -         |       -        |       -        |
-
-TFX_COMBAT_CONCUSSION  |    int malus    |       -        |       -        |
-
-TFX_AMXCUSTOM          |     more1       |    more2       |     more3      |
-
-TFX_GREY               |       -         |       -        |       -        |
-
------------------------|-----------------|----------------|----------------|
-
-- = parameter unused
-
-? = parameter used, but I don't know for what O_o
-
- 
-
-* 
-
-Potion type table
-
-  POTION   |  TYPE  | SUBTYPE = 1 | SUBTYPE = 2 | SUNBTYPE = 3 | SUBTYPE = 4 |
-
------------|--------|-------------|-------------|--------------|-------------|
-
-agility    |    1   |    normal   |   greater   |       -      |      -      | 
-
-cure       |    2   |    lesser   |   normal    |       -      |      -      | 
-
-explosion  |    3   |    lesser   |   normal    |    greater   |      -      | 
-
-heal       |    4   |    lesser   |   normal    |    greater   |      -      | 
-
-night sight|    5   |      -      |     -       |       -      |      -      | 
-
-poison     |    6   |    lesser   |   normal    |    greater   |    deadly   | 
-
-refresh    |    7   |    normal   |   total     |       -      |      -      | 
-
-strenght   |    8   |    normal   |   greater   |       -      |      -      | 
-
------------|--------|-------------|-------------|--------------|-------------|
-
-NOTE: passing an invalid subtype will cause a "switch reached default" error to be logged
-
-\endcode
 */
