@@ -1,0 +1,42 @@
+/*! \page build Building your own NoX-Wizard
+\section Build NoxWizard can be compiled with:
+
+\subsection Build_Gcc GCC/G++ [Linux/BSD]
+You can build NoX-Wizard under Linux with GCC/G++ versions 2.95.x 
+A makefile is included to build sources properly. 
+
+\subsection Build_Vc Visual C++ [Windows]
+Under Visual C++ 6.0 or later, you should set these options to correctly build NoX-Wizard: 
+VC++ 6.0 Options   
+
+<table style="border: solid white 1px" align="center">
+	<tr>
+		<th>Project/Settings..</th>
+		<th>What do</th>
+	</tr>
+	<tr>
+		<td>C++/General/Project Options</td>
+		<td>Add the /J option</td>
+	</tr>
+	<tr>
+		<td>C++/Code Generation/Use runtime library</td>
+		<td>Select one of the multithreaded libraries</td>
+	</tr>
+	<tr>
+		<td>Link/General/Object-library modules</td>
+		<td>Add wsock32.lib and comctl32.lib</td>
+	</tr>
+</table>
+
+
+Also you need <a href="http://www.stlport.org/">STLport</a> to correctly build your program under Visual C++ platform, due to many problems of the standard STL implementation of Visual C++ compiler.
+There is also an \ref stlport written by Horian
+
+\subsection Build_Bcb Borland C++ Builder [Windows]
+You can build NoX-Wizard (from cvs) under Windows also with Borland C++ Builder 6 and later.
+You don't need STLport because it's the default STL library for this version of Borland compiler.
+
+The makefile for BCB6 is named nox-bcb6.mak. For compile, open a command prompt to the sources directory and type make -f nox-bcb6.mak.
+<BR><BR><BR>
+*/
+
