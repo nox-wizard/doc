@@ -1,37 +1,38 @@
 /*! \mainpage Nox Wizard Documentation
- *
- * \section intro Introduction
- *
- * Nox Wizard is an Ultima Online Emulator ect ect
- *
- * <br>
- * <br>
- *
- * This manual is divided into three parts, each of which is divided into several sections.
- *
- * The first part forms a user manual: 
- *
- * \section user User
- * <UL>
- * 	<LI> \ref p_installation
- * 	<LI> \ref p_license
- * </UL>
- * <br>
- * The second part forms a reference manual for scripter:
- *
- * \section script Script
- * <UL>
- *  <LI> \ref p_script_dummies
- * 	<LI> \ref p_small
- * 	<LI> \ref XSS
- * </UL>
- *
- * The third part provides information for developers:
- *
- * \section p_source Source
- * <UL>
- * 	<LI> \ref p_reference
- * </UL>
- * <BR><BR>
- */
+
+\section intro Introduction
+
+ Nox Wizard is an Ultima Online Emulator ect ect
+
+ <br>
+ <br>
+
+ This manual is divided into three parts, each of which is divided into several sections.
+
+ The first part forms a user manual: 
+
+ \section s_user_main User
+ <UL>
+ 	<LI> \ref installation
+ 	<LI> \ref license
+ </UL>
+ <br>
+ The second part forms a reference manual for scripter:
+
+ \section s_script_main Script
+ <UL>
+	<LI> \ref script_dummies
+	<LI> \ref small
+ 	<LI> \ref XSS
+ </UL>
+
+ The third part provides information for developers:
+
+ \section s_source_main Source
+ <UL>
+ 	<LI> \ref reference
+ </UL>
+ <BR><BR>
+
+*/
 
