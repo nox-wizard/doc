@@ -1,16 +1,17 @@
 /*! \page installation Installation
-\section installation Installation	
+\section Installation Installation	
  
  How install:
  	NoxWizard support more OS like:
  <UL>
- 	<LI> \ref linux
-   <LI> \ref windows
+ 	<LI> \ref Installation_Linux
+	<LI> \ref Installation_Windows
  </UL>
 
 
- \subsection linux Linux
+ \subsection Installation_Linux Linux
  Linux stuff
- \subsection windows Windows
+ \subsection Installation_Windows Windows
  Windows fuck
+ 
 */

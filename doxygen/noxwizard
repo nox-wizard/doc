@@ -62,7 +62,9 @@ INPUT                  = ../main.dox \
                          ../source/ \
                          ../user/ \
                          ../../scripts/small-scripts/
-FILE_PATTERNS          = *.dox
+FILE_PATTERNS          = *.dox \
+                         *.sma \
+                         *.api
 RECURSIVE              = YES
 EXCLUDE                = 
 EXCLUDE_SYMLINKS       = NO

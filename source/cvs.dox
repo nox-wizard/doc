@@ -1,0 +1,72 @@
+/*! \page cvs Get latest sources using Cvs 
+
+You can get latest NoX-Wizard sources through anonymous CVS access:
+
+<b>CVS Parameters</b>
+<table style="border: solid white 1px" align="center">
+	<tr><th></th><th></th></tr>
+	<tr>
+		<td>Server</td>
+		<td>cvs.sourceforge.net:/cvsroot/noxwizard</td>
+	</tr>
+	<tr>
+		<td>User</td>
+		<td>anonymous</td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td>[press enter]</td>
+	</tr>
+	<tr>
+		<td>Method</td>
+		<td>pserver</td>
+	</tr>
+	<tr>
+		<td>Module name</td>
+		<td>See the next table.</td>
+	</tr>
+</table>
+
+Quick commands to download sources from console:
+(if you use wincvs, you must give those commands once you are in the wincvs directory) \n\n
+	cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/noxwizard login \n
+	Just press enter as password \n
+	cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/noxwizard co <i>modulename</i> \n
+
+<table style="border: solid white 1px" align="center">
+	<tr>
+		<th>Module</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>src</td>
+		<td>Sources of NoX-Wizard</td>
+	</tr>
+	<tr>
+		<td>scripts</td>
+		<td>Scripts for NoX-Wizard</td>
+	</tr>
+	<tr>
+		<td>doc</td>
+		<td>Documentation of NoX-Wizard</td>
+	</tr>
+	<tr>
+		<td>unicorn</td>
+		<td>Unicorn Suite's Sources</td>
+	</tr>
+	<tr>
+		<td>nxwtoolset</td>
+		<td>NoX-Wizard Toolset for Linux sources</td>
+	</tr>
+</table>
+
+If you use <b>Windows</b> you will need <a href="http://www.wincvs.org/">WinCVS</a>
+or <a href="http://www.tortoisecvs.org/">Tortoise CVS</a> for get the sources.
+
+<h2>WEB</h2>
+You can also explore sources in cvs using the web by going to <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/noxwizard/">
+http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/noxwizard/</a>
+<BR><BR>
+ 
+
+*/

@@ -11,7 +11,7 @@
 
  The first part forms a user manual: 
 
- \section s_user_main User
+ \section main_User User
  <UL>
  	<LI> \ref installation
  	<LI> \ref license
@@ -19,18 +19,19 @@
  <br>
  The second part forms a reference manual for scripter:
 
- \section s_script_main Script
+ \section main_Script Script
  <UL>
 	<LI> \ref script_dummies
 	<LI> \ref small
- 	<LI> \ref XSS
+ 	<LI> \ref xss
  </UL>
 
  The third part provides information for developers:
 
- \section s_source_main Source
+ \section main_Source Source
  <UL>
  	<LI> \ref reference
+ 	<LI> \ref cvs
  </UL>
  <BR><BR>
 
