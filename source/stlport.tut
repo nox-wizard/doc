@@ -1,0 +1,54 @@
+/*! \page stlport Stlport Installation on MS Visual C++ 6 Tutorial
+
+Written by <b>Horian</b>.
+
+Many thanks to Alkor at our page for helping me with this Tut! 
+
+<a href="http://www.stlport.org/">STLport Site</a>
+
+Until now you could compile Nox with VC 6.0 without using STLPORT, but now new functions are implemented which need this installed for proper compilation. STLPORT does not only allow these new functions, it prevents memory leaks with nox when compiled with VC 6.0 alone so its quite usefull. 
+First you have to install it, then include into VC 6.0. 
+
+In windows with VC++ 6.0 it works like this: 
+<BR>
+<OL>
+
+	<LI> First copy the content of STLPORT-scr-folder into your compiler folder called bin: Microsoft Visual Studio\\VC98\\Bin
+ 
+
+	<LI> Then go to the Dos Prompt and give the stlport-drive more environment memory (if you have a dos window in Win9x right klick at the window-> properties->Memory->original environmental memory (or something like this), put it as high as possible, click ok and let the Dos window open. If you have no Dos window, put into Prompt: C:\\> command /E:10000 
+		(c:/ the drive with command.com, e: the drive with stlport-folder 
+
+	<LI> Now go into folder of VC 6.0 with dos window and start Vcvars32.bat. 
+		This activates the compiler environment. 
+
+	<LI> Go into src-folder of STLPORTs (NOT src folder of compiler!) and write one after the other: 
+
+		<center>
+			copy vc6.mak makefile <br>
+			nmake clean all <br>
+			nmake install <br>
+		</center>
+ 
+
+		Now it should start installing stlport, this can take a while. At the end it says "installed". 
+
+	<LI> Now open Visual Studio, click at Tools -> Options, choose at Tab Control Directories 
+		At include files add this line: 
+
+
+		C:\\STLPORT-4.5.3\\STLPORT (or where your stlport-folder lies, it's a subfolder of STLPORT!) 
+ 
+
+		Put it on top of the list. 
+
+	<LI> Then choose library files instead of include files and add: 
+
+		C:\\STLPORT-4.5.3\\LIB 
+
+		Its another sub folder of STLPORT, put it on top of the list, too. 
+
+
+<BR><BR><BR>
+*/
+
