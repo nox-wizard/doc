@@ -1,0 +1,122 @@
+//=================================================================================================
+//==============================    TARGETTING    =================================================
+//=================================================================================================
+
+/*! 
+* \page p_targetting Targetting
+
+As an UO player you surely know what does "targetting" mean: you are targetting when you left click an item
+or character with the target pointer<br>
+Targetting is necessary to interact with the UO world, so in your scripts you surely will have to manage targetting<br>
+Here we'll discuss the question from NOX wizard scripter's point of view.<br>
+
+* \subsection whatsatarget What's a target?
+Many times we refer to a target thinking it to be the object we selected with the targetting action.<br>
+For example when we attack someone we click on him and we say he is our target.<br>
+When you are scripting the question is a bit different<br>
+A target is an object wich allows us to manage the targetting action<br>
+You can create a target with:
+
+\code
+new target = target_create(chr, _, _, _, "mycallback");
+\endcode
+
+click the link to know more on the target_create function parameters.<br>
+From the client point of view, this line of code causes the target pointer to appear, so this line will make the player
+able to click on something. 
+
+\subsection howworks How do targets work
+When you create/activate a target the following things happen: <br>
+<UL>
+<LI>the target is created for the character you specified
+<LI>the target notification is sent to the client
+<LI>the player clicks something
+<LI>the server receives a notification that something has been clicked
+<LI>the Small callback you specified is called to perform some actions
+</UL>
+
+The only things you have to worry about are the first and last points, all the thing between are managed
+by the source code.<br>
+But analyzing the sequence you should notice a very important thing: the whole process is not purely sequential, 
+that is, the operations are not performet one just after the other. Why? Because of the 3rd point!
+To go on with target management the server has to wait for the player to click something, and you will never know
+when this will happen!<br>
+This will have heavy consequences on how you will structure your code.
+
+\subsection callback Callback proptotype
+Your callback function must have the following proptotype:
+public callback( const target, const chr, const obj, const x, const y, const z, const model, const param1 )
+<b>target:</b> is the target wich called the function<br>
+<b>chr:</b> is the character who clicked on something<br>
+<b>object:</b> the item or character targetted, INVALID if no object targetted<br>
+<b>x,y,z:</b> if the player targetted the ground or other map locations, these are the coordinates, else x,y,z are INVALID<br>
+<b>model:</b> is valid when targetted an item or a static tile, not when a land tile is targetted<br>
+<b>param1:</b> is the first param passed<br>
+<b>param2:</b> passed to target_create can be getted using the target_getProperty, with TP_BUFFER and 1 for index<br>
+
+As you can see in the callback you have all the parameters of the targetting action.
+
+\subsection targetaction Put it in action
+After all this theoretical explanation what should you do to get this all working?
+The typical target code should be:
+
+\code
+public a_function(const chr, ...)
+{
+	chr_message(chr, _, "Target something ...");
+	target_create(chr, _, _, _, "callback");
+}
+
+public callback(target, chr, object, param1, x ,y ,z ,model, param1)
+{
+	//do something here
+}
+\endcode
+
+This is all you need to manage a target, the first function will send the target to the character with a message
+and the callback will be activated on target use.<br>
+When you write code in the callback you have to take in consideration that the exact moment the function
+will be called is not known.
+
+\subsection advancedtarget Advanced target use
+You surely have noticed that we didn't use all target_create parameters, neither we used the target_do function.
+This features are for advanced target use.
+The first 2 additional parameters param1 and param2 are simply used to pass something to the callback wothout having to
+declare global variables/local vars, so that's not such an advanced used.
+the doNow paramter is mre interesting: it allows you to create the target (so getting a serial for it) without sending it to the
+player, simply use
+
+\code
+target_create(chr,_,_,false,"callback");
+\endcode
+
+and your target won't be sent.<br>
+This feature allows you a complex target management, so you can create many targets with a function and then
+activate them when needed with target_do(target, chr). This way you can use the same target for more than one character too.<br>
+The additional parameters after the callback name are used to build the callback name at runtime.
+
+\code
+N = 10;
+new targets[N];
+for(new i = 0; i<N ; i++)
+	targets[i] = target_create(chr, _,_,_,"callback%d",i)	
+\endcode
+
+will create N targets that will have callbacks named callback0, callback1, callback2 ... and so on.
+
+\subsection oldtarget Switching from old target system
+All these interesting target features are available only from the newest 0.82 versions, those of you 
+who are yousing the old system (with getTarget) will find that old system is no longer supported.
+You can easily switch to new system replacing your old
+
+\code
+getTarget(chr, funcidx("callback"), "message");
+\endcode
+
+with the new
+
+\code
+chr_message(chr,_,"message");
+target_create(chr,_,_,_,"callback");
+\endcode
+*/

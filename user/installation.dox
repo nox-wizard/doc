@@ -16,9 +16,9 @@
  <UL>
  <LI>Unzip the executable noxwizard.exe in a folder.
  <LI>Unzip the scripts in the same folder
- <LI>Edit the config\server.cfg file and set the UO paths, if you unzip NOX in a subfolder of the UO folder
+ <LI> make sure you have "log" and "save" subfolders in your NOX folder, if there aren't create them.
+ <LI>open the config\server.cfg file and in SECTION MULFILES set the UO paths, if you unzip NOX in a subfolder of the UO folder (c:\UO\NOX)
  this is not needed.
- <LI>Edit config\accounts.cfg and change the admin account password
  <LI>Doubleclick noxwizard.exe
  <LI>Enjoy!
  </UL>

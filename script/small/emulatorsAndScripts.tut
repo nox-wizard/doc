@@ -1,0 +1,38 @@
+//============================================================================================
+//===========================  EMULATORS AND SCRIPTS  ========================================
+//============================================================================================
+
+/*! \page p_emulators_and_scripts Emulators and scripts
+This page is for those who never heard about emulators and absolutely don't know what scripting is, so if you
+feel you already know this concepts, you can skip this page.<br>
+
+\section emulators Emulators
+This is not a complete explanation on emulators, and you won't find here what emulator is better for you, here I'll only
+explain the concept of "emulator".<br>
+Ultima Online is a product of OSI (Origin Systems Inc) and you can play it buying UO and creating an 
+account on OSI servers.<br>
+The problem is that you have to pay for an OSI account, paying for the account you receive professional
+ingame support and professional programmer staff who fixes bugs.<br>
+UO shards (a shard is a server running UO) exist because someone wrote a program that, running on a server, makes the people able to
+use their UO client to play Ultima Online on that server, <b>without having an OSI account</b>, that is, withoum payment.<br>
+This program is called "emulator".<br>
+To make a new shard you simply have to download an emulator (they are all free), put in on a server, make it run, and
+wait for players to connect and play on your UO world.<br>
+This ease of use is the cause of the huge number if free shards there are all over the world.<br>
+You will ask: why free shard are all so different from OSI and from each other shard?<br>
+The answer comes in the next chapter.
+
+\section scripting Scripting
+As I said, an emulator allows you to have a shard on your server, but in its base configuration
+emulators usually perform as an OSI UO world, or at least they try to.<br>
+If emulators weren't customizable by shard admins, there will problably be an only emulator and an only huge free shard (many people drem of this ;-))<br>
+"Customization" is the key word for every emulator, wich means, you can modify the emulator behaviour (and then the game)
+so you have your personal shard, with your personal version of UO running.<br>
+To achieve this, emulators usually offer a scripting language to modify some of the emulator's parts.<br>
+A scripting language is not a programming language (you can't write standalone programs with it), and every emulator has a different one, basing on the
+customizations it allows to the user.<br>
+The scripting language is one of the base things to take in consideration when choosing an emulator:
+a too difficult may need expert coders to be used, a too simple one may not allow complex algorithms and so may not
+fit your needs; this is why there are different emulators, each one has his scripting language and is suitable for
+different shard needs.
+*/

@@ -1,0 +1,60 @@
+//============================================================================================
+//=================================== NOX BASICS  ============================================
+//============================================================================================
+
+/*! \page p_nox_basics NOX basics
+NOX wizard bases his scripting capabilities on Small, a C derived language.<br>
+I won't explain all good features of Small (wich you can find on <A HREF="http://www.compuphase.com/small.htm"> Small homepage</A>),
+I'll explain how Small interacts with NOX.<br>
+\section thesourcecode The source code
+NOX wizard is written in C++, all C++ parts are "the source code", these parts are compiled and put
+into an .exe file (usually noxwizard.exe).<br>
+Although NOX wizard is an open source project (so you can download the C++ code an modify it to your needs)
+modifyng the source code it's not the right way to cusomize the emulator, as source code changes over
+NOX versions and you might not be able to follow the evolution, of course you are free to take a stble version's code
+and make you own NOX wizard without caring of new versions, by this is not NOX aim.<br>
+How can I modify a program's behaviour if I can't access sources? Small language permits this, you can
+modify the internal emulator behaviur even if you only have an exe file.<br>
+
+\section howisthispossible How is this possible?
+Although Small is not a programming language, it allows you to implement all the algorithms a normal language do, so once we 
+can make the bynaries execute a Small routine, we can do what we want.<br>
+NOX has an embedded Small compiler, and at the startup all Small scripts are compiled and transformed
+in AMX code (you can see it in override.amx), this code, can be executed by a virtual machine coded in the sources, so
+once we have the AMX code, the exe can execute it as if it were source code.<br>
+We are done, we can write a Small scrpt and NOX will execute it! Only we still have a problem, how can we tell NOX
+which script we want to execute and when?<br>
+Here come the only limitation of NOX, we can only execute Small code when NOX allows us, so we can'r insert
+our routines where we want.<br>
+Luckily NOX allows a great number of locations in his source code where we can insert our custom scripts, so actually
+this limitation doesn't exist, moreover we must say that if you feel NOX doesn't have a feature you need, you can tell this to
+the dev team, and it will be added if possible.<br>
+A more detailed description on this argument can be found in the \ref p_override page.
+
+\section theAPIs The APIs 
+Now we know how NOX can execute our scripts, but 
+another question rises: how can Small support all the UO features and allow us 
+to make script managing characters, items and so on?<br> As a scripting 
+language, Small heavily relies on the main program interface, so Smal is 
+powerfull only if the main program allows it to be powerful, by giving 
+appropriate funcitons to handle the source code data.<br> As source code is C++, 
+an Object Oriented Language, is easy for the developers to give to Small the 
+capabilities to interact with the program's objects and data types, doing this, 
+Small becomes similar to an OOL itself, and it can deal with charcaters, items, 
+NPCs, spells viewing them as objects.<br>
+The interface between the source code data and Small are the APIs (Application Programming Interface) wich are
+Small native functions, implemented in the sources, wich give the possibility to handle the internal data types an classes.<br>
+APIs are declared in the .api files (this extention does not mean anything particular, it's only to identofy them).
+You will see there are tons of APIs, this is because NOX really gives you control over every aspect
+of the source code, thus many of the internal functions are duplicated as APIs and made available to the scripter.<br>
+
+\section thestandardscripts The standard scripts
+To help the shards scripters customizing their shards, some scripts are provided to perform
+in Small the most commonly customized features, these are called the standard scripts.<br>
+Standard scripts are sometimes called by the sources in way that are not permitted to scripters, but
+we try to keep this exceptions limited to the strict necessary.<br>
+In standard scripts you can find emulator parts written in Small (this demonstrates the power of this language)
+and you can modify them to your needs. Usually these scripts are designed to be easily customizable by
+changing some parameteres, so you usually won't have to modify the algorithms, but sometimes this is needed, so the whole code
+is fully commented to provide you a guide.
+*/

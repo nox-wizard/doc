@@ -1,0 +1,20 @@
+/*!
+\defgroup script_API API
+
+\section API what are APIs
+APIs are the interface between the source code and the Small code.<br>
+Altough Small is a very simple language, the huge number of APIs can make NOX-Small quite a difficult
+language to master, it will take a lot of time to you to learn all the available functions and to learn
+when and how to use them.
+By the Small point of view APIs are the "native" functions, that is, functions whose implementation is
+"hardcoded" and that are provided by the host application (NOX)to be used in Small.<br>
+You will see APIs as extentions to the Small language that allow you to manipulate source code
+objects sych as characters and items.<br>
+Sometimes APIs also provide support for complex data structures (i.e.: sets) that would not be
+implementable in Small.<br>
+You should always pay attention to APIs' changes because thay can make you scripts non compatible
+(if functions are deleted/renamed) or allow more power to the scripter (if new APIs are added).<br>
+Usually source code algorithms are faster than scripted ones, so having an API that does something means that
+task will be executed rapidly. You can always create your own scripted algorithms, but if you feel 
+your script is too slow and it is a vital script, you can ask dev team to add an API that does it for you.<br>
+*/
