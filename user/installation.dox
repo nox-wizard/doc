@@ -10,8 +10,16 @@
 
 
  \subsection Installation_Linux Linux
- Linux stuff
- \subsection Installation_Windows Windows
- Windows fuck
+ Linux instructions to be done
  
+ \subsection Installation_Windows Windows
+ <UL>
+ <LI>Unzip the executable noxwizard.exe in a folder.
+ <LI>Unzip the scripts in the same folder
+ <LI>Edit the config\server.cfg file and set the UO paths, if you unzip NOX in a subfolder of the UO folder
+ this is not needed.
+ <LI>Edit config\accounts.cfg and change the admin account password
+ <LI>Doubleclick noxwizard.exe
+ <LI>Enjoy!
+ </UL>
 */
