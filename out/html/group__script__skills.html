@@ -47,12 +47,18 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__skills.html#ga2">__evintTarget</a> (const t, const cc, const target, const x, const y, const z, const model, const param1)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">evalint target callback  <a href="#ga2"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__skills.html#ga3">__nxw_sk_inscript</a> (const chr)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__skills.html#ga3">chr_getSkill</a> (const chr, const skill)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">called by __nxw_sk_main, gets a target to select the scroll  <a href="#ga3"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__skills.html#ga4">__inscriptTarget</a> (const t, const chr, const item, const x, const y, const z, const model, const param1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">reads a skill value of a character  <a href="#ga3"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__skills.html#ga4">chr_setSkill</a> (const chr, const skill, const <a class="el" href="float_8api.html#a0">value</a>)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">target callback for inscription  <a href="#ga4"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets a skill value of a character  <a href="#ga4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__skills.html#ga5">__nxw_sk_inscript</a> (const chr)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">called by __nxw_sk_main, gets a target to select the scroll  <a href="#ga5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__skills.html#ga6">__inscriptTarget</a> (const t, const chr, const item, const x, const y, const z, const model, const param1)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">target callback for inscription  <a href="#ga6"></a><br><br></td></tr>
 </table>
 <hr><h2>Function Documentation</h2>
 <a class="anchor" name="ga1" doxytag="anatomy.sma::__anatomyTarget" ></a><p>
@@ -215,7 +221,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga4" doxytag="inscription.sma::__inscriptTarget" ></a><p>
+<a class="anchor" name="ga6" doxytag="inscription.sma::__inscriptTarget" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -330,7 +336,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga3" doxytag="inscription.sma::__nxw_sk_inscript" ></a><p>
+<a class="anchor" name="ga5" doxytag="inscription.sma::__nxw_sk_inscript" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -365,6 +371,105 @@
     </td>
   </tr>
 </table>
+<a class="anchor" name="ga3" doxytag="extendedSkillsystem.sma::chr_getSkill" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> chr_getSkill </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>skill</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr:</em>&nbsp;</td><td>the character whose skill is needed </td></tr>
+    <tr><td valign=top><em>skill:</em>&nbsp;</td><td>the skill to read </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Returns:</b></dt><dd>the skill value or -1 if not a valid skill</dd></dl>
+Reads a skill value of a character, if extended skillsystem is active supports additional skills too     </td>
+  </tr>
+</table>
+<a class="anchor" name="ga4" doxytag="extendedSkillsystem.sma::chr_setSkill" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> chr_setSkill </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>skill</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>value</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr:</em>&nbsp;</td><td>the character whose skill is needed </td></tr>
+    <tr><td valign=top><em>skill:</em>&nbsp;</td><td>the skill to read </td></tr>
+    <tr><td valign=top><em>value:</em>&nbsp;</td><td>the value to set </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Returns:</b></dt><dd>OK or INVALID if not a valid skill sets a skill value of a character, if extended skillsystem is active supports additional skills too </dd></dl>
+    </td>
+  </tr>
+</table>
 				</TD>
 				<TD WIDTH=30  VALIGN=top >
 					<TABLE WIDTH=30 cellpadding="0" cellspacing="0">
@@ -383,7 +488,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

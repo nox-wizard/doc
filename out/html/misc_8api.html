@@ -59,9 +59,12 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="misc_8api.html#a8">broadcast</a> (const format[],...)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sends a broadcast message.  <a href="#a8"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="misc_8api.html#a9">getIntFromDefine</a> (const define[],...)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="misc_8api.html#a9">getIntFromDefine</a> (const define[], checkDefine=true)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get define Number.  <a href="#a9"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="misc_8api.html#a10">world_save</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">performs a worldsave  <a href="#a10"></a><br><br></td></tr>
 </table>
 <hr><h2>Function Documentation</h2>
 <a class="anchor" name="a8" doxytag="misc.api::broadcast" ></a><p>
@@ -224,8 +227,8 @@
         <tr>
           <td class="md" nowrap align="right"></td>
           <td></td>
-          <td class="md" nowrap>...&nbsp;</td>
-          <td class="mdname" nowrap></td>
+          <td class="md" nowrap>checkDefine&nbsp;</td>
+          <td class="mdname" nowrap> <em>checkDefine</em> = true</td>
         </tr>
         <tr>
           <td></td>
@@ -245,10 +248,11 @@
     <td>
 
 <p>
-<dl compact><dt><b>Author:</b></dt><dd>Endymion </dd></dl>
+<dl compact><dt><b>Author:</b></dt><dd>Endymion, changed by Wintermute </dd></dl>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>define[]:</em>&nbsp;</td><td>the define </td></tr>
+    <tr><td valign=top><em>checkDefine:</em>&nbsp;</td><td>true if a logmessage should be displayed in the console if the define is not available </td></tr>
   </table>
 </dl>
     </td>
@@ -431,6 +435,35 @@
     </td>
   </tr>
 </table>
+<a class="anchor" name="a10" doxytag="misc.api::world_save" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> world_save </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>stonedz </dd></dl>
+    </td>
+  </tr>
+</table>
 				</TD>
 				<TD WIDTH=30  VALIGN=top >
 					<TABLE WIDTH=30 cellpadding="0" cellspacing="0">
@@ -449,7 +482,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

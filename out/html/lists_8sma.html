@@ -33,114 +33,258 @@
 <h1>lists.sma File Reference</h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Defines</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga1">NUM_MAGICAL_ITEMS</a>&nbsp;&nbsp;&nbsp;4</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga2">MAGIC_MENU_IDX</a>&nbsp;&nbsp;&nbsp;0</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a1">NUM_REAGENTS</a>&nbsp;&nbsp;&nbsp;8</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga3">NUM_MAGICALITEMS</a>&nbsp;&nbsp;&nbsp;4</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a2">NUM_REAGENTS2</a>&nbsp;&nbsp;&nbsp;18</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga4">MAGICALITEMS_IDX</a>&nbsp;&nbsp;&nbsp;MAGIC_MENU_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a3">NUM_BOTTLES</a>&nbsp;&nbsp;&nbsp;12</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga5">NUM_REAGENTS</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a4">NUM_POTIONS</a>&nbsp;&nbsp;&nbsp;12</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga6">REAGENTS_IDX</a>&nbsp;&nbsp;&nbsp;NUM_MAGICALITEMS + MAGICALITEMS_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a5">NUM_WANDS</a>&nbsp;&nbsp;&nbsp;9</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga7">NUM_REAGENTS2</a>&nbsp;&nbsp;&nbsp;18</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a6">NUM_GATES</a>&nbsp;&nbsp;&nbsp;3</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga8">REAGENTS2_IDX</a>&nbsp;&nbsp;&nbsp;NUM_REAGENTS + REAGENTS_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a7">MAX_SCROLLS</a>&nbsp;&nbsp;&nbsp;64</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga9">NUM_BOTTLES</a>&nbsp;&nbsp;&nbsp;12</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a8">SCROLLS_PER_CIRCLE</a>&nbsp;&nbsp;&nbsp;8</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga10">BOTTLES_IDX</a>&nbsp;&nbsp;&nbsp;NUM_REAGENTS2 + REAGENTS2_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a9">NUM_ARMORS</a>&nbsp;&nbsp;&nbsp;8</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga11">NUM_POTIONS</a>&nbsp;&nbsp;&nbsp;12</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a10">ARMOR_PARTS</a>&nbsp;&nbsp;&nbsp;7</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga12">POTIONS_IDX</a>&nbsp;&nbsp;&nbsp;NUM_BOTTLES + BOTTLES_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a11">NUM_WEAPONS</a>&nbsp;&nbsp;&nbsp;4</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga13">NUM_WANDS</a>&nbsp;&nbsp;&nbsp;9</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a12">WEAPONS_PER_GROUP</a>&nbsp;&nbsp;&nbsp;8</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga14">WANDS_IDX</a>&nbsp;&nbsp;&nbsp;NUM_POTIONS + POTIONS_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a13">NUM_ANIMALS</a>&nbsp;&nbsp;&nbsp;26</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga15">NUM_GATES</a>&nbsp;&nbsp;&nbsp;3</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a14">NUM_T2A_MONSTERS</a>&nbsp;&nbsp;&nbsp;41</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga16">GATES_IDX</a>&nbsp;&nbsp;&nbsp;NUM_WANDS + WANDS_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a15">NUM_DEAMONS</a>&nbsp;&nbsp;&nbsp;5</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga17">NUM_SCROLLS1</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a16">NUM_ELEMENTALS</a>&nbsp;&nbsp;&nbsp;7</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga18">NUM_SCROLLS2</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a17">NUM_ORCS</a>&nbsp;&nbsp;&nbsp;12</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga19">NUM_SCROLLS3</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a18">NUM_MONSTERS</a>&nbsp;&nbsp;&nbsp;17</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga20">NUM_SCROLLS4</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a19">NUM_UNDEADS</a>&nbsp;&nbsp;&nbsp;15</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga21">NUM_SCROLLS5</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a20">NUM_UNIQUE</a>&nbsp;&nbsp;&nbsp;5</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga22">NUM_SCROLLS6</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a21">NUM_FROST_STONE</a>&nbsp;&nbsp;&nbsp;7</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga23">NUM_SCROLLS7</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a22">NUM_DRAGONS</a>&nbsp;&nbsp;&nbsp;13</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga24">NUM_SCROLLS8</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a23">NUM_PEOPLE_M</a>&nbsp;&nbsp;&nbsp;29</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga25">NUM_SCROLLS</a>&nbsp;&nbsp;&nbsp;64</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a24">NUM_PEOPLE_F</a>&nbsp;&nbsp;&nbsp;22</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga26">SCROLLS_IDX</a>&nbsp;&nbsp;&nbsp;NUM_GATES + GATES_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a25">NUM_MERCHANTS_M</a>&nbsp;&nbsp;&nbsp;32</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga27">NPC_MENU_IDX</a>&nbsp;&nbsp;&nbsp;SCROLLS_IDX + NUM_SCROLLS</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a26">NUM_MERCHANTS_F</a>&nbsp;&nbsp;&nbsp;30</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga28">NUM_ANIMALS</a>&nbsp;&nbsp;&nbsp;26</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a27">NUM_BEVERAGES</a>&nbsp;&nbsp;&nbsp;27</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga29">IDX_ANIMALS</a>&nbsp;&nbsp;&nbsp;NPC_MENU_IDX</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a28">NUM_BAKED</a>&nbsp;&nbsp;&nbsp;39</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga30">NUM_T2A_MONSTERS</a>&nbsp;&nbsp;&nbsp;41</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a29">NUM_BOWLSMEATFRUIT</a>&nbsp;&nbsp;&nbsp;28</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga31">IDX_T2A_MONSTERS</a>&nbsp;&nbsp;&nbsp;IDX_ANIMALS + NUM_ANIMALS</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a30">NUM_PLANTS</a>&nbsp;&nbsp;&nbsp;19</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga32">NUM_DEAMONS</a>&nbsp;&nbsp;&nbsp;5</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a31">NUM_LIGHTS</a>&nbsp;&nbsp;&nbsp;18</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga33">IDX_DEAMONS</a>&nbsp;&nbsp;&nbsp;IDX_T2A_MONSTERS + NUM_T2A_MONSTERS</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a32">NUM_SIGNS</a>&nbsp;&nbsp;&nbsp;125</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga34">NUM_ELEMENTALS</a>&nbsp;&nbsp;&nbsp;7</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a33">NUM_CONTAINERS</a>&nbsp;&nbsp;&nbsp;18</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga35">IDX_ELEMENTALS</a>&nbsp;&nbsp;&nbsp;IDX_DEAMONS + NUM_DEAMONS</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a34">NUM_STATUES_TROPHIES</a>&nbsp;&nbsp;&nbsp;29</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga36">NUM_ORCS</a>&nbsp;&nbsp;&nbsp;12</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a35">NUM_HAIR_BEARD</a>&nbsp;&nbsp;&nbsp;16</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga37">IDX_ORCS</a>&nbsp;&nbsp;&nbsp;IDX_ELEMENTALS + NUM_ELEMENTALS</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a36">NUM_RUGS</a>&nbsp;&nbsp;&nbsp;90</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga38">NUM_MONSTERS</a>&nbsp;&nbsp;&nbsp;17</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a37">NUM_CLOTHING</a>&nbsp;&nbsp;&nbsp;41</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga39">IDX_MONSTERS</a>&nbsp;&nbsp;&nbsp;IDX_ORCS + NUM_ORCS</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a38">NUM_JEWELS</a>&nbsp;&nbsp;&nbsp;60</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga40">NUM_UNDEADS</a>&nbsp;&nbsp;&nbsp;15</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a39">NUM_FURNITURE</a>&nbsp;&nbsp;&nbsp;174</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga41">IDX_UNDEADS</a>&nbsp;&nbsp;&nbsp;IDX_MONSTERS + NUM_MONSTERS</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a40">NUM_CARPENTER</a>&nbsp;&nbsp;&nbsp;89</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga42">NUM_UNIQUE</a>&nbsp;&nbsp;&nbsp;5</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a41">NUM_TAILOR</a>&nbsp;&nbsp;&nbsp;15</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga43">IDX_UNIQUE</a>&nbsp;&nbsp;&nbsp;IDX_UNDEADS + NUM_UNDEADS</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a42">NUM_BLACKSMITH</a>&nbsp;&nbsp;&nbsp;11</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga44">NUM_FROST_STONE</a>&nbsp;&nbsp;&nbsp;7</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a43">NUM_MUSICIAN</a>&nbsp;&nbsp;&nbsp;7</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga45">IDX_FROST_STONE</a>&nbsp;&nbsp;&nbsp;IDX_UNIQUE + NUM_UNIQUE</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a44">NUM_THIEF</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga46">NUM_DRAGONS</a>&nbsp;&nbsp;&nbsp;13</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a45">NUM_FISHER</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga47">IDX_DRAGONS</a>&nbsp;&nbsp;&nbsp;IDX_FROST_STONE + NUM_FROST_STONE</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a46">NUM_TINKER</a>&nbsp;&nbsp;&nbsp;10</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga48">NUM_PEOPLE_M</a>&nbsp;&nbsp;&nbsp;29</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a47">NUM_BOWYER</a>&nbsp;&nbsp;&nbsp;10</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga49">IDX_PEOPLE_M</a>&nbsp;&nbsp;&nbsp;IDX_DRAGONS + NUM_DRAGONS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga50">NUM_PEOPLE_F</a>&nbsp;&nbsp;&nbsp;22</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga51">IDX_PEOPLE_F</a>&nbsp;&nbsp;&nbsp;IDX_PEOPLE_M + NUM_PEOPLE_M</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga52">NUM_MERCHANTS_M</a>&nbsp;&nbsp;&nbsp;32</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga53">IDX_MERCHANTS_M</a>&nbsp;&nbsp;&nbsp;IDX_PEOPLE_F + NUM_PEOPLE_F</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga54">NUM_MERCHANTS_F</a>&nbsp;&nbsp;&nbsp;30</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga55">IDX_MERCHANTS_F</a>&nbsp;&nbsp;&nbsp;IDX_MERCHANTS_M + NUM_MERCHANTS_M</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga56">SUPPLY_MENU_IDX</a>&nbsp;&nbsp;&nbsp;IDX_MERCHANTS_F + NUM_MERCHANTS_F</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga57">NUM_BEVERAGES</a>&nbsp;&nbsp;&nbsp;27</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga58">IDX_BEVERAGES</a>&nbsp;&nbsp;&nbsp;SUPPLY_MENU_IDX</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga59">NUM_BAKED</a>&nbsp;&nbsp;&nbsp;39</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga60">IDX_BAKED</a>&nbsp;&nbsp;&nbsp;IDX_BEVERAGES + NUM_BEVERAGES</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga61">NUM_BOWLSMEATFRUIT</a>&nbsp;&nbsp;&nbsp;28</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga62">IDX_BOWLSMEATFRUIT</a>&nbsp;&nbsp;&nbsp;IDX_BAKED + NUM_BAKED</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga63">NUM_PLANTS</a>&nbsp;&nbsp;&nbsp;19</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga64">IDX_PLANTS</a>&nbsp;&nbsp;&nbsp;IDX_BOWLSMEATFRUIT + NUM_BOWLSMEATFRUIT</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga65">NUM_LIGHTS</a>&nbsp;&nbsp;&nbsp;22</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga66">IDX_LIGHTS</a>&nbsp;&nbsp;&nbsp;IDX_PLANTS + NUM_PLANTS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga67">NUM_CONTAINERS</a>&nbsp;&nbsp;&nbsp;10</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga68">IDX_CONTAINERS</a>&nbsp;&nbsp;&nbsp;IDX_LIGHTS + NUM_LIGHTS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga69">NUM_STATUES_TROPHIES</a>&nbsp;&nbsp;&nbsp;29</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga70">IDX_STATUES_TROPHIES</a>&nbsp;&nbsp;&nbsp;IDX_CONTAINERS + NUM_CONTAINERS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga71">NUM_HAIR_BEARD</a>&nbsp;&nbsp;&nbsp;16</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga72">IDX_HAIR_BEARD</a>&nbsp;&nbsp;&nbsp;IDX_STATUES_TROPHIES + NUM_STATUES_TROPHIES</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga73">NUM_CLOTHING</a>&nbsp;&nbsp;&nbsp;40</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga74">IDX_CLOTHING</a>&nbsp;&nbsp;&nbsp;IDX_HAIR_BEARD + NUM_HAIR_BEARD</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga75">NUM_RUGS</a>&nbsp;&nbsp;&nbsp;82</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga76">IDX_RUGS</a>&nbsp;&nbsp;&nbsp;IDX_CLOTHING + NUM_CLOTHING</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga77">NUM_JEWELS</a>&nbsp;&nbsp;&nbsp;60</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga78">IDX_JEWELS</a>&nbsp;&nbsp;&nbsp;IDX_RUGS + NUM_RUGS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga79">SIGNS_MENU_IDX</a>&nbsp;&nbsp;&nbsp;IDX_JEWELS + NUM_JEWELS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga80">NUM_WORKER</a>&nbsp;&nbsp;&nbsp;36</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga81">IDX_WORKER</a>&nbsp;&nbsp;&nbsp;SIGNS_MENU_IDX</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga82">NUM_GUILD</a>&nbsp;&nbsp;&nbsp;28</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga83">IDX_GUILD</a>&nbsp;&nbsp;&nbsp;IDX_WORKER + NUM_WORKER</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga84">FURNITURE_MENU_IDX</a>&nbsp;&nbsp;&nbsp;IDX_GUILD + NUM_GUILD</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga85">NUM_FURNITURE</a>&nbsp;&nbsp;&nbsp;24</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga86">IDX_FURNITURE</a>&nbsp;&nbsp;&nbsp;FURNITURE_MENU_IDX</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga87">NUM_TABLES</a>&nbsp;&nbsp;&nbsp;54</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga88">IDX_TABLES</a>&nbsp;&nbsp;&nbsp;IDX_FURNITURE + NUM_FURNITURE</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga89">NUM_CHAIRS</a>&nbsp;&nbsp;&nbsp;42</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga90">IDX_CHAIRS</a>&nbsp;&nbsp;&nbsp;IDX_TABLES + NUM_TABLES</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga91">NUM_BEDS</a>&nbsp;&nbsp;&nbsp;14</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga92">IDX_BEDS</a>&nbsp;&nbsp;&nbsp;IDX_CHAIRS + NUM_CHAIRS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga93">NUM_BIGBEDS</a>&nbsp;&nbsp;&nbsp;40</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga94">IDX_BIGBEDS</a>&nbsp;&nbsp;&nbsp;IDX_BEDS + NUM_BEDS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga95">TOOLS_MENU_IDX</a>&nbsp;&nbsp;&nbsp;IDX_BIGBEDS + NUM_BIGBEDS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga96">NUM_CARPENTER1</a>&nbsp;&nbsp;&nbsp;36</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga97">IDX_CARPENTER1</a>&nbsp;&nbsp;&nbsp;TOOLS_MENU_IDX</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga98">NUM_CARPENTER2</a>&nbsp;&nbsp;&nbsp;53</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga99">IDX_CARPENTER2</a>&nbsp;&nbsp;&nbsp;IDX_CARPENTER1 + NUM_CARPENTER1</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga100">NUM_TAILOR</a>&nbsp;&nbsp;&nbsp;15</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga101">IDX_TAILOR</a>&nbsp;&nbsp;&nbsp;IDX_CARPENTER2 + NUM_CARPENTER2</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga102">NUM_BLACKSMITH</a>&nbsp;&nbsp;&nbsp;19</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga103">IDX_BLACKSMITH</a>&nbsp;&nbsp;&nbsp;IDX_TAILOR + NUM_TAILOR</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga104">NUM_MUSICIAN</a>&nbsp;&nbsp;&nbsp;7</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga105">IDX_MUSICIAN</a>&nbsp;&nbsp;&nbsp;IDX_BLACKSMITH + NUM_BLACKSMITH</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga106">NUM_THIEF</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga107">IDX_THIEF</a>&nbsp;&nbsp;&nbsp;IDX_MUSICIAN + NUM_MUSICIAN</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga108">NUM_FISHER</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga109">IDX_FISHER</a>&nbsp;&nbsp;&nbsp;IDX_THIEF + NUM_THIEF</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga110">NUM_TINKER</a>&nbsp;&nbsp;&nbsp;10</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga111">IDX_TINKER</a>&nbsp;&nbsp;&nbsp;IDX_FISHER + NUM_FISHER</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga112">NUM_BOWYER</a>&nbsp;&nbsp;&nbsp;10</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga113">IDX_BOWYER</a>&nbsp;&nbsp;&nbsp;IDX_TINKER + NUM_TINKER</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga114">NUM_SPAWNERS</a>&nbsp;&nbsp;&nbsp;114</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga115">IDX_SPAWNERS</a>&nbsp;&nbsp;&nbsp;IDX_BOWYER + NUM_BOWYER</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga116">NUM_ADD_ITEMS</a>&nbsp;&nbsp;&nbsp;IDX_SPAWNERS + NUM_SPAWNERS</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a115">NUM_ARMORS</a>&nbsp;&nbsp;&nbsp;8</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a116">ARMOR_PARTS</a>&nbsp;&nbsp;&nbsp;7</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a117">NUM_WEAPONS</a>&nbsp;&nbsp;&nbsp;4</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="lists_8sma.html#a118">WEAPONS_PER_GROUP</a>&nbsp;&nbsp;&nbsp;8</td></tr>
 
 <tr><td colspan=2><br><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga2">additemEntry</a> { <a class="el" href="group__script__commands__add__lists.html#gga2a49">__ID</a>, 
-<a class="el" href="group__script__commands__add__lists.html#gga2a50">__def</a>, 
-<a class="el" href="group__script__commands__add__lists.html#gga2a51">__name</a>
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga117">additemEntry</a> { <a class="el" href="group__script__commands__add__lists.html#gga117a121">__ID</a>, 
+<a class="el" href="group__script__commands__add__lists.html#gga117a122">__def</a>, 
+<a class="el" href="group__script__commands__add__lists.html#gga117a123">__name</a>
  }</td></tr>
 
 <tr><td colspan=2><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>enum <a class="el" href="group__script__commands__add__lists.html#ga2">additemEntry</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga0">addMenuItems</a> [ADD_MENU_ENTRIES][<a class="el" href="group__script__commands__add__constants.html#ga4">__addMenuStruct</a>]</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum <a class="el" href="group__script__commands__add__lists.html#ga117">additemEntry</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga0">addMenuItems</a> [ADD_MENU_ENTRIES][<a class="el" href="group__script__commands__add__constants.html#ga4">__addMenuStruct</a>]</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>new&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__commands__add__lists.html#ga1">__listAllocationMap</a> [58]</td></tr>
 
 </table>
 <hr><h2>Define Documentation</h2>
-<a class="anchor" name="a10" doxytag="lists.sma::ARMOR_PARTS" ></a><p>
+<a class="anchor" name="a116" doxytag="lists.sma::ARMOR_PARTS" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -162,51 +306,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a7" doxytag="lists.sma::MAX_SCROLLS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define MAX_SCROLLS&nbsp;&nbsp;&nbsp;64
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a13" doxytag="lists.sma::NUM_ANIMALS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_ANIMALS&nbsp;&nbsp;&nbsp;26
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a9" doxytag="lists.sma::NUM_ARMORS" ></a><p>
+<a class="anchor" name="a115" doxytag="lists.sma::NUM_ARMORS" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -228,887 +328,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a28" doxytag="lists.sma::NUM_BAKED" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_BAKED&nbsp;&nbsp;&nbsp;39
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a27" doxytag="lists.sma::NUM_BEVERAGES" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_BEVERAGES&nbsp;&nbsp;&nbsp;27
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a42" doxytag="lists.sma::NUM_BLACKSMITH" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_BLACKSMITH&nbsp;&nbsp;&nbsp;11
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a3" doxytag="lists.sma::NUM_BOTTLES" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_BOTTLES&nbsp;&nbsp;&nbsp;12
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a29" doxytag="lists.sma::NUM_BOWLSMEATFRUIT" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_BOWLSMEATFRUIT&nbsp;&nbsp;&nbsp;28
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a47" doxytag="lists.sma::NUM_BOWYER" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_BOWYER&nbsp;&nbsp;&nbsp;10
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a40" doxytag="lists.sma::NUM_CARPENTER" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_CARPENTER&nbsp;&nbsp;&nbsp;89
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a37" doxytag="lists.sma::NUM_CLOTHING" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_CLOTHING&nbsp;&nbsp;&nbsp;41
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a33" doxytag="lists.sma::NUM_CONTAINERS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_CONTAINERS&nbsp;&nbsp;&nbsp;18
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a15" doxytag="lists.sma::NUM_DEAMONS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_DEAMONS&nbsp;&nbsp;&nbsp;5
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a22" doxytag="lists.sma::NUM_DRAGONS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_DRAGONS&nbsp;&nbsp;&nbsp;13
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a16" doxytag="lists.sma::NUM_ELEMENTALS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_ELEMENTALS&nbsp;&nbsp;&nbsp;7
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a45" doxytag="lists.sma::NUM_FISHER" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_FISHER&nbsp;&nbsp;&nbsp;1
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a21" doxytag="lists.sma::NUM_FROST_STONE" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_FROST_STONE&nbsp;&nbsp;&nbsp;7
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a39" doxytag="lists.sma::NUM_FURNITURE" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_FURNITURE&nbsp;&nbsp;&nbsp;174
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a6" doxytag="lists.sma::NUM_GATES" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_GATES&nbsp;&nbsp;&nbsp;3
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a35" doxytag="lists.sma::NUM_HAIR_BEARD" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_HAIR_BEARD&nbsp;&nbsp;&nbsp;16
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a38" doxytag="lists.sma::NUM_JEWELS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_JEWELS&nbsp;&nbsp;&nbsp;60
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a31" doxytag="lists.sma::NUM_LIGHTS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_LIGHTS&nbsp;&nbsp;&nbsp;18
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a26" doxytag="lists.sma::NUM_MERCHANTS_F" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_MERCHANTS_F&nbsp;&nbsp;&nbsp;30
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a25" doxytag="lists.sma::NUM_MERCHANTS_M" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_MERCHANTS_M&nbsp;&nbsp;&nbsp;32
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a18" doxytag="lists.sma::NUM_MONSTERS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_MONSTERS&nbsp;&nbsp;&nbsp;17
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a43" doxytag="lists.sma::NUM_MUSICIAN" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_MUSICIAN&nbsp;&nbsp;&nbsp;7
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a17" doxytag="lists.sma::NUM_ORCS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_ORCS&nbsp;&nbsp;&nbsp;12
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a24" doxytag="lists.sma::NUM_PEOPLE_F" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_PEOPLE_F&nbsp;&nbsp;&nbsp;22
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a23" doxytag="lists.sma::NUM_PEOPLE_M" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_PEOPLE_M&nbsp;&nbsp;&nbsp;29
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a30" doxytag="lists.sma::NUM_PLANTS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_PLANTS&nbsp;&nbsp;&nbsp;19
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a4" doxytag="lists.sma::NUM_POTIONS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_POTIONS&nbsp;&nbsp;&nbsp;12
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a1" doxytag="lists.sma::NUM_REAGENTS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_REAGENTS&nbsp;&nbsp;&nbsp;8
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a2" doxytag="lists.sma::NUM_REAGENTS2" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_REAGENTS2&nbsp;&nbsp;&nbsp;18
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a36" doxytag="lists.sma::NUM_RUGS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_RUGS&nbsp;&nbsp;&nbsp;90
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a32" doxytag="lists.sma::NUM_SIGNS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_SIGNS&nbsp;&nbsp;&nbsp;125
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a34" doxytag="lists.sma::NUM_STATUES_TROPHIES" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_STATUES_TROPHIES&nbsp;&nbsp;&nbsp;29
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a14" doxytag="lists.sma::NUM_T2A_MONSTERS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_T2A_MONSTERS&nbsp;&nbsp;&nbsp;41
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a41" doxytag="lists.sma::NUM_TAILOR" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_TAILOR&nbsp;&nbsp;&nbsp;15
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a44" doxytag="lists.sma::NUM_THIEF" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_THIEF&nbsp;&nbsp;&nbsp;1
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a46" doxytag="lists.sma::NUM_TINKER" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_TINKER&nbsp;&nbsp;&nbsp;10
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a19" doxytag="lists.sma::NUM_UNDEADS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_UNDEADS&nbsp;&nbsp;&nbsp;15
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a20" doxytag="lists.sma::NUM_UNIQUE" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_UNIQUE&nbsp;&nbsp;&nbsp;5
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a5" doxytag="lists.sma::NUM_WANDS" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define NUM_WANDS&nbsp;&nbsp;&nbsp;9
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a11" doxytag="lists.sma::NUM_WEAPONS" ></a><p>
+<a class="anchor" name="a117" doxytag="lists.sma::NUM_WEAPONS" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1130,29 +350,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a8" doxytag="lists.sma::SCROLLS_PER_CIRCLE" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> #define SCROLLS_PER_CIRCLE&nbsp;&nbsp;&nbsp;8
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a12" doxytag="lists.sma::WEAPONS_PER_GROUP" ></a><p>
+<a class="anchor" name="a118" doxytag="lists.sma::WEAPONS_PER_GROUP" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1192,7 +390,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

@@ -45,9 +45,9 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga2">chr_countItems</a> (const chr, const itemtype, const color=-1)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">counts the items of the specified type and color (if specified) in the character's backpack  <a href="#ga2"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga3">chr_getBankBox</a> (const chr, const bankboxtype)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga3">chr_getBankBox</a> (const chr, const bankboxtype=BANKBOX_NORMAL)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">??  <a href="#ga3"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets serial of character's bankbox  <a href="#ga3"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga4">chr_getBackpack</a> (const chr, const createIfNotExist=false)</td></tr>
 
 <tr><td class="memItemLeft" nowrap align=right valign=top>native&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__character__items.html#ga5">chr_getItemOnLayer</a> (const chr, const layer)</td></tr>
@@ -238,7 +238,7 @@
           <td class="md" nowrap align="right"></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>bankboxtype</em></td>
+          <td class="mdname" nowrap> <em>bankboxtype</em> = BANKBOX_NORMAL</td>
         </tr>
         <tr>
           <td></td>
@@ -262,10 +262,10 @@
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>chr</em>&nbsp;</td><td>tha character </td></tr>
-    <tr><td valign=top><em>bankboxtype</em>&nbsp;</td><td>?? </td></tr>
+    <tr><td valign=top><em>bankboxtype</em>&nbsp;</td><td>the bank box type, normal(0) or gold-only(123) bank. </td></tr>
   </table>
 </dl>
-    </td>
+normal bankbox(BANKBOX_NORMAL) contains gold and items, gold-only bankbox (BANKBOX_GOLDONLY) contains only gold pieces. gold-only bank can be opened only if the extended bank system is activated in server.cfg     </td>
   </tr>
 </table>
 <a class="anchor" name="ga5" doxytag="character.api::chr_getItemOnLayer" ></a><p>
@@ -405,7 +405,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 29 Mar 2004 &nbsp&nbsp
+			Documentation generated 29 May 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>
