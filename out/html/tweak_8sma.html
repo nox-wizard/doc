@@ -32,300 +32,70 @@
 <div class="qindex"><a class="qindex" href="index.html">Main&nbsp;Page</a> | <a class="qindex" href="modules.html">Modules</a> | <a class="qindex" href="files.html">File&nbsp;List</a> | <a class="qindex" href="globals.html">Globals</a> | <a class="qindex" href="pages.html">Related&nbsp;Pages</a> | <a class="qindex" href="examples.html">Examples</a></div>
 <h1>tweak.sma File Reference</h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
+<tr><td colspan=2><br><h2>Enumerations</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga18">twk_buttons</a> { <br>
+&nbsp;&nbsp;<a class="el" href="group__script__command__tweak.html#gga18a6">new1</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a7">old1</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a8">new2</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a9">old2</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="group__script__command__tweak.html#gga18a10">new3</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a11">old3</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a12">new4</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a13">old4</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="group__script__command__tweak.html#gga18a14">new5</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a15">old5</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a16">new6</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a17">old6</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="group__script__command__tweak.html#gga18a18">new7</a>, 
+<a class="el" href="group__script__command__tweak.html#gga18a19">old7</a>
+<br>
+ }</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga19">event_prop</a> { <a class="el" href="group__script__command__tweak.html#gga19a20">eventname</a>, 
+<a class="el" href="group__script__command__tweak.html#gga19a21">eventnum</a>
+ }</td></tr>
+
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tweak_8sma.html#a0">command_tweak</a> (const caller)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga6">cmd_tweak</a> (const chrsource)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tweak_8sma.html#a1">target_tweak</a> (const caller, const target, const item)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga7">TweakStart</a> (const t, const chrsource, const target, const x, const y, const z, const model, const param1)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tweak_8sma.html#a2">IsNumero</a> (const int)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga8">tweak_char</a> (const chrsource, const target, pagenumber)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tweak_8sma.html#a3">tweak_char</a> (const caller, const chr, const page)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga9">viewMenu</a> (const chrsource, const target, const buttonCode)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tweak_8sma.html#a4">handle_tweak_char</a> (const caller, const menu, const button)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga10">tweakBck1</a> (const twkMenu, const chrsource, const buttonCode)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tweak_8sma.html#a5">handle_tweak_item</a> (const chr, const menu, const button)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga11">tweakBck2</a> (const twkMenu, const chrsource, const buttonCode)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tweak_8sma.html#a6">tweak_item</a> (const caller, const item, const page)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga12">tweakBck3</a> (const twkMenu, const chrsource, const buttonCode)</td></tr>
 
-</table>
-<hr><h2>Function Documentation</h2>
-<a class="anchor" name="a0" doxytag="tweak.sma::command_tweak" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> public command_tweak </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname1" valign="top" nowrap> <em>caller</em>          </td>
-          <td class="md" valign="top">&nbsp;)&nbsp;</td>
-          <td class="md" nowrap></td>
-        </tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga13">tweakBck4</a> (const twkMenu, const chrsource, const buttonCode)</td></tr>
 
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga14">tweakBck5</a> (const twkMenu, const chrsource, const buttonCode)</td></tr>
 
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a4" doxytag="tweak.sma::handle_tweak_char" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> public handle_tweak_char </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>caller</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>menu</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>button</em></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="md">)&nbsp;</td>
-          <td class="md" colspan="2"></td>
-        </tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga15">tweakBck6</a> (const twkMenu, const chrsource, const buttonCode)</td></tr>
 
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga16">tweakBck7</a> (const twkMenu, const chrsource, const buttonCode)</td></tr>
 
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a5" doxytag="tweak.sma::handle_tweak_item" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> public handle_tweak_item </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chr</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>menu</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>button</em></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="md">)&nbsp;</td>
-          <td class="md" colspan="2"></td>
-        </tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga17">callItemMenu</a> (const chrsource, const target, const pagenumber)</td></tr>
 
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
+<tr><td colspan=2><br><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga0">BUTTON_APPLY</a></td></tr>
 
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a2" doxytag="tweak.sma::IsNumero" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> public IsNumero </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname1" valign="top" nowrap> <em>int</em>          </td>
-          <td class="md" valign="top">&nbsp;)&nbsp;</td>
-          <td class="md" nowrap></td>
-        </tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga1">NUM_chrevent</a> = 38</td></tr>
 
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga2">oldpic</a> = 5002</td></tr>
 
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a1" doxytag="tweak.sma::target_tweak" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> public target_tweak </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>caller</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>target</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>item</em></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="md">)&nbsp;</td>
-          <td class="md" colspan="2"></td>
-        </tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga3">newpic</a> = 5003</td></tr>
 
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga4">twkButton</a> [twkpages][<a class="el" href="group__script__command__tweak.html#ga18">twk_buttons</a>]</td></tr>
 
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a3" doxytag="tweak.sma::tweak_char" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> public tweak_char </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>caller</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chr</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>page</em></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="md">)&nbsp;</td>
-          <td class="md" colspan="2"></td>
-        </tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__tweak.html#ga5">event_array</a> [<a class="el" href="group__script__command__tweak.html#ga1">NUM_chrevent</a>][<a class="el" href="group__script__command__tweak.html#ga19">event_prop</a>]</td></tr>
 
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
-<a class="anchor" name="a6" doxytag="tweak.sma::tweak_item" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> public tweak_item </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>caller</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>item</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>page</em></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="md">)&nbsp;</td>
-          <td class="md" colspan="2"></td>
-        </tr>
-
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
 </table>
 				</TD>
 				<TD WIDTH=30  VALIGN=top >
@@ -345,7 +115,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

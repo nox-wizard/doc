@@ -32,55 +32,64 @@
 <div class="qindex"><a class="qindex" href="index.html">Main&nbsp;Page</a> | <a class="qindex" href="modules.html">Modules</a> | <a class="qindex" href="files.html">File&nbsp;List</a> | <a class="qindex" href="globals.html">Globals</a> | <a class="qindex" href="pages.html">Related&nbsp;Pages</a> | <a class="qindex" href="examples.html">Examples</a></div>
 <h1>command area system<br>
 <small>
-[<a class="el" href="group__script__command__area.html">area command</a>]</small>
+[<a class="el" href="group__script__command__area.html">'area</a>]</small>
 </h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Defines</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga15">AREA_INVALID</a>&nbsp;&nbsp;&nbsp;-1</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga18">AREA_INVALID</a>&nbsp;&nbsp;&nbsp;-1</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">invalid area serial  <a href="#ga15"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga16">MAX_AREAS</a>&nbsp;&nbsp;&nbsp;= 32;</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">invalid area serial  <a href="#ga18"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga19">MAX_AREAS</a>&nbsp;&nbsp;&nbsp;32;</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">max number of areas, should be &gt;= to the number of players that can access the 'area command  <a href="#ga16"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">max number of areas, should be &gt;= to the number of players that can access the 'area command  <a href="#ga19"></a><br><br></td></tr>
 <tr><td colspan=2><br><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga17">areaParams</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__script__command__area__class.html#gga17a9">area_user</a>, 
-<a class="el" href="group__script__command__area__class.html#gga17a10">area_chrs</a>, 
-<a class="el" href="group__script__command__area__class.html#gga17a11">area_itms</a>, 
-<a class="el" href="group__script__command__area__class.html#gga17a12">area_R</a>, 
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga20">areaParams</a> { <br>
+&nbsp;&nbsp;<a class="el" href="group__script__command__area__class.html#gga20a9">area_user</a>, 
+<a class="el" href="group__script__command__area__class.html#gga20a10">area_chrs</a>, 
+<a class="el" href="group__script__command__area__class.html#gga20a11">area_itms</a>, 
+<a class="el" href="group__script__command__area__class.html#gga20a12">area_R</a>, 
 <br>
-&nbsp;&nbsp;<a class="el" href="group__script__command__area__class.html#gga17a13">area_x</a>, 
-<a class="el" href="group__script__command__area__class.html#gga17a14">area_y</a>, 
-<a class="el" href="group__script__command__area__class.html#gga17a15">area_include</a>, 
-<a class="el" href="group__script__command__area__class.html#gga17a16">area_cmdsLeft</a>
+&nbsp;&nbsp;<a class="el" href="group__script__command__area__class.html#gga20a13">area_x</a>, 
+<a class="el" href="group__script__command__area__class.html#gga20a14">area_y</a>, 
+<a class="el" href="group__script__command__area__class.html#gga20a15">area_incl</a>, 
+<a class="el" href="group__script__command__area__class.html#gga20a16">area_cmdsLeft</a>
 <br>
  }</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">used by the area_ functions to address the main data structure  <a href="#ga17">More...</a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">used by the area_ functions to address the main data structure  <a href="#ga20">More...</a><br><br></td></tr>
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga7">chr_getCmdArea</a> (const chr)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga7">resetCmdAreas</a> ()</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns the area used by a character  <a href="#ga7"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga8">area_isValid</a> (const area)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">initializes data in areas[][]  <a href="#ga7"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga8">chr_getCmdArea</a> (const chr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">checks if a number is a valid area serial  <a href="#ga8"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga9">cmds_getNewArea</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns the area used by a character  <a href="#ga8"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga9">area_isValid</a> (const area)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets a new area serial, logs a warning if the area[][] array is full  <a href="#ga9"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga10">area_useCommand</a> (const area)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">checks if a number is a valid area serial  <a href="#ga9"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga10">cmds_getNewArea</a> ()</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">decreases the available commands for the area effect and removes the area when no more commands are left  <a href="#ga10"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga11">area_refresh</a> (const area)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets a new area serial, logs a warning if the area[][] array is full  <a href="#ga10"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga11">area_useCommand</a> (const area)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga12">area_include</a> (const area)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">decreases the available commands for the area effect and removes the area when no more commands are left  <a href="#ga11"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga12">area_refresh</a> (const area)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the included objects in an area  <a href="#ga12"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga13">area_items</a> (const area)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga13">area_include</a> (const area)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns the characters set of an area  <a href="#ga13"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga14">area_chars</a> (const area)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the included objects in an area  <a href="#ga13"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga14">area_itemsIncluded</a> (const area)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns the characters set of an area  <a href="#ga14"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">checks if the command area includes items  <a href="#ga14"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga15">area_charsIncluded</a> (const area)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">checks if the command area includes characters  <a href="#ga15"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga16">area_items</a> (const area)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns the characters set of an area  <a href="#ga16"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga17">area_chars</a> (const area)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns the characters set of an area  <a href="#ga17"></a><br><br></td></tr>
 <tr><td colspan=2><br><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga0">INCLUDE_CHR</a> = 0x1</td></tr>
 
@@ -88,7 +97,7 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga1">INCLUDE_ITM</a> = 0x2</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">include items in the area  <a href="#ga1"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga2">INCUIDE_ALL</a> = 0x3</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga2">INCLUDE_ALL</a> = 0x3</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">incllude all  <a href="#ga2"></a><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga3">DEFAULT_R</a> = VISRANGE</td></tr>
@@ -97,16 +106,16 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga4">DEFAULT_INCLUDE</a> = <a class="el" href="group__script__command__area__class.html#ga0">INCLUDE_CHR</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">default value for the objects to include in an area  <a href="#ga4"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga5">DEFAULT_CMDS</a> = 0xFFFFFFFF</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga5">DEFAULT_CMDS</a> = 50000</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">default area duration (number of commands)  <a href="#ga5"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga6">areas</a> [MAX_AREAS][<a class="el" href="group__script__command__area__class.html#ga17">areaParams</a>]</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__command__area__class.html#ga6">areas</a> [MAX_AREAS][<a class="el" href="group__script__command__area__class.html#ga20">areaParams</a>]</td></tr>
 
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 <dl compact><dt><b>Note:</b></dt><dd>MODIFYING THIS FILE MAY CAUSE THE INGAME COMMANDS NOT TO WORK PROPERLY! </dd></dl>
 <hr><h2>Define Documentation</h2>
-<a class="anchor" name="ga15" doxytag="area.sma::AREA_INVALID" ></a><p>
+<a class="anchor" name="ga18" doxytag="area.sma::AREA_INVALID" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -128,13 +137,13 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga16" doxytag="area.sma::MAX_AREAS" ></a><p>
+<a class="anchor" name="ga19" doxytag="area.sma::MAX_AREAS" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> #define MAX_AREAS&nbsp;&nbsp;&nbsp;= 32;
+          <td class="md" nowrap valign="top"> #define MAX_AREAS&nbsp;&nbsp;&nbsp;32;
       </table>
     </td>
   </tr>
@@ -151,13 +160,13 @@
   </tr>
 </table>
 <hr><h2>Enumeration Type Documentation</h2>
-<a class="anchor" name="ga17" doxytag="area.sma::areaParams" ></a><p>
+<a class="anchor" name="ga20" doxytag="area.sma::areaParams" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> enum <a class="el" href="group__script__command__area__class.html#ga17">areaParams</a>
+          <td class="md" nowrap valign="top"> enum <a class="el" href="group__script__command__area__class.html#ga20">areaParams</a>
       </table>
     </td>
   </tr>
@@ -172,21 +181,21 @@
 <p>
 This enum contains constants to address the areas[][] array, you should never directly use the areas[][] array and this enum, as they are private, used only for the command area system definition <dl compact><dt><b>Enumeration values: </b></dt><dd>
 <table border=0 cellspacing=2 cellpadding=0>
-<tr><td valign=top><em><a class="anchor" name="gga17a9" doxytag="area_user" ></a>area_user</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga20a9" doxytag="area_user" ></a>area_user</em>&nbsp;</td><td>
 the character this command area is assigned to </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga17a10" doxytag="area_chrs" ></a>area_chrs</em>&nbsp;</td><td>
-set with alla charcaters in the area </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga17a11" doxytag="area_itms" ></a>area_itms</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga20a10" doxytag="area_chrs" ></a>area_chrs</em>&nbsp;</td><td>
+set with all charcaters in the area </td></tr>
+<tr><td valign=top><em><a class="anchor" name="gga20a11" doxytag="area_itms" ></a>area_itms</em>&nbsp;</td><td>
 set with all the items in the area </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga17a12" doxytag="area_R" ></a>area_R</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga20a12" doxytag="area_R" ></a>area_R</em>&nbsp;</td><td>
 area Radius </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga17a13" doxytag="area_x" ></a>area_x</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga20a13" doxytag="area_x" ></a>area_x</em>&nbsp;</td><td>
 area's center x coordinate </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga17a14" doxytag="area_y" ></a>area_y</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga20a14" doxytag="area_y" ></a>area_y</em>&nbsp;</td><td>
 area's center y coordinate </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga17a15" doxytag="area_include" ></a>area_include</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga20a15" doxytag="area_incl" ></a>area_incl</em>&nbsp;</td><td>
 what objects should be included in the area </td></tr>
-<tr><td valign=top><em><a class="anchor" name="gga17a16" doxytag="area_cmdsLeft" ></a>area_cmdsLeft</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="gga20a16" doxytag="area_cmdsLeft" ></a>area_cmdsLeft</em>&nbsp;</td><td>
 number of comands left for this area </td></tr>
 </table>
 </dl>
@@ -194,7 +203,7 @@ number of comands left for this area </td></tr>
   </tr>
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="ga14" doxytag="area.sma::area_chars" ></a><p>
+<a class="anchor" name="ga17" doxytag="area.sma::area_chars" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -225,7 +234,38 @@ number of comands left for this area </td></tr>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga12" doxytag="area.sma::area_include" ></a><p>
+<a class="anchor" name="ga15" doxytag="area.sma::area_charsIncluded" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> area_charsIncluded </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>area</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<dl compact><dt><b>Returns:</b></dt><dd>true if characters are included, false if not </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga13" doxytag="area.sma::area_include" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -256,7 +296,7 @@ number of comands left for this area </td></tr>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga8" doxytag="area.sma::area_isValid" ></a><p>
+<a class="anchor" name="ga9" doxytag="area.sma::area_isValid" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -287,7 +327,7 @@ number of comands left for this area </td></tr>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga13" doxytag="area.sma::area_items" ></a><p>
+<a class="anchor" name="ga16" doxytag="area.sma::area_items" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -318,7 +358,38 @@ number of comands left for this area </td></tr>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga11" doxytag="area.sma::area_refresh" ></a><p>
+<a class="anchor" name="ga14" doxytag="area.sma::area_itemsIncluded" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> area_itemsIncluded </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>area</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+<dl compact><dt><b>Returns:</b></dt><dd>true if items are included, false if not </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga12" doxytag="area.sma::area_refresh" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -347,7 +418,7 @@ number of comands left for this area </td></tr>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga10" doxytag="area.sma::area_useCommand" ></a><p>
+<a class="anchor" name="ga11" doxytag="area.sma::area_useCommand" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -379,7 +450,7 @@ number of comands left for this area </td></tr>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga7" doxytag="area.sma::chr_getCmdArea" ></a><p>
+<a class="anchor" name="ga8" doxytag="area.sma::chr_getCmdArea" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -410,7 +481,7 @@ Performs a sequential search in the area[][] array to see if it finds a match be
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga9" doxytag="area.sma::cmds_getNewArea" ></a><p>
+<a class="anchor" name="ga10" doxytag="area.sma::cmds_getNewArea" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -440,6 +511,35 @@ Performs a sequential search in the area[][] array to see if it finds a match be
     </td>
   </tr>
 </table>
+<a class="anchor" name="ga7" doxytag="area.sma::resetCmdAreas" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> resetCmdAreas </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Fax </dd></dl>
+    </td>
+  </tr>
+</table>
 <hr><h2>Variable Documentation</h2>
 <a class="anchor" name="ga6" doxytag="area.sma::areas" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
@@ -447,7 +547,7 @@ Performs a sequential search in the area[][] array to see if it finds a match be
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="group__script__command__area__class.html#ga6">areas</a>[MAX_AREAS][<a class="el" href="group__script__command__area__class.html#ga17">areaParams</a>]<code> [static]</code>
+          <td class="md" nowrap valign="top"> <a class="el" href="group__script__command__area__class.html#ga6">areas</a>[MAX_AREAS][<a class="el" href="group__script__command__area__class.html#ga20">areaParams</a>]<code> [static]</code>
       </table>
     </td>
   </tr>
@@ -469,7 +569,7 @@ Main area system data structure, this array contains all the areas and their dat
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> const <a class="el" href="group__script__command__area__class.html#ga5">DEFAULT_CMDS</a> = 0xFFFFFFFF
+          <td class="md" nowrap valign="top"> const <a class="el" href="group__script__command__area__class.html#ga5">DEFAULT_CMDS</a> = 50000
       </table>
     </td>
   </tr>
@@ -529,6 +629,28 @@ Main area system data structure, this array contains all the areas and their dat
     </td>
   </tr>
 </table>
+<a class="anchor" name="ga2" doxytag="area.sma::INCLUDE_ALL" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> const <a class="el" href="group__script__command__area__class.html#ga2">INCLUDE_ALL</a> = 0x3
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
 <a class="anchor" name="ga0" doxytag="area.sma::INCLUDE_CHR" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
@@ -573,28 +695,6 @@ Main area system data structure, this array contains all the areas and their dat
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga2" doxytag="area.sma::INCUIDE_ALL" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> const <a class="el" href="group__script__command__area__class.html#ga2">INCUIDE_ALL</a> = 0x3
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-    </td>
-  </tr>
-</table>
 				</TD>
 				<TD WIDTH=30  VALIGN=top >
 					<TABLE WIDTH=30 cellpadding="0" cellspacing="0">
@@ -613,7 +713,7 @@ Main area system data structure, this array contains all the areas and their dat
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

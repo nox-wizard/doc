@@ -36,28 +36,127 @@
 </h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Defines</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga6">GUILD_POSITION_WITH_TARGET</a></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga39">RENAMEPRICE</a>&nbsp;&nbsp;&nbsp;40000</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga40">ABBREVPRICE</a>&nbsp;&nbsp;&nbsp;40000</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga41">GUILD_POSITION_WITH_TARGET</a></td></tr>
 
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga0">guild_dclickDeed</a> (const deed, const master)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga4">guild_dclickDeed</a> (const deed, const chr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild deed double-click  <a href="#ga0"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga1">guildPlace</a> (const target, const master, const obj, const x, const y, const z, const model, const deed)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild deed double-click  <a href="#ga4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga5">guildPlace</a> (const target, const master, const obj, const x, const y, const z, const model, const deed)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga2">guildgui_callback</a> (const gui, const master, const button)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">callback method for placing a guildstone, checks for current membership of placing char in antoher guild and opens the naming gump  <a href="#ga5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga6">guildgui_callback</a> (const chr, const gui, const button)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga3">guild_dclickStone</a> (const guild, const curr)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">callback method for placing a guildstone, checks for current membership of placing char in antoher guild and opens the naming gump  <a href="#ga6"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga7">getGuildMaster</a> (const guild)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga4">guildDclick_cback</a> (const gui, const curr, const button)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">helper function to obtain the guildmaster until it is available in the properties  <a href="#ga7"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga8">guild_dclickStone</a> (const guild, const chr)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga5">guild_sclickStone</a> (const guild, const curr)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild stone double-click, opens the guild menu gump  <a href="#ga8"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga9">guildDclick_cback</a> (const chr, const gui, const button)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild stone single-click  <a href="#ga5"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">callback method for the guild menu, calling the approbriate sub methods  <a href="#ga9"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga10">viewCB</a> (const chr, const gui, const button)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">common callback method for the guild menu, called for all view xxx dialogs  <a href="#ga10"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga11">guild_viewRoster</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga12">guild_viewDesc</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga13">guildRecruitNew</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga14">addRecruit</a> (const chr, const charTarget, const itmTarget)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga15">declareFealty</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga16">fealtyCB</a> (const chr, const gui, const button)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga17">toggleAbbreviation</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga18">resignGuild</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga19">viewCandidatesList</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga20">viewGuildAtWar</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga21">guildmasterMenu</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga22">guildMasterMenuCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga23">renameGuild</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga24">renameGuildCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga25">changeAbbreviation</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga26">changeAbbrevCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga27">changeAlignment</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga28">setCharter</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga29">dismissMember</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga30">declareWar</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga31">declareWarCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga32">declarePeace</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga33">declarePeaceCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga34">acceptMember</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga35">refuseCandidate</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga36">setMemberTitle</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga37">issueAlignmentShields</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga38">guild_sclickStone</a> (const guild, const chr)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild stone single-click  <a href="#ga38"></a><br><br></td></tr>
+<tr><td colspan=2><br><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a> = 2</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga1">ranks</a> [<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga2">rank_male_name</a> [<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga3">rank_female_name</a> [<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]</td></tr>
+
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 <dl compact><dt><b>Attention:</b></dt><dd>not used now </dd></dl>
 <hr><h2>Define Documentation</h2>
-<a class="anchor" name="ga6" doxytag="guildstone.sma::GUILD_POSITION_WITH_TARGET" ></a><p>
+<a class="anchor" name="ga40" doxytag="guildstone.sma::ABBREVPRICE" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define ABBREVPRICE&nbsp;&nbsp;&nbsp;40000
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga41" doxytag="guildstone.sma::GUILD_POSITION_WITH_TARGET" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -79,8 +178,551 @@
     </td>
   </tr>
 </table>
+<a class="anchor" name="ga39" doxytag="guildstone.sma::RENAMEPRICE" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define RENAMEPRICE&nbsp;&nbsp;&nbsp;40000
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="ga0" doxytag="guildstone.sma::guild_dclickDeed" ></a><p>
+<a class="anchor" name="ga34" doxytag="guildstone.sma::acceptMember" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public acceptMember </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga14" doxytag="guildstone.sma::addRecruit" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public addRecruit </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>charTarget</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>itmTarget</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga26" doxytag="guildstone.sma::changeAbbrevCB" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public changeAbbrevCB </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>buttonCode</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga25" doxytag="guildstone.sma::changeAbbreviation" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public changeAbbreviation </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga27" doxytag="guildstone.sma::changeAlignment" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public changeAlignment </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga15" doxytag="guildstone.sma::declareFealty" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public declareFealty </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga32" doxytag="guildstone.sma::declarePeace" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public declarePeace </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga33" doxytag="guildstone.sma::declarePeaceCB" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public declarePeaceCB </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>buttonCode</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga30" doxytag="guildstone.sma::declareWar" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public declareWar </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga31" doxytag="guildstone.sma::declareWarCB" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public declareWarCB </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>buttonCode</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga29" doxytag="guildstone.sma::dismissMember" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public dismissMember </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga16" doxytag="guildstone.sma::fealtyCB" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public fealtyCB </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>button</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga7" doxytag="guildstone.sma::getGuildMaster" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> getGuildMaster </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>guild</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Wintermute </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>guild:</em>&nbsp;</td><td>guild serial to search for master </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga4" doxytag="guildstone.sma::guild_dclickDeed" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -95,7 +737,7 @@
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>master</em></td>
+          <td class="mdname" nowrap> <em>chr</em></td>
         </tr>
         <tr>
           <td></td>
@@ -119,19 +761,19 @@
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>deed</em>&nbsp;</td><td>the guildstone deed </td></tr>
-    <tr><td valign=top><em>master</em>&nbsp;</td><td>who click </td></tr>
+    <tr><td valign=top><em>chr</em>&nbsp;</td><td>who click </td></tr>
   </table>
 </dl>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga3" doxytag="guildstone.sma::guild_dclickStone" ></a><p>
+<a class="anchor" name="ga8" doxytag="guildstone.sma::guild_dclickStone" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> public guild_dclickStone </td>
+          <td class="md" nowrap valign="top"> guild_dclickStone </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
           <td class="mdname" nowrap> <em>guild</em>, </td>
@@ -140,7 +782,7 @@
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>curr</em></td>
+          <td class="mdname" nowrap> <em>chr</em></td>
         </tr>
         <tr>
           <td></td>
@@ -160,10 +802,11 @@
     <td>
 
 <p>
+<dl compact><dt><b>Author:</b></dt><dd>Tuzzi, modified by Straylight </dd></dl>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga5" doxytag="guildstone.sma::guild_sclickStone" ></a><p>
+<a class="anchor" name="ga38" doxytag="guildstone.sma::guild_sclickStone" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -178,7 +821,7 @@
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>curr</em></td>
+          <td class="mdname" nowrap> <em>chr</em></td>
         </tr>
         <tr>
           <td></td>
@@ -202,22 +845,98 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga4" doxytag="guildstone.sma::guildDclick_cback" ></a><p>
+<a class="anchor" name="ga12" doxytag="guildstone.sma::guild_viewDesc" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> public guildDclick_cback </td>
+          <td class="md" nowrap valign="top"> public guild_viewDesc </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>gui</em>, </td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>curr</em>, </td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga11" doxytag="guildstone.sma::guild_viewRoster" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public guild_viewRoster </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga9" doxytag="guildstone.sma::guildDclick_cback" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> guildDclick_cback </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
         </tr>
         <tr>
           <td></td>
@@ -243,25 +962,33 @@
     <td>
 
 <p>
+<dl compact><dt><b>Author:</b></dt><dd>Wintermute </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr:</em>&nbsp;</td><td>Character serial who places the stone </td></tr>
+    <tr><td valign=top><em>gui:</em>&nbsp;</td><td>serial of the menu </td></tr>
+    <tr><td valign=top><em>button:</em>&nbsp;</td><td>button id that was pressed </td></tr>
+  </table>
+</dl>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga2" doxytag="guildstone.sma::guildgui_callback" ></a><p>
+<a class="anchor" name="ga6" doxytag="guildstone.sma::guildgui_callback" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> public guildgui_callback </td>
+          <td class="md" nowrap valign="top"> guildgui_callback </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>gui</em>, </td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>master</em>, </td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
         </tr>
         <tr>
           <td></td>
@@ -287,16 +1014,106 @@
     <td>
 
 <p>
+<dl compact><dt><b>Author:</b></dt><dd>Endymion, modified by Wintermute </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr:</em>&nbsp;</td><td>Character serial who places the stone </td></tr>
+    <tr><td valign=top><em>gui:</em>&nbsp;</td><td>serial of the menu </td></tr>
+    <tr><td valign=top><em>button:</em>&nbsp;</td><td>button id that was pressed </td></tr>
+  </table>
+</dl>
     </td>
   </tr>
 </table>
-<a class="anchor" name="ga1" doxytag="guildstone.sma::guildPlace" ></a><p>
+<a class="anchor" name="ga21" doxytag="guildstone.sma::guildmasterMenu" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> public guildPlace </td>
+          <td class="md" nowrap valign="top"> public guildmasterMenu </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga22" doxytag="guildstone.sma::guildMasterMenuCB" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public guildMasterMenuCB </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>buttonCode</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga5" doxytag="guildstone.sma::guildPlace" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> guildPlace </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
           <td class="mdname" nowrap> <em>target</em>, </td>
@@ -361,7 +1178,597 @@
     <td>
 
 <p>
+<dl compact><dt><b>Author:</b></dt><dd>Endymion, modified by Wintermute </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>target:</em>&nbsp;</td><td>target location for the guildstone </td></tr>
+    <tr><td valign=top><em>master:</em>&nbsp;</td><td>Character serial who places the stone </td></tr>
+    <tr><td valign=top><em>obj:</em>&nbsp;</td><td>Unknown/Unused </td></tr>
+    <tr><td valign=top><em>x:</em>&nbsp;</td><td>X Position of target location </td></tr>
+    <tr><td valign=top><em>y:</em>&nbsp;</td><td>Y Position of target location </td></tr>
+    <tr><td valign=top><em>z:</em>&nbsp;</td><td>Z Position of target location </td></tr>
+    <tr><td valign=top><em>model:</em>&nbsp;</td><td>Unknown/Unused </td></tr>
+    <tr><td valign=top><em>deed:</em>&nbsp;</td><td>serial of the guildstone deed, used for placing </td></tr>
+  </table>
+</dl>
     </td>
+  </tr>
+</table>
+<a class="anchor" name="ga13" doxytag="guildstone.sma::guildRecruitNew" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public guildRecruitNew </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga37" doxytag="guildstone.sma::issueAlignmentShields" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public issueAlignmentShields </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga35" doxytag="guildstone.sma::refuseCandidate" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public refuseCandidate </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga23" doxytag="guildstone.sma::renameGuild" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public renameGuild </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga24" doxytag="guildstone.sma::renameGuildCB" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public renameGuildCB </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>buttonCode</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga18" doxytag="guildstone.sma::resignGuild" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public resignGuild </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga28" doxytag="guildstone.sma::setCharter" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public setCharter </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga36" doxytag="guildstone.sma::setMemberTitle" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public setMemberTitle </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga17" doxytag="guildstone.sma::toggleAbbreviation" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public toggleAbbreviation </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga19" doxytag="guildstone.sma::viewCandidatesList" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public viewCandidatesList </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga10" doxytag="guildstone.sma::viewCB" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> viewCB </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>gui</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>button</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Author:</b></dt><dd>Wintermute </dd></dl>
+<dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>chr:</em>&nbsp;</td><td>Character serial who places the stone </td></tr>
+    <tr><td valign=top><em>gui:</em>&nbsp;</td><td>serial of the menu </td></tr>
+    <tr><td valign=top><em>button:</em>&nbsp;</td><td>button id that was pressed </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga20" doxytag="guildstone.sma::viewGuildAtWar" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public viewGuildAtWar </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>guild</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Variable Documentation</h2>
+<a class="anchor" name="ga0" doxytag="guildstone.sma::ALL_RANKS" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> const <a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a> = 2
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga3" doxytag="guildstone.sma::rank_female_name" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="group__script__API__guild__various.html#ga3">rank_female_name</a>[<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]<code> [static]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<b>Initial value:</b><div class="fragment"><pre> {      
+        <span class="stringliteral">"GuildMistress"</span>,
+        <span class="stringliteral">"Novice"</span>
+}
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga2" doxytag="guildstone.sma::rank_male_name" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="group__script__API__guild__various.html#ga2">rank_male_name</a>[<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]<code> [static]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<b>Initial value:</b><div class="fragment"><pre> {      
+        <span class="stringliteral">"GuildMaster"</span>,
+        <span class="stringliteral">"Novice"</span>
+}
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="ga1" doxytag="guildstone.sma::ranks" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="group__script__API__guild__various.html#ga1">ranks</a>[<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]<code> [static]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<b>Initial value:</b><div class="fragment"><pre> { 
+        <span class="stringliteral">"GuildMaster"</span>,
+        <span class="stringliteral">"Member"</span>
+}
+</pre></div>    </td>
   </tr>
 </table>
 				</TD>
@@ -382,7 +1789,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

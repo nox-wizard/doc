@@ -39,7 +39,7 @@ Many times we refer to a target thinking it to be the object we selected with th
  When you are scripting the question is a bit different<br>
  A target is an object wich allows us to manage the targetting action<br>
  You can create a target with:<p>
-<div class="fragment"><pre><span class="keyword">new</span> target = <a class="code" href="kill_8sma.html#a2">target_create</a>(chr, _, _, _, <span class="stringliteral">"mycallback"</span>);
+<div class="fragment"><pre><span class="keyword">new</span> target = <a class="code" href="group__script__API__target.html#ga0">target_create</a>(chr, _, _, _, <span class="stringliteral">"mycallback"</span>);
 </pre></div><p>
 click the link to know more on the target_create function parameters.<br>
  From the client point of view, this line of code causes the target pointer to appear, so this line will make the player able to click on something.<p>
@@ -73,7 +73,7 @@ After all this theoretical explanation what should you do to get this all workin
 <div class="fragment"><pre><span class="keyword">public</span> a_function(<span class="keyword">const</span> chr, ...)
 {
         <a class="code" href="group__script__API__character__privs.html#ga24">chr_message</a>(chr, _, <span class="stringliteral">"Target something ..."</span>);
-        <a class="code" href="kill_8sma.html#a2">target_create</a>(chr, _, _, _, <span class="stringliteral">"callback"</span>);
+        <a class="code" href="group__script__API__target.html#ga0">target_create</a>(chr, _, _, _, <span class="stringliteral">"callback"</span>);
 }
 
 <span class="keyword">public</span> callback(target, chr, object, param1, x ,y ,z ,model, param1)
@@ -84,7 +84,7 @@ After all this theoretical explanation what should you do to get this all workin
 This is all you need to manage a target, the first function will send the target to the character with a message and the callback will be activated on target use.<br>
  When you write code in the callback you have to take in consideration that the exact moment the function will be called is not known.<p>
 You surely have noticed that we didn't use all target_create parameters, neither we used the target_do function. This features are for advanced target use. The first 2 additional parameters param1 and param2 are simply used to pass something to the callback wothout having to declare global variables/local vars, so that's not such an advanced used. the doNow paramter is mre interesting: it allows you to create the target (so getting a serial for it) without sending it to the player, simply use<p>
-<div class="fragment"><pre><a class="code" href="kill_8sma.html#a2">target_create</a>(chr,_,_,<span class="keyword">false</span>,<span class="stringliteral">"callback"</span>);
+<div class="fragment"><pre><a class="code" href="group__script__API__target.html#ga0">target_create</a>(chr,_,_,<span class="keyword">false</span>,<span class="stringliteral">"callback"</span>);
 </pre></div><p>
 and your target won't be sent.<br>
  This feature allows you a complex target management, so you can create many targets with a function and then activate them when needed with <a class="el" href="group__script__API__target.html#ga1">target_do(target, chr)</a>. This way you can use the same target for more than one character too.<br>
@@ -92,7 +92,7 @@ and your target won't be sent.<br>
 <div class="fragment"><pre>N = 10;
 <span class="keyword">new</span> targets[N];
 <span class="keywordflow">for</span>(<span class="keyword">new</span> i = 0; i&lt;N ; i++)
-        targets[i] = <a class="code" href="kill_8sma.html#a2">target_create</a>(chr, _,_,_,<span class="stringliteral">"callback%d"</span>,i)   
+        targets[i] = <a class="code" href="group__script__API__target.html#ga0">target_create</a>(chr, _,_,_,<span class="stringliteral">"callback%d"</span>,i)   
 </pre></div><p>
 will create N targets that will have callbacks named callback0, callback1, callback2 ... and so on.<p>
 All these interesting target features are available only from the newest 0.82 versions, those of you who are yousing the old system (with getTarget) will find that old system is no longer supported. You can easily switch to new system replacing your old<p>
@@ -100,7 +100,7 @@ All these interesting target features are available only from the newest 0.82 ve
 </pre></div><p>
 with the new<p>
 <div class="fragment"><pre><a class="code" href="group__script__API__character__privs.html#ga24">chr_message</a>(chr,_,<span class="stringliteral">"message"</span>);
-<a class="code" href="kill_8sma.html#a2">target_create</a>(chr,_,_,_,<span class="stringliteral">"callback"</span>);
+<a class="code" href="group__script__API__target.html#ga0">target_create</a>(chr,_,_,_,<span class="stringliteral">"callback"</span>);
 </pre></div>				</TD>
 				<TD WIDTH=30  VALIGN=top >
 					<TABLE WIDTH=30 cellpadding="0" cellspacing="0">
@@ -119,7 +119,7 @@ with the new<p>
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

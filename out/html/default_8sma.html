@@ -32,20 +32,75 @@
 <div class="qindex"><a class="qindex" href="index.html">Main&nbsp;Page</a> | <a class="qindex" href="modules.html">Modules</a> | <a class="qindex" href="files.html">File&nbsp;List</a> | <a class="qindex" href="globals.html">Globals</a> | <a class="qindex" href="pages.html">Related&nbsp;Pages</a> | <a class="qindex" href="examples.html">Examples</a></div>
 <h1>default.sma File Reference</h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
+<tr><td colspan=2><br><h2>Defines</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a0">localvar_TARGETACTUATOR</a>&nbsp;&nbsp;&nbsp;5000</td></tr>
+
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a0">__get_milk_target</a> (const itm, const chr)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a2">__get_milk_target</a> (const itm, const chr)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a1">__get_milk_from_cow</a> (const t, const cc, const c, const x, const y, const z, const model, const param1)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a3">__get_milk_from_cow</a> (const cc, const this_is_useless)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a2">__anatomy_target</a> (const cc, const target, const obj)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a4">__anatomy_target</a> (const cc)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a3">__crystBall</a> (const ball, const cc)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a5">__crystBall</a> (const ball, const cc)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a4">__nxwBench</a> ()</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a6">__nxwBench</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a7">_GetDirOfTarg</a> (const SourceX, const SourceY, const TargX, const TargY)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a8">isInBackpack</a> (const itm, const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a9">isInBank</a> (const itm, const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a10">saveTargetActuator</a> (cc, serial)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a11">delTargetActuator</a> (cc)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a12">getTargetActuator</a> (cc)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a13">cal_getDaysOfYear</a> (const year)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a14">cal_isLeapYear</a> (const year)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a15">cal_getDayInYear</a> (const daysSince1970)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a16">cal_getRealYear</a> (const daysSince1970)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a17">cal_getRealMonth</a> (daysInYear, const year)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a18">cal_getDayInMonth</a> (daysInYear, const year)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a19">chr_countItemsByDef</a> (const chr, const resource, const color)</td></tr>
+
+<tr><td colspan=2><br><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="default_8sma.html#a1">DIR_UNDEF</a> = -1</td></tr>
 
 </table>
+<hr><h2>Define Documentation</h2>
+<a class="anchor" name="a0" doxytag="default.sma::localvar_TARGETACTUATOR" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define localvar_TARGETACTUATOR&nbsp;&nbsp;&nbsp;5000
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="a2" doxytag="default.sma::__anatomy_target" ></a><p>
+<a class="anchor" name="a4" doxytag="default.sma::__anatomy_target" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -54,24 +109,9 @@
           <td class="md" nowrap valign="top"> public __anatomy_target </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>cc</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>target</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>obj</em></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="md">)&nbsp;</td>
-          <td class="md" colspan="2"></td>
+          <td class="mdname1" valign="top" nowrap> <em>cc</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
         </tr>
 
       </table>
@@ -89,7 +129,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a3" doxytag="default.sma::__crystBall" ></a><p>
+<a class="anchor" name="a5" doxytag="default.sma::__crystBall" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -127,7 +167,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a1" doxytag="default.sma::__get_milk_from_cow" ></a><p>
+<a class="anchor" name="a3" doxytag="default.sma::__get_milk_from_cow" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -136,49 +176,13 @@
           <td class="md" nowrap valign="top"> public __get_milk_from_cow </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>t</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
           <td class="mdname" nowrap> <em>cc</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>c</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>x</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>y</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>z</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>model</em>, </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>param1</em></td>
+          <td class="mdname" nowrap> <em>this_is_useless</em></td>
         </tr>
         <tr>
           <td></td>
@@ -201,7 +205,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a0" doxytag="default.sma::__get_milk_target" ></a><p>
+<a class="anchor" name="a2" doxytag="default.sma::__get_milk_target" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -239,7 +243,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a4" doxytag="default.sma::__nxwBench" ></a><p>
+<a class="anchor" name="a6" doxytag="default.sma::__nxwBench" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -252,6 +256,487 @@
           <td class="md" nowrap></td>
         </tr>
 
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="default.sma::_GetDirOfTarg" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public _GetDirOfTarg </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>SourceX</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>SourceY</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>TargX</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>TargY</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a18" doxytag="default.sma::cal_getDayInMonth" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public cal_getDayInMonth </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">daysInYear&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>year</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a15" doxytag="default.sma::cal_getDayInYear" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public cal_getDayInYear </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>daysSince1970</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a13" doxytag="default.sma::cal_getDaysOfYear" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public cal_getDaysOfYear </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>year</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a17" doxytag="default.sma::cal_getRealMonth" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public cal_getRealMonth </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">daysInYear&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>year</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a16" doxytag="default.sma::cal_getRealYear" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public cal_getRealYear </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>daysSince1970</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a14" doxytag="default.sma::cal_isLeapYear" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public cal_isLeapYear </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>year</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a19" doxytag="default.sma::chr_countItemsByDef" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public chr_countItemsByDef </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>color</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="default.sma::delTargetActuator" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public delTargetActuator </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">cc&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a12" doxytag="default.sma::getTargetActuator" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public getTargetActuator </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">cc&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="default.sma::isInBackpack" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public isInBackpack </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>itm</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="default.sma::isInBank" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public isInBank </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>itm</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a10" doxytag="default.sma::saveTargetActuator" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public saveTargetActuator </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">cc&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>serial&nbsp;</td>
+          <td class="mdname" nowrap></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Variable Documentation</h2>
+<a class="anchor" name="a1" doxytag="default.sma::DIR_UNDEF" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> const <a class="el" href="default_8sma.html#a1">DIR_UNDEF</a> = -1
       </table>
     </td>
   </tr>
@@ -285,7 +770,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

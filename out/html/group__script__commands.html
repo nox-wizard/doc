@@ -33,12 +33,48 @@
 <h1>commands</h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Modules</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__area.html">area command</a></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__add.html">'add</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__area.html">'area</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__commands__system.html">system functions</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__commands__constants.html">constants</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__freeze.html">'freeze</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__func.html">'func</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__hiding.html">'hiding</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__invul.html">'invul</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__kill.html">'kill</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__make.html">'make</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__move.html">'move</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__options.html">'options</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__playerlist.html">'playerlist</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__polymorph.html">'polymorph</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__setpriv.html">'setpriv</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__skills.html">'skills</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__stats.html">'stats</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__tweak.html">'tweak</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__where.html">'where</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="group__script__command__wipe.html">'wipe</a></td></tr>
 
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
-This group of scripts contains all the ingame commands scripts.<br>
- The commandlevel management is done internally, in the sources, but you can define, modify all the commands you want by editing the existing scripts.<br>
 <h2><a class="anchor" name="commandsplayerinterface">
 Player interface</a></h2>
 Players can use ingame commands, that is, they can send commands to the server to make various things. Not all commands are available to all players, every command needs a certain authorization to be used, this authorization is the "command level" or "privlevel".<br>
@@ -62,11 +98,17 @@ Using commands is easy, simpy type the command (with his parameters) and the fol
 Command areas</a></h2>
 A player who can use the 'area command, can set "command area".<br>
  This is needed sometimes when you have to aplly a command to a large number of items/characters and it would be boring to write the command many times.<br>
- See the <a class="el" href="group__script__command__area.html">area command</a> for more details.<h2><a class="anchor" name="customizability">
+ See the <a class="el" href="group__script__command__area.html">'area</a> for more details.<h2><a class="anchor" name="customizability">
 Customizability</a></h2>
 You can define all commands you want, modify the privlevels, modify/erase existing commands, in other words, you can do everything you want with commands!<br>
- To edit an existing command simply open the corresponding script (has the same name as the command, in the small-scripts folder) and modify it, the commands' behaviour is completely written in small, so you full control over it.<br>
- 				</TD>
+ You can add a command by adding its name in __commands[][] array (in small-scripts/commands/constants.sma) and then you have to write a public function with the following proptotype:<p>
+<div class="fragment"><pre>        <span class="keyword">public</span> cmd_commandname(<span class="keyword">const</span> chr)
+</pre></div><p>
+The function name MUST be cmd_ + "command name" or your command won't be recognized and you won't have any warning of that. SO for example if you want to add a 'killme command you must enter "killme" in __commands[][] (the place is not important, but leaving blank spaces in the array affects performance) and the declare:<p>
+<div class="fragment"><pre>        <span class="keyword">public</span> cmd_killme(cons chr)
+</pre></div><p>
+in one of your included files. Once you set the command nme and fucntion you can edit the privlevel simply by modifying the value in __commands[][] (see default commands for example).<p>
+Tip: If you don't want to directly modify the file <a class="el" href="commands_8sma.html">commands.sma</a> (because you would have to update it every time you download new scripts), remeber that you can modify it at runtime, as it is not declared as const. So you can modify commands with a script. The helper function addCommand(name[],priv) is intended for this purpose. 				</TD>
 				<TD WIDTH=30  VALIGN=top >
 					<TABLE WIDTH=30 cellpadding="0" cellspacing="0">
 						<TR HEIGHT=26 bgcolor=#FFFFFF><TD></TD></TR>
@@ -84,7 +126,7 @@ You can define all commands you want, modify the privlevels, modify/erase existi
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

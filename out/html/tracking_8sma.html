@@ -33,22 +33,24 @@
 <h1>tracking.sma File Reference</h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a2">__nxw_sk_tracking</a> (const chr)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a3">__nxw_sk_tracking</a> (const chr)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a3">handle_tracking</a> (const chr, const oldmenu, const button, const model, const color, const data)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a4">handle_tracking</a> (const oldtrackMenu, const chr, const button, const model, const color, const data)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a4">handle_track_choose</a> (const chr, const menu, const button, const model, const color, const data)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a5">handle_track_choose</a> (const trackMenu, const chr, const button, const model, const color, const data)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a5">removeTracking</a> (const chr, const dummy1, const data, const mode)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a6">removeTracking</a> (const chr, const dummy1, const data, const mode)</td></tr>
 
 <tr><td colspan=2><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a0">typeQuestion</a> [3][]</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a0">seconds</a> = 25</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a1">where</a> [8][]</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a1">typeQuestion</a> [3][]</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="tracking_8sma.html#a2">where</a> [8][]</td></tr>
 
 </table>
 <hr><h2>Function Documentation</h2>
-<a class="anchor" name="a2" doxytag="tracking.sma::__nxw_sk_tracking" ></a><p>
+<a class="anchor" name="a3" doxytag="tracking.sma::__nxw_sk_tracking" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -77,7 +79,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a4" doxytag="tracking.sma::handle_track_choose" ></a><p>
+<a class="anchor" name="a5" doxytag="tracking.sma::handle_track_choose" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -86,13 +88,13 @@
           <td class="md" nowrap valign="top"> public handle_track_choose </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chr</em>, </td>
+          <td class="mdname" nowrap> <em>trackMenu</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>menu</em>, </td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
         </tr>
         <tr>
           <td></td>
@@ -139,7 +141,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a3" doxytag="tracking.sma::handle_tracking" ></a><p>
+<a class="anchor" name="a4" doxytag="tracking.sma::handle_tracking" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -148,13 +150,13 @@
           <td class="md" nowrap valign="top"> public handle_tracking </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chr</em>, </td>
+          <td class="mdname" nowrap> <em>oldtrackMenu</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>oldmenu</em>, </td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
         </tr>
         <tr>
           <td></td>
@@ -201,7 +203,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a5" doxytag="tracking.sma::removeTracking" ></a><p>
+<a class="anchor" name="a6" doxytag="tracking.sma::removeTracking" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -252,13 +254,35 @@
   </tr>
 </table>
 <hr><h2>Variable Documentation</h2>
-<a class="anchor" name="a0" doxytag="tracking.sma::typeQuestion" ></a><p>
+<a class="anchor" name="a0" doxytag="tracking.sma::seconds" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="tracking_8sma.html#a0">typeQuestion</a>[3][]<code> [static]</code>
+          <td class="md" nowrap valign="top"> const <a class="el" href="tracking_8sma.html#a0">seconds</a> = 25
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a1" doxytag="tracking.sma::typeQuestion" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="tracking_8sma.html#a1">typeQuestion</a>[3][]<code> [static]</code>
       </table>
     </td>
   </tr>
@@ -279,13 +303,13 @@
 </pre></div>    </td>
   </tr>
 </table>
-<a class="anchor" name="a1" doxytag="tracking.sma::where" ></a><p>
+<a class="anchor" name="a2" doxytag="tracking.sma::where" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="tracking_8sma.html#a1">where</a>[8][]<code> [static]</code>
+          <td class="md" nowrap valign="top"> <a class="el" href="tracking_8sma.html#a2">where</a>[8][]<code> [static]</code>
       </table>
     </td>
   </tr>
@@ -329,7 +353,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

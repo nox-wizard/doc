@@ -33,23 +33,100 @@
 <h1>guildstone.sma File Reference</h1><table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Defines</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga6">GUILD_POSITION_WITH_TARGET</a></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga39">RENAMEPRICE</a>&nbsp;&nbsp;&nbsp;40000</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga40">ABBREVPRICE</a>&nbsp;&nbsp;&nbsp;40000</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga41">GUILD_POSITION_WITH_TARGET</a></td></tr>
 
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga0">guild_dclickDeed</a> (const deed, const master)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga4">guild_dclickDeed</a> (const deed, const chr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild deed double-click  <a href="group__script__API__guild__various.html#ga0"></a><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga1">guildPlace</a> (const target, const master, const obj, const x, const y, const z, const model, const deed)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild deed double-click  <a href="group__script__API__guild__various.html#ga4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga5">guildPlace</a> (const target, const master, const obj, const x, const y, const z, const model, const deed)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga2">guildgui_callback</a> (const gui, const master, const button)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">callback method for placing a guildstone, checks for current membership of placing char in antoher guild and opens the naming gump  <a href="group__script__API__guild__various.html#ga5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga6">guildgui_callback</a> (const chr, const gui, const button)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga3">guild_dclickStone</a> (const guild, const curr)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">callback method for placing a guildstone, checks for current membership of placing char in antoher guild and opens the naming gump  <a href="group__script__API__guild__various.html#ga6"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga7">getGuildMaster</a> (const guild)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga4">guildDclick_cback</a> (const gui, const curr, const button)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">helper function to obtain the guildmaster until it is available in the properties  <a href="group__script__API__guild__various.html#ga7"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga8">guild_dclickStone</a> (const guild, const chr)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga5">guild_sclickStone</a> (const guild, const curr)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild stone double-click, opens the guild menu gump  <a href="group__script__API__guild__various.html#ga8"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga9">guildDclick_cback</a> (const chr, const gui, const button)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild stone single-click  <a href="group__script__API__guild__various.html#ga5"></a><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">callback method for the guild menu, calling the approbriate sub methods  <a href="group__script__API__guild__various.html#ga9"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga10">viewCB</a> (const chr, const gui, const button)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">common callback method for the guild menu, called for all view xxx dialogs  <a href="group__script__API__guild__various.html#ga10"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga11">guild_viewRoster</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga12">guild_viewDesc</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga13">guildRecruitNew</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga14">addRecruit</a> (const chr, const charTarget, const itmTarget)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga15">declareFealty</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga16">fealtyCB</a> (const chr, const gui, const button)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga17">toggleAbbreviation</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga18">resignGuild</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga19">viewCandidatesList</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga20">viewGuildAtWar</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga21">guildmasterMenu</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga22">guildMasterMenuCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga23">renameGuild</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga24">renameGuildCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga25">changeAbbreviation</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga26">changeAbbrevCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga27">changeAlignment</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga28">setCharter</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga29">dismissMember</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga30">declareWar</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga31">declareWarCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga32">declarePeace</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga33">declarePeaceCB</a> (const chr, const gui, const buttonCode)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga34">acceptMember</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga35">refuseCandidate</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga36">setMemberTitle</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga37">issueAlignmentShields</a> (const chr, const guild)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga38">guild_sclickStone</a> (const guild, const chr)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a guild stone single-click  <a href="group__script__API__guild__various.html#ga38"></a><br><br></td></tr>
+<tr><td colspan=2><br><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a> = 2</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga1">ranks</a> [<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga2">rank_male_name</a> [<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="group__script__API__guild__various.html#ga3">rank_female_name</a> [<a class="el" href="group__script__API__guild__various.html#ga0">ALL_RANKS</a>][]</td></tr>
+
 </table>
 				</TD>
 				<TD WIDTH=30  VALIGN=top >
@@ -69,7 +146,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>

@@ -34,56 +34,133 @@
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom>{ <br>
-&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a25a11">IRON</a> =  0, 
-<a class="el" href="mining_8sma.html#a25a12">SHADOW</a>, 
-<a class="el" href="mining_8sma.html#a25a13">MERKITE</a>, 
-<a class="el" href="mining_8sma.html#a25a14">COPPER</a>, 
+&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a65a12">iron</a> = 0, 
+<a class="el" href="mining_8sma.html#a65a13">shadow</a>, 
+<a class="el" href="mining_8sma.html#a65a14">merkite</a>, 
+<a class="el" href="mining_8sma.html#a65a15">copper</a>, 
 <br>
-&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a25a15">SILVER</a>, 
-<a class="el" href="mining_8sma.html#a25a16">BRONZE</a>, 
-<a class="el" href="mining_8sma.html#a25a17">GOLD</a>, 
-<a class="el" href="mining_8sma.html#a25a18">AGAPITE</a>, 
+&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a65a16">silver</a>, 
+<a class="el" href="mining_8sma.html#a65a17">bronze</a>, 
+<a class="el" href="mining_8sma.html#a65a18">gold</a>, 
+<a class="el" href="mining_8sma.html#a65a19">agapite</a>, 
 <br>
-&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a25a19">VERITE</a>, 
-<a class="el" href="mining_8sma.html#a25a20">MYTHRIL</a>
+&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a65a20">verite</a>, 
+<a class="el" href="mining_8sma.html#a65a21">mythril</a>
+<br>
+ }</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a66">oreprop</a> { <br>
+&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a66a22">oreweight</a>, 
+<a class="el" href="mining_8sma.html#a66a23">miningmin</a>, 
+<a class="el" href="mining_8sma.html#a66a24">orechance</a>, 
+<a class="el" href="mining_8sma.html#a66a25">orecolor</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a66a26">orename</a>, 
+<a class="el" href="mining_8sma.html#a66a27">oreuseskill</a>, 
+<a class="el" href="mining_8sma.html#a66a28">orescriptname</a>
+<br>
+ }</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a67">smithprop</a> { <br>
+&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a67a29">ingotnumber</a>, 
+<a class="el" href="mining_8sma.html#a67a30">skillminsmith</a>, 
+<a class="el" href="mining_8sma.html#a67a31">skillmaxsmith</a>, 
+<a class="el" href="mining_8sma.html#a67a32">repairskillsmith</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="mining_8sma.html#a67a33">repairingot</a>, 
+<a class="el" href="mining_8sma.html#a67a34">itemname</a>
 <br>
  }</td></tr>
 
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a21">__nxw_sk_mining</a> (const cc)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a35">__nxw_sk_mining</a> (const cc)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a22">__nxw_smeltOre2</a> (const cc, const ore, const minskill, const id, const color, const orename[])</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a36">__nxw_smeltOre</a> (const cc, const color1, const color2, ore)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a23">__nxw_smeltOre</a> (const chr, const color, ore)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a37">blacksmith</a> (const itm, const chr)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a24">__nxw_ingot_mm</a> (const color)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a38">blacksmithtwo</a> (const t, const chr, const target, const x, const y, const z, const model, const param1)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a39">menu_smith</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a40">smithBtnPress</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a41">menu_armor_ring</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a42">armorbtn_ring</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a43">menu_armor_chain</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a44">armorbtn_chain</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a45">menu_armor_plate</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a46">armorbtn_plate</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a47">menu_helm</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a48">helmbtn</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a49">menu_schield</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a50">shieldbtn</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a51">menu_weapon_sword</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a52">weaponbtn_Schwerter</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a53">menu_weapon_mace</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a54">weaponbtn_mace</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a55">menu_weapon_Speer</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a56">weaponbtn_Speer</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a57">menu_weapon_axe</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a58">weaponbtn_axe</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a59">menu_weapon_pole</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a60">weaponbtn_pole_arms</a> (const chr, const pg, const idx)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a61">last_smithitem</a> (const chr)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a62">item_smith_create</a> (const chr, const itemtyp)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a63">item_smith_create_two</a> (const chr, const itemtyp, const colornum)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>public&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a64">_repair</a> (const target, const chr)</td></tr>
 
 <tr><td colspan=2><br><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a0">NUM_ORES</a> = 10</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a1">oreWeight</a> []</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>enum <a class="el" href="mining_8sma.html#a66">oreprop</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a1">oreProperty</a> [<a class="el" href="mining_8sma.html#a0">NUM_ORES</a>][<a class="el" href="mining_8sma.html#a66">oreprop</a>]</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a2">oreSkill</a> []</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a2">ENABLE_REGIONS</a> = 0</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a3">oreChance</a> []</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a3">NUM_REGIONS</a> = 2</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a4">oreColor</a> []</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a4">oreRegions</a> [<a class="el" href="mining_8sma.html#a3">NUM_REGIONS</a>][4]</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a5">oreMakeMenu</a> []</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a5">regionChance</a> [<a class="el" href="mining_8sma.html#a3">NUM_REGIONS</a>][<a class="el" href="mining_8sma.html#a0">NUM_ORES</a>]</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a6">oreName</a> [<a class="el" href="mining_8sma.html#a0">NUM_ORES</a>][]</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a6">globalSkillVar1</a> = 1004</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a7">ENABLE_REGIONS</a> = 0</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a7">globalSkillVar2</a> = 1005</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a8">NUM_REGIONS</a> = 2</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a8">NUM_ITEMS</a> = 49</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a9">oreRegions</a> [<a class="el" href="mining_8sma.html#a8">NUM_REGIONS</a>][4]</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a9">itemDef</a> [<a class="el" href="mining_8sma.html#a8">NUM_ITEMS</a>][<a class="el" href="mining_8sma.html#a67">smithprop</a>]</td></tr>
 
-<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a10">regionChance</a> [<a class="el" href="mining_8sma.html#a8">NUM_REGIONS</a>][<a class="el" href="mining_8sma.html#a0">NUM_ORES</a>]</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>const &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a10">NUM_smithSENTENCE</a> = 89</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mining_8sma.html#a11">msg_blacksmithDef</a> [<a class="el" href="mining_8sma.html#a10">NUM_smithSENTENCE</a>][]</td></tr>
 
 </table>
 <hr><h2>Enumeration Type Documentation</h2>
-<a class="anchor" name="a25" doxytag="mining.sma::@15" ></a><p>
+<a class="anchor" name="a65" doxytag="mining.sma::@18" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -104,46 +181,38 @@
 <p>
 <dl compact><dt><b>Enumeration values: </b></dt><dd>
 <table border=0 cellspacing=2 cellpadding=0>
-<tr><td valign=top><em><a class="anchor" name="a25a11" doxytag="IRON" ></a>IRON</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a12" doxytag="iron" ></a>iron</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a12" doxytag="SHADOW" ></a>SHADOW</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a13" doxytag="shadow" ></a>shadow</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a13" doxytag="MERKITE" ></a>MERKITE</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a14" doxytag="merkite" ></a>merkite</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a14" doxytag="COPPER" ></a>COPPER</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a15" doxytag="copper" ></a>copper</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a15" doxytag="SILVER" ></a>SILVER</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a16" doxytag="silver" ></a>silver</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a16" doxytag="BRONZE" ></a>BRONZE</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a17" doxytag="bronze" ></a>bronze</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a17" doxytag="GOLD" ></a>GOLD</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a18" doxytag="gold" ></a>gold</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a18" doxytag="AGAPITE" ></a>AGAPITE</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a19" doxytag="agapite" ></a>agapite</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a19" doxytag="VERITE" ></a>VERITE</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a20" doxytag="verite" ></a>verite</em>&nbsp;</td><td>
 </td></tr>
-<tr><td valign=top><em><a class="anchor" name="a25a20" doxytag="MYTHRIL" ></a>MYTHRIL</em>&nbsp;</td><td>
+<tr><td valign=top><em><a class="anchor" name="a65a21" doxytag="mythril" ></a>mythril</em>&nbsp;</td><td>
 </td></tr>
 </table>
 </dl>
     </td>
   </tr>
 </table>
-<hr><h2>Function Documentation</h2>
-<a class="anchor" name="a24" doxytag="mining.sma::__nxw_ingot_mm" ></a><p>
+<a class="anchor" name="a66" doxytag="mining.sma::oreprop" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> public __nxw_ingot_mm </td>
-          <td class="md" valign="top">(&nbsp;</td>
-          <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname1" valign="top" nowrap> <em>color</em>          </td>
-          <td class="md" valign="top">&nbsp;)&nbsp;</td>
-          <td class="md" nowrap></td>
-        </tr>
-
+          <td class="md" nowrap valign="top"> enum <a class="el" href="mining_8sma.html#a66">oreprop</a>
       </table>
     </td>
   </tr>
@@ -156,10 +225,67 @@
     <td>
 
 <p>
+<dl compact><dt><b>Enumeration values: </b></dt><dd>
+<table border=0 cellspacing=2 cellpadding=0>
+<tr><td valign=top><em><a class="anchor" name="a66a22" doxytag="oreweight" ></a>oreweight</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a66a23" doxytag="miningmin" ></a>miningmin</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a66a24" doxytag="orechance" ></a>orechance</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a66a25" doxytag="orecolor" ></a>orecolor</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a66a26" doxytag="orename" ></a>orename</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a66a27" doxytag="oreuseskill" ></a>oreuseskill</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a66a28" doxytag="orescriptname" ></a>orescriptname</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dl>
     </td>
   </tr>
 </table>
-<a class="anchor" name="a21" doxytag="mining.sma::__nxw_sk_mining" ></a><p>
+<a class="anchor" name="a67" doxytag="mining.sma::smithprop" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> enum <a class="el" href="mining_8sma.html#a67">smithprop</a>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<dl compact><dt><b>Enumeration values: </b></dt><dd>
+<table border=0 cellspacing=2 cellpadding=0>
+<tr><td valign=top><em><a class="anchor" name="a67a29" doxytag="ingotnumber" ></a>ingotnumber</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a67a30" doxytag="skillminsmith" ></a>skillminsmith</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a67a31" doxytag="skillmaxsmith" ></a>skillmaxsmith</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a67a32" doxytag="repairskillsmith" ></a>repairskillsmith</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a67a33" doxytag="repairingot" ></a>repairingot</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign=top><em><a class="anchor" name="a67a34" doxytag="itemname" ></a>itemname</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dl>
+    </td>
+  </tr>
+</table>
+<hr><h2>Function Documentation</h2>
+<a class="anchor" name="a35" doxytag="mining.sma::__nxw_sk_mining" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -188,7 +314,7 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a23" doxytag="mining.sma::__nxw_smeltOre" ></a><p>
+<a class="anchor" name="a36" doxytag="mining.sma::__nxw_smeltOre" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -197,13 +323,19 @@
           <td class="md" nowrap valign="top"> public __nxw_smeltOre </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>chr</em>, </td>
+          <td class="mdname" nowrap> <em>cc</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>color</em>, </td>
+          <td class="mdname" nowrap> <em>color1</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>color2</em>, </td>
         </tr>
         <tr>
           <td></td>
@@ -232,46 +364,1048 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a22" doxytag="mining.sma::__nxw_smeltOre2" ></a><p>
+<a class="anchor" name="a64" doxytag="mining.sma::_repair" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> public __nxw_smeltOre2 </td>
+          <td class="md" nowrap valign="top"> public _repair </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="md" nowrap valign="top">const&nbsp;</td>
-          <td class="mdname" nowrap> <em>cc</em>, </td>
+          <td class="mdname" nowrap> <em>target</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>ore</em>, </td>
+          <td class="mdname" nowrap> <em>chr</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a44" doxytag="mining.sma::armorbtn_chain" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public armorbtn_chain </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>minskill</em>, </td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>id</em>, </td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a46" doxytag="mining.sma::armorbtn_plate" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public armorbtn_plate </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>color</em>, </td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
         </tr>
         <tr>
           <td></td>
           <td></td>
           <td class="md" nowrap>const&nbsp;</td>
-          <td class="mdname" nowrap> <em>orename</em>[]</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a42" doxytag="mining.sma::armorbtn_ring" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public armorbtn_ring </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a37" doxytag="mining.sma::blacksmith" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public blacksmith </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>itm</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a38" doxytag="mining.sma::blacksmithtwo" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public blacksmithtwo </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>t</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>target</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>z</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>model</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>param1</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a48" doxytag="mining.sma::helmbtn" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public helmbtn </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a62" doxytag="mining.sma::item_smith_create" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public item_smith_create </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>itemtyp</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a63" doxytag="mining.sma::item_smith_create_two" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public item_smith_create_two </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>itemtyp</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>colornum</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a61" doxytag="mining.sma::last_smithitem" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public last_smithitem </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a43" doxytag="mining.sma::menu_armor_chain" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_armor_chain </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a45" doxytag="mining.sma::menu_armor_plate" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_armor_plate </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a41" doxytag="mining.sma::menu_armor_ring" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_armor_ring </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a47" doxytag="mining.sma::menu_helm" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_helm </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a49" doxytag="mining.sma::menu_schield" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_schield </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a39" doxytag="mining.sma::menu_smith" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_smith </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a57" doxytag="mining.sma::menu_weapon_axe" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_weapon_axe </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a53" doxytag="mining.sma::menu_weapon_mace" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_weapon_mace </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a59" doxytag="mining.sma::menu_weapon_pole" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_weapon_pole </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a55" doxytag="mining.sma::menu_weapon_Speer" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_weapon_Speer </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a51" doxytag="mining.sma::menu_weapon_sword" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public menu_weapon_sword </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chr</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a50" doxytag="mining.sma::shieldbtn" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public shieldbtn </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a40" doxytag="mining.sma::smithBtnPress" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public smithBtnPress </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a58" doxytag="mining.sma::weaponbtn_axe" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public weaponbtn_axe </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a54" doxytag="mining.sma::weaponbtn_mace" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public weaponbtn_mace </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a60" doxytag="mining.sma::weaponbtn_pole_arms" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public weaponbtn_pole_arms </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a52" doxytag="mining.sma::weaponbtn_Schwerter" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public weaponbtn_Schwerter </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a56" doxytag="mining.sma::weaponbtn_Speer" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> public weaponbtn_Speer </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const&nbsp;</td>
+          <td class="mdname" nowrap> <em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>pg</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const&nbsp;</td>
+          <td class="mdname" nowrap> <em>idx</em></td>
         </tr>
         <tr>
           <td></td>
@@ -295,13 +1429,123 @@
   </tr>
 </table>
 <hr><h2>Variable Documentation</h2>
-<a class="anchor" name="a7" doxytag="mining.sma::ENABLE_REGIONS" ></a><p>
+<a class="anchor" name="a2" doxytag="mining.sma::ENABLE_REGIONS" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a7">ENABLE_REGIONS</a> = 0<code> [static]</code>
+          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a2">ENABLE_REGIONS</a> = 0<code> [static]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="mining.sma::globalSkillVar1" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> const <a class="el" href="mining_8sma.html#a6">globalSkillVar1</a> = 1004
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="mining.sma::globalSkillVar2" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> const <a class="el" href="mining_8sma.html#a7">globalSkillVar2</a> = 1005
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="mining.sma::itemDef" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a9">itemDef</a>[<a class="el" href="mining_8sma.html#a8">NUM_ITEMS</a>][<a class="el" href="mining_8sma.html#a67">smithprop</a>]<code> [static]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="mining.sma::msg_blacksmithDef" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a11">msg_blacksmithDef</a>[<a class="el" href="mining_8sma.html#a10">NUM_smithSENTENCE</a>][]<code> [static]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="mining.sma::NUM_ITEMS" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> const <a class="el" href="mining_8sma.html#a8">NUM_ITEMS</a> = 49
       </table>
     </td>
   </tr>
@@ -339,13 +1583,13 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a8" doxytag="mining.sma::NUM_REGIONS" ></a><p>
+<a class="anchor" name="a3" doxytag="mining.sma::NUM_REGIONS" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> const <a class="el" href="mining_8sma.html#a8">NUM_REGIONS</a> = 2
+          <td class="md" nowrap valign="top"> const <a class="el" href="mining_8sma.html#a3">NUM_REGIONS</a> = 2
       </table>
     </td>
   </tr>
@@ -361,13 +1605,13 @@
     </td>
   </tr>
 </table>
-<a class="anchor" name="a3" doxytag="mining.sma::oreChance" ></a><p>
+<a class="anchor" name="a10" doxytag="mining.sma::NUM_smithSENTENCE" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a3">oreChance</a>[]<code> [static]</code>
+          <td class="md" nowrap valign="top"> const <a class="el" href="mining_8sma.html#a10">NUM_smithSENTENCE</a> = 89
       </table>
     </td>
   </tr>
@@ -380,28 +1624,16 @@
     <td>
 
 <p>
-<b>Initial value:</b><div class="fragment"><pre> {
-100, 
-60,  
-55,  
-50,  
-45,  
-40,  
-35,  
-30,  
-25,  
-20  
-}
-</pre></div>    </td>
+    </td>
   </tr>
 </table>
-<a class="anchor" name="a4" doxytag="mining.sma::oreColor" ></a><p>
+<a class="anchor" name="a1" doxytag="mining.sma::oreProperty" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a4">oreColor</a>[]<code> [static]</code>
+          <td class="md" nowrap valign="top"> enum <a class="el" href="mining_8sma.html#a66">oreprop</a>  <a class="el" href="mining_8sma.html#a1">oreProperty</a>[<a class="el" href="mining_8sma.html#a0">NUM_ORES</a>][<a class="el" href="mining_8sma.html#a66">oreprop</a>]
       </table>
     </td>
   </tr>
@@ -414,87 +1646,16 @@
     <td>
 
 <p>
-<b>Initial value:</b><div class="fragment"><pre> {
-0x0000, 
-0x0386, 
-0x02C3, 
-0x046E, 
-0x0961, 
-0x02E7, 
-0x0466, 
-0x0150, 
-0x022F, 
-0x0191  
-}
-</pre></div>    </td>
+    </td>
   </tr>
 </table>
-<a class="anchor" name="a5" doxytag="mining.sma::oreMakeMenu" ></a><p>
+<a class="anchor" name="a4" doxytag="mining.sma::oreRegions" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a5">oreMakeMenu</a>[]<code> [static]</code>
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-<b>Initial value:</b><div class="fragment"><pre> {
-1,   
-800, 
-804, 
-814, 
-813, 
-801, 
-50,  
-806, 
-802, 
-803  
-}
-</pre></div>    </td>
-  </tr>
-</table>
-<a class="anchor" name="a6" doxytag="mining.sma::oreName" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a6">oreName</a>[<a class="el" href="mining_8sma.html#a0">NUM_ORES</a>][]<code> [static]</code>
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-<b>Initial value:</b><div class="fragment"><pre> {
-<span class="stringliteral">"Iron"</span>, <span class="stringliteral">"Shadow"</span>, <span class="stringliteral">"Merkite"</span>, <span class="stringliteral">"Copper"</span>, <span class="stringliteral">"Silver"</span>, <span class="stringliteral">"Bronze"</span>, <span class="stringliteral">"Golden"</span>, <span class="stringliteral">"Agapite"</span>, <span class="stringliteral">"Verite"</span>, <span class="stringliteral">"Mythril"</span>
-}
-</pre></div>    </td>
-  </tr>
-</table>
-<a class="anchor" name="a9" doxytag="mining.sma::oreRegions" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a9">oreRegions</a>[<a class="el" href="mining_8sma.html#a8">NUM_REGIONS</a>][4]<code> [static]</code>
+          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a4">oreRegions</a>[<a class="el" href="mining_8sma.html#a3">NUM_REGIONS</a>][4]<code> [static]</code>
       </table>
     </td>
   </tr>
@@ -515,81 +1676,13 @@
 </pre></div>    </td>
   </tr>
 </table>
-<a class="anchor" name="a2" doxytag="mining.sma::oreSkill" ></a><p>
+<a class="anchor" name="a5" doxytag="mining.sma::regionChance" ></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a2">oreSkill</a>[]<code> [static]</code>
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-<b>Initial value:</b><div class="fragment"><pre> {
-0,   
-650, 
-700, 
-750, 
-790, 
-800, 
-850, 
-900, 
-950, 
-990  
-}
-</pre></div>    </td>
-  </tr>
-</table>
-<a class="anchor" name="a1" doxytag="mining.sma::oreWeight" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a1">oreWeight</a>[]<code> [static]</code>
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
-<b>Initial value:</b><div class="fragment"><pre> {
-700, 
-700, 
-700, 
-700, 
-700, 
-700, 
-700, 
-700, 
-700, 
-700  
-}
-</pre></div>    </td>
-  </tr>
-</table>
-<a class="anchor" name="a10" doxytag="mining.sma::regionChance" ></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a10">regionChance</a>[<a class="el" href="mining_8sma.html#a8">NUM_REGIONS</a>][<a class="el" href="mining_8sma.html#a0">NUM_ORES</a>]<code> [static]</code>
+          <td class="md" nowrap valign="top"> <a class="el" href="mining_8sma.html#a5">regionChance</a>[<a class="el" href="mining_8sma.html#a3">NUM_REGIONS</a>][<a class="el" href="mining_8sma.html#a0">NUM_ORES</a>]<code> [static]</code>
       </table>
     </td>
   </tr>
@@ -627,7 +1720,7 @@
 	<TR HEIGHT=1 bgcolor=#808080><TD></TD></TR>
 	<TR HEIGHT=75 bgcolor=#125492 ALIGN=right> <TD>
 		<font color="#FFFFFF" size="4" face="ArialBlack">
-			Documentation generated 28 Dec 2003 &nbsp&nbsp
+			Documentation generated 19 Feb 2004 &nbsp&nbsp
 		</FONT>
 	</TD> 
 	</TR>
